@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preset name="Color Contrast FFT" uniqueId="Animation" className="Animation" default="0">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="23" microVersion="0" revision="49330"/>
+	<Animation>
+		<DurationSource name="DurationSource" defaultDuration="5s" scale="1"/>
+		<PhaseSourceFFT name="PhaseSourceFFT" phase="0.3444688868234841439" linkId="/audioengine/externalfft">
+			<Params name="Params">
+				<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.5">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0" max="1"/>
+					<ValueRange name="minMax" min="0" max="1"/>
+					<ValueRange name="startStop" min="0" max="1"/>
+				</ParamRange>
+				<ParamRange name="Gain" T="DOUBLE" default="0" value="38.016000000000005343">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="-48" max="48"/>
+					<ValueRange name="minMax" min="-48" max="48"/>
+					<ValueRange name="startStop" min="-48" max="48"/>
+				</ParamRange>
+				<ParamRange name="Fallback" T="DOUBLE" default="1000" value="483.19999999999993179">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="100" max="2000"/>
+					<ValueRange name="minMax" min="100" max="2000"/>
+					<ValueRange name="startStop" min="100" max="2000"/>
+				</ParamRange>
+				<ParamChoice name="ValueBehaviour" T="INT32" default="0" value="0" storeChoices="0"/>
+			</Params>
+		</PhaseSourceFFT>
+		<BehaviourDouble name="BehaviourDouble">
+			<Modifier>
+				<ModifierEnvelope name="ModifierEnvelope" altName="Envelope" uniqueId="1753033287542">
+					<points>
+						<point x="0" y="0" curve="33"/>
+						<point x="1" y="1" curve="16"/>
+					</points>
+				</ModifierEnvelope>
+			</Modifier>
+		</BehaviourDouble>
+		<AnimationStarter flags="9223372036854775809"/>
+	</Animation>
+</Preset>
+

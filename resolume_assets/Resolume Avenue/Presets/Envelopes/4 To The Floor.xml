@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset name="4 To The Floor" uniqueId="MOD_ENVELOPE" className="Envelope">
+  <versionInfo name="Resolume Arena" majorVersion="7" minorVersion="3" microVersion="0"
+               revision="70000"/>
+  <ModifierEnvelope name="ModifierEnvelope" altName="Envelope">
+    <points>
+      <point x="0" y="1" curve="33"/>
+      <point x="0.24999999999999997224" y="0" curve="3"/>
+      <point x="0.24999999999999997224" y="1" curve="1"/>
+      <point x="0.50000000000000011102" y="0" curve="3"/>
+      <point x="0.50000000000000011102" y="1" curve="1"/>
+      <point x="0.75" y="0" curve="3"/>
+      <point x="0.75190114068441049611" y="1" curve="1"/>
+      <point x="1" y="0" curve="3"/>
+    </points>
+  </ModifierEnvelope>
+</Preset>

@@ -1,0 +1,1043 @@
+{
+	"formatVersion": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"patch": {
+		"connections": [
+			{
+				"from": [
+					40,
+					"output0"
+				],
+				"to": [
+					45,
+					"input"
+				]
+			},
+			{
+				"from": [
+					40,
+					"output0"
+				],
+				"to": [
+					46,
+					"channel0"
+				]
+			},
+			{
+				"from": [
+					45,
+					"output0"
+				],
+				"to": [
+					46,
+					"channel1"
+				]
+			},
+			{
+				"from": [
+					41,
+					"output"
+				],
+				"to": [
+					48,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					48,
+					"output0"
+				],
+				"to": [
+					40,
+					"points"
+				]
+			},
+			{
+				"from": [
+					47,
+					"output"
+				],
+				"to": [
+					48,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					47,
+					"output"
+				],
+				"to": [
+					49,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output0"
+				],
+				"to": [
+					50,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					50,
+					"output"
+				],
+				"to": [
+					45,
+					"translation"
+				]
+			}
+		],
+		"inputOrder": {
+			"groups": {},
+			"roots": [
+				{
+					"node": 47
+				}
+			]
+		},
+		"meta": {
+			"author": "",
+			"category": null,
+			"deploymentTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 0
+				}
+			},
+			"description": "",
+			"displayName": "Fractal Tree 33",
+			"identifier": "fc26b282-8f93-457b-8489-ced945e055e8",
+			"licenseName": "",
+			"mail": "",
+			"originalTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 9
+				}
+			},
+			"quality": 32856,
+			"resolution": {
+				"height": 1080,
+				"width": 1920
+			},
+			"saveTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 9
+				}
+			},
+			"thumbnail": "",
+			"url": "",
+			"vendor": ""
+		},
+		"nextNodeId": 51,
+		"nodes": {
+			"12": {
+				"attributes": {
+					"defaultValue-type": {
+						"type": "type",
+						"value": "null"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input0": {
+						"type": "integer",
+						"value": 4
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "integer"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 243,
+					"y": 1090
+				},
+				"class": {
+					"id": "77697265-0A11-4E95-9584-4ECE0708B834",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"input0-type",
+					"defaultValue-type",
+					"flow",
+					"instances"
+				],
+				"name": "Steps",
+				"thumbnail_visible": true
+			},
+			"40": {
+				"attributes": {
+					"points-dimensions": {
+						"type": "integer",
+						"value": 16
+					}
+				},
+				"bounds": {
+					"height": 30.19053459167480469,
+					"width": 195,
+					"x": 1589.66357421875,
+					"y": 686.35272216796875
+				},
+				"class": {
+					"id": "77697265-ad7a-4f41-8d67-612CD29f2ea4",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"points": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					}
+				},
+				"hidden": [
+					"points-dimensions"
+				],
+				"name": "Polygon",
+				"thumbnail_visible": true
+			},
+			"41": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input10-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input11-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input12-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input13-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input14-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input15-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input2-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input3-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input4-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input5-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input6-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input7-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input8-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input9-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"num-channels": {
+						"type": "integer",
+						"value": 16
+					},
+					"type": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 410.367645263671875,
+					"width": 195,
+					"x": 979.143798828125,
+					"y": 703.12530517578125
+				},
+				"class": {
+					"id": "77697265-3732-42da-653e-b641d4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"channel0": {
+						"type": "float2",
+						"value": [
+							-1,
+							-1
+						]
+					},
+					"channel1": {
+						"type": "float2",
+						"value": [
+							-1,
+							-0.25
+						]
+					},
+					"channel10": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"channel11": {
+						"type": "float2",
+						"value": [
+							1,
+							0.25
+						]
+					},
+					"channel12": {
+						"type": "float2",
+						"value": [
+							1.5,
+							0.25
+						]
+					},
+					"channel13": {
+						"type": "float2",
+						"value": [
+							1.5,
+							-0.25
+						]
+					},
+					"channel14": {
+						"type": "float2",
+						"value": [
+							1,
+							-0.25
+						]
+					},
+					"channel15": {
+						"type": "float2",
+						"value": [
+							1,
+							-1
+						]
+					},
+					"channel2": {
+						"type": "float2",
+						"value": [
+							-1.5,
+							-0.25
+						]
+					},
+					"channel3": {
+						"type": "float2",
+						"value": [
+							-1.5,
+							0.25
+						]
+					},
+					"channel4": {
+						"type": "float2",
+						"value": [
+							-1,
+							0.25
+						]
+					},
+					"channel5": {
+						"type": "float2",
+						"value": [
+							-1,
+							1
+						]
+					},
+					"channel6": {
+						"type": "float2",
+						"value": [
+							-0.25,
+							1
+						]
+					},
+					"channel7": {
+						"type": "float2",
+						"value": [
+							-0.25,
+							1.5
+						]
+					},
+					"channel8": {
+						"type": "float2",
+						"value": [
+							0.25,
+							1.5
+						]
+					},
+					"channel9": {
+						"type": "float2",
+						"value": [
+							0.25,
+							1
+						]
+					}
+				},
+				"hidden": [
+					"type",
+					"flow",
+					"num-channels",
+					"input0-dimensions",
+					"input1-dimensions",
+					"input2-dimensions",
+					"input3-dimensions",
+					"input4-dimensions",
+					"input5-dimensions",
+					"input6-dimensions",
+					"input7-dimensions",
+					"input8-dimensions",
+					"input9-dimensions",
+					"input10-dimensions",
+					"input11-dimensions",
+					"input12-dimensions",
+					"input13-dimensions",
+					"input14-dimensions",
+					"input15-dimensions"
+				],
+				"name": "Join",
+				"thumbnail_visible": true
+			},
+			"45": {
+				"attributes": {
+					"anchor-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input-type": {
+						"type": "type",
+						"value": "procedural"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"rotation-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"scale-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"translation-type": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 128.589324951171875,
+					"width": 195,
+					"x": 1916.168701171875,
+					"y": 836.187255859375
+				},
+				"class": {
+					"id": "77697265-9225-4009-9D2D-5F898E94CC33",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"anchor": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					},
+					"input": {
+						"type": "procedural",
+						"value": null
+					},
+					"rotation": {
+						"type": "float",
+						"value": -0.25
+					},
+					"scale": {
+						"type": "float",
+						"value": 0.5
+					},
+					"translation": {
+						"type": "float2",
+						"value": [
+							-1,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"input-type",
+					"translation-type",
+					"rotation-type",
+					"scale-type",
+					"anchor-type",
+					"flow",
+					"instances"
+				],
+				"name": "Transform",
+				"thumbnail_visible": true
+			},
+			"46": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"num-channels": {
+						"type": "integer",
+						"value": 2
+					},
+					"type": {
+						"type": "type",
+						"value": "procedural"
+					}
+				},
+				"bounds": {
+					"height": 81.62625885009765625,
+					"width": 195,
+					"x": 2190.119873046875,
+					"y": 599.1356201171875
+				},
+				"class": {
+					"id": "77697265-3732-42da-653e-b641d4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"channel0": {
+						"type": "procedural",
+						"value": null
+					},
+					"channel1": {
+						"type": "procedural",
+						"value": null
+					}
+				},
+				"hidden": [
+					"type",
+					"flow",
+					"num-channels",
+					"input0-dimensions",
+					"input1-dimensions"
+				],
+				"name": "Join",
+				"thumbnail_visible": true
+			},
+			"47": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": true
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"max": {
+						"type": "float",
+						"value": 1
+					},
+					"min": {
+						"type": "float",
+						"value": 0
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 886.33587646484375,
+					"y": 327.42083740234375
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 0.53846198320388794
+					}
+				},
+				"hidden": [
+					"instances",
+					"flow",
+					"has-min",
+					"min",
+					"has-max",
+					"max",
+					"options-count",
+					"widget",
+					"unit"
+				],
+				"name": "Scale",
+				"thumbnail_visible": true
+			},
+			"48": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 16
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float2"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 81.62625885009765625,
+					"width": 195,
+					"x": 1268.310546875,
+					"y": 464.955535888671875
+				},
+				"class": {
+					"id": "77697265-A0D8-429A-A558-69BC58D0D425",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float2",
+						"value": [
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							],
+							[
+								1,
+								1
+							]
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": 1
+					}
+				},
+				"hidden": [
+					"flow",
+					"size",
+					"type0",
+					"input0-dimensions",
+					"type1",
+					"input1-dimensions"
+				],
+				"name": "Multiply",
+				"thumbnail_visible": true
+			},
+			"49": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 81.62625885009765625,
+					"width": 195,
+					"x": 1366.030029296875,
+					"y": 836.187255859375
+				},
+				"class": {
+					"id": "77697265-A0D8-429A-A558-69BC58D0D425",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 1
+					},
+					"input1": {
+						"type": "float",
+						"value": 2
+					}
+				},
+				"hidden": [
+					"flow",
+					"size",
+					"type0",
+					"input0-dimensions",
+					"type1",
+					"input1-dimensions"
+				],
+				"name": "Multiply",
+				"thumbnail_visible": true
+			},
+			"50": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 81.62625885009765625,
+					"width": 195,
+					"x": 1637.744873046875,
+					"y": 937.94061279296875
+				},
+				"class": {
+					"id": "77697265-E7EF-4944-8FC2-D808EE0433CB",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					},
+					"input1": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances"
+				],
+				"name": "Float2",
+				"thumbnail_visible": true
+			},
+			"8": {
+				"attributes": {
+					"defaultValue-type": {
+						"type": "type",
+						"value": "null"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 329,
+					"y": 628
+				},
+				"class": {
+					"id": "77697265-E9E1-4BAC-9742-265E5207A103",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0.5
+					}
+				},
+				"hidden": [
+					"input0-type",
+					"defaultValue-type",
+					"flow",
+					"instances"
+				],
+				"name": "Size",
+				"thumbnail_visible": true
+			}
+		},
+		"ui": {
+			"camera": {
+				"x": 53.30072402954101562,
+				"y": 142.923126220703125,
+				"zoom": 0.89432001113891602
+			},
+			"selection": [
+				"46"
+			]
+		}
+	},
+	"ui": {
+		"audio": {
+			"routing": {
+				"in": {},
+				"out": []
+			}
+		},
+		"deviceConnections": {
+			"input": {}
+		},
+		"transport": {
+			"bpm": 120,
+			"time-signature": [
+				4,
+				4
+			]
+		},
+		"video": {
+			"routing": {
+				"out": {
+					"Display 1": null,
+					"Display 2": null,
+					"Display 3": null
+				}
+			}
+		}
+	}
+}

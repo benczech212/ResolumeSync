@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OscController>
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="23" microVersion="2" revision="51094"/>
+	<Input Enabled="1" Port="7000"/>
+	<Output enabled="1" sendBundles="1" targetType="2" targetPort="7001" targetAddress="127.0.0.1"/>
+</OscController>
+

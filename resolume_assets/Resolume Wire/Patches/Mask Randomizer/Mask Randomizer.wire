@@ -1,0 +1,5413 @@
+{
+	"formatVersion": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"patch": {
+		"connections": [
+			{
+				"from": [
+					0,
+					"output"
+				],
+				"to": [
+					15,
+					"channel0"
+				]
+			},
+			{
+				"from": [
+					5,
+					"output"
+				],
+				"to": [
+					15,
+					"channel1"
+				]
+			},
+			{
+				"from": [
+					6,
+					"output"
+				],
+				"to": [
+					15,
+					"channel2"
+				]
+			},
+			{
+				"from": [
+					7,
+					"output"
+				],
+				"to": [
+					15,
+					"channel3"
+				]
+			},
+			{
+				"from": [
+					8,
+					"output"
+				],
+				"to": [
+					15,
+					"channel4"
+				]
+			},
+			{
+				"from": [
+					9,
+					"output"
+				],
+				"to": [
+					15,
+					"channel5"
+				]
+			},
+			{
+				"from": [
+					10,
+					"output"
+				],
+				"to": [
+					15,
+					"channel6"
+				]
+			},
+			{
+				"from": [
+					11,
+					"output"
+				],
+				"to": [
+					15,
+					"channel7"
+				]
+			},
+			{
+				"from": [
+					15,
+					"output"
+				],
+				"to": [
+					16,
+					"container"
+				]
+			},
+			{
+				"from": [
+					16,
+					"output0"
+				],
+				"to": [
+					14,
+					"instances"
+				]
+			},
+			{
+				"from": [
+					0,
+					"output"
+				],
+				"to": [
+					23,
+					"image"
+				]
+			},
+			{
+				"from": [
+					5,
+					"output"
+				],
+				"to": [
+					24,
+					"image"
+				]
+			},
+			{
+				"from": [
+					6,
+					"output"
+				],
+				"to": [
+					25,
+					"image"
+				]
+			},
+			{
+				"from": [
+					7,
+					"output"
+				],
+				"to": [
+					26,
+					"image"
+				]
+			},
+			{
+				"from": [
+					8,
+					"output"
+				],
+				"to": [
+					27,
+					"image"
+				]
+			},
+			{
+				"from": [
+					9,
+					"output"
+				],
+				"to": [
+					28,
+					"image"
+				]
+			},
+			{
+				"from": [
+					10,
+					"output"
+				],
+				"to": [
+					29,
+					"image"
+				]
+			},
+			{
+				"from": [
+					11,
+					"output"
+				],
+				"to": [
+					30,
+					"image"
+				]
+			},
+			{
+				"from": [
+					23,
+					"output"
+				],
+				"to": [
+					40,
+					"input"
+				]
+			},
+			{
+				"from": [
+					24,
+					"output"
+				],
+				"to": [
+					41,
+					"input"
+				]
+			},
+			{
+				"from": [
+					25,
+					"output"
+				],
+				"to": [
+					42,
+					"input"
+				]
+			},
+			{
+				"from": [
+					26,
+					"output"
+				],
+				"to": [
+					43,
+					"input"
+				]
+			},
+			{
+				"from": [
+					27,
+					"output"
+				],
+				"to": [
+					44,
+					"input"
+				]
+			},
+			{
+				"from": [
+					28,
+					"output"
+				],
+				"to": [
+					45,
+					"input"
+				]
+			},
+			{
+				"from": [
+					29,
+					"output"
+				],
+				"to": [
+					46,
+					"input"
+				]
+			},
+			{
+				"from": [
+					30,
+					"output"
+				],
+				"to": [
+					47,
+					"input"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					40,
+					"contrast"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					41,
+					"contrast"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					42,
+					"contrast"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					43,
+					"contrast"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					44,
+					"contrast"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					45,
+					"contrast"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					46,
+					"contrast"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					47,
+					"contrast"
+				]
+			},
+			{
+				"from": [
+					40,
+					"output"
+				],
+				"to": [
+					60,
+					"channel0"
+				]
+			},
+			{
+				"from": [
+					41,
+					"output"
+				],
+				"to": [
+					60,
+					"channel1"
+				]
+			},
+			{
+				"from": [
+					42,
+					"output"
+				],
+				"to": [
+					60,
+					"channel2"
+				]
+			},
+			{
+				"from": [
+					44,
+					"output"
+				],
+				"to": [
+					60,
+					"channel3"
+				]
+			},
+			{
+				"from": [
+					43,
+					"output"
+				],
+				"to": [
+					60,
+					"channel4"
+				]
+			},
+			{
+				"from": [
+					45,
+					"output"
+				],
+				"to": [
+					60,
+					"channel5"
+				]
+			},
+			{
+				"from": [
+					46,
+					"output"
+				],
+				"to": [
+					60,
+					"channel6"
+				]
+			},
+			{
+				"from": [
+					47,
+					"output"
+				],
+				"to": [
+					60,
+					"channel7"
+				]
+			},
+			{
+				"from": [
+					61,
+					"output0"
+				],
+				"to": [
+					63,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					74,
+					"output"
+				],
+				"to": [
+					62,
+					"input2"
+				]
+			},
+			{
+				"from": [
+					74,
+					"output"
+				],
+				"to": [
+					62,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					74,
+					"output"
+				],
+				"to": [
+					62,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					60,
+					"output"
+				],
+				"to": [
+					61,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					62,
+					"output"
+				],
+				"to": [
+					75,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					76,
+					"output"
+				],
+				"to": [
+					75,
+					"duration"
+				]
+			},
+			{
+				"from": [
+					75,
+					"output0"
+				],
+				"to": [
+					61,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					12,
+					"output"
+				],
+				"to": [
+					13,
+					"input"
+				]
+			},
+			{
+				"from": [
+					16,
+					"output0"
+				],
+				"to": [
+					13,
+					"instances"
+				]
+			},
+			{
+				"from": [
+					85,
+					"output"
+				],
+				"to": [
+					13,
+					"argument1"
+				]
+			},
+			{
+				"from": [
+					86,
+					"output"
+				],
+				"to": [
+					13,
+					"argument2"
+				]
+			},
+			{
+				"from": [
+					63,
+					"output0"
+				],
+				"to": [
+					64,
+					"input"
+				]
+			},
+			{
+				"from": [
+					12,
+					"output"
+				],
+				"to": [
+					87,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					87,
+					"output0"
+				],
+				"to": [
+					13,
+					"input"
+				]
+			},
+			{
+				"from": [
+					87,
+					"output0"
+				],
+				"to": [
+					14,
+					"input"
+				]
+			},
+			{
+				"from": [
+					124,
+					"beat-count"
+				],
+				"to": [
+					125,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					122,
+					"output"
+				],
+				"to": [
+					125,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					125,
+					"output0"
+				],
+				"to": [
+					126,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					126,
+					"output0"
+				],
+				"to": [
+					121,
+					"multiplier"
+				]
+			},
+			{
+				"from": [
+					121,
+					"output"
+				],
+				"to": [
+					87,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					127,
+					"play"
+				],
+				"to": [
+					87,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					14,
+					"output"
+				],
+				"to": [
+					74,
+					"selection"
+				]
+			},
+			{
+				"from": [
+					158,
+					"output"
+				],
+				"to": [
+					14,
+					"probability"
+				]
+			},
+			{
+				"from": [
+					13,
+					"output"
+				],
+				"to": [
+					159,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					161,
+					"output"
+				],
+				"to": [
+					162,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					159,
+					"output0"
+				],
+				"to": [
+					162,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					162,
+					"output0"
+				],
+				"to": [
+					163,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					13,
+					"output"
+				],
+				"to": [
+					163,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					163,
+					"output0"
+				],
+				"to": [
+					62,
+					"input3"
+				]
+			},
+			{
+				"from": [
+					168,
+					"output"
+				],
+				"to": [
+					169,
+					"input"
+				]
+			},
+			{
+				"from": [
+					170,
+					"output"
+				],
+				"to": [
+					171,
+					"input"
+				]
+			},
+			{
+				"from": [
+					172,
+					"output"
+				],
+				"to": [
+					173,
+					"input"
+				]
+			},
+			{
+				"from": [
+					174,
+					"output"
+				],
+				"to": [
+					175,
+					"input"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					169,
+					"contrast"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					171,
+					"contrast"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					173,
+					"contrast"
+				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					175,
+					"contrast"
+				]
+			},
+			{
+				"from": [
+					164,
+					"output"
+				],
+				"to": [
+					168,
+					"image"
+				]
+			},
+			{
+				"from": [
+					165,
+					"output"
+				],
+				"to": [
+					170,
+					"image"
+				]
+			},
+			{
+				"from": [
+					166,
+					"output"
+				],
+				"to": [
+					172,
+					"image"
+				]
+			},
+			{
+				"from": [
+					167,
+					"output"
+				],
+				"to": [
+					174,
+					"image"
+				]
+			},
+			{
+				"from": [
+					169,
+					"output"
+				],
+				"to": [
+					60,
+					"channel8"
+				]
+			},
+			{
+				"from": [
+					171,
+					"output"
+				],
+				"to": [
+					60,
+					"channel9"
+				]
+			},
+			{
+				"from": [
+					173,
+					"output"
+				],
+				"to": [
+					60,
+					"channel10"
+				]
+			},
+			{
+				"from": [
+					175,
+					"output"
+				],
+				"to": [
+					60,
+					"channel11"
+				]
+			},
+			{
+				"from": [
+					164,
+					"output"
+				],
+				"to": [
+					15,
+					"channel8"
+				]
+			},
+			{
+				"from": [
+					165,
+					"output"
+				],
+				"to": [
+					15,
+					"channel9"
+				]
+			},
+			{
+				"from": [
+					166,
+					"output"
+				],
+				"to": [
+					15,
+					"channel10"
+				]
+			},
+			{
+				"from": [
+					167,
+					"output"
+				],
+				"to": [
+					15,
+					"channel11"
+				]
+			}
+		],
+		"inputOrder": {
+			"groups": {},
+			"roots": [
+				{
+					"node": 0
+				},
+				{
+					"node": 5
+				},
+				{
+					"node": 6
+				},
+				{
+					"node": 7
+				},
+				{
+					"node": 8
+				},
+				{
+					"node": 9
+				},
+				{
+					"node": 10
+				},
+				{
+					"node": 11
+				},
+				{
+					"node": 12
+				},
+				{
+					"node": 49
+				},
+				{
+					"node": 76
+				},
+				{
+					"node": 85
+				},
+				{
+					"node": 86
+				},
+				{
+					"node": 122
+				},
+				{
+					"node": 158
+				},
+				{
+					"node": 161
+				},
+				{
+					"node": 164
+				},
+				{
+					"node": 165
+				},
+				{
+					"node": 166
+				},
+				{
+					"node": 167
+				}
+			]
+		},
+		"meta": {
+			"author": "Benjamin Czech",
+			"category": "source",
+			"deploymentTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 0
+				}
+			},
+			"description": "",
+			"displayName": "Mask Randomizer",
+			"identifier": "1e4ad5b1-d2a8-4e74-acd7-40d0e9026060",
+			"licenseName": "",
+			"mail": "",
+			"originalTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 1
+				}
+			},
+			"quality": 32856,
+			"resolution": {
+				"height": 1080,
+				"width": 1920
+			},
+			"saveTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 2
+				}
+			},
+			"thumbnail": "",
+			"url": "",
+			"vendor": "Watt"
+		},
+		"nextNodeId": 176,
+		"nodes": {
+			"0": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Flower - Flower Full.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1737.37548828125,
+					"y": 270.80419921875
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Mask 1",
+				"thumbnail_visible": true
+			},
+			"10": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Top and Bottom.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1737.37548828125,
+					"y": 942.80419921875
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Mask 7",
+				"thumbnail_visible": true
+			},
+			"11": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1737.37548828125,
+					"y": 1054.80419921875
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Mask 8",
+				"thumbnail_visible": true
+			},
+			"12": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1192.6741943359375,
+					"y": -531.55615234375
+				},
+				"class": {
+					"id": "77697265-e61f-42c0-862a-0dca04e14569",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances"
+				],
+				"name": "Randomize",
+				"thumbnail_visible": true
+			},
+			"121": {
+				"attributes": {
+					"count-flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"multiplier-flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"output-flow": {
+						"type": "flow",
+						"value": "event"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 1126.445556640625,
+					"y": -782.85223388671875
+				},
+				"class": {
+					"id": "77697265-F95D-4BF9-94B0-3336465DEEFC",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"multiplier": {
+						"type": "float",
+						"value": 0.25
+					}
+				},
+				"hidden": [
+					"count-flow",
+					"multiplier-flow",
+					"output-flow"
+				],
+				"name": "Transport Tick",
+				"thumbnail_visible": true
+			},
+			"122": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": true
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"max": {
+						"type": "integer",
+						"value": 64
+					},
+					"min": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 327.738037109375,
+					"y": -824.70062255859375
+				},
+				"class": {
+					"id": "77697265-2649-4abb-b38f-4e1005183415",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "integer",
+						"value": 4
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"max",
+					"min",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Transition Bar Count",
+				"thumbnail_visible": true
+			},
+			"124": {
+				"attributes": {},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 282.302490234375,
+					"y": -660.89385986328125
+				},
+				"class": {
+					"id": "77697265-66B1-4C28-A5A9-1F64026D769B",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [],
+				"name": "Transport Info",
+				"thumbnail_visible": true
+			},
+			"125": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 578.8287353515625,
+					"y": -794.80889892578125
+				},
+				"class": {
+					"id": "77697265-A0D8-429A-A558-69BC58D0D425",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 1
+					},
+					"input1": {
+						"type": "float",
+						"value": 1
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"size",
+					"type0",
+					"type1"
+				],
+				"name": "Multiply",
+				"thumbnail_visible": true
+			},
+			"126": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 895.6812744140625,
+					"y": -772.0911865234375
+				},
+				"class": {
+					"id": "77697265-8061-467F-B375-DB03FFF5ED40",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input0-type"
+				],
+				"name": "1 \/ x",
+				"thumbnail_visible": true
+			},
+			"127": {
+				"attributes": {},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 1120.9205322265625,
+					"y": -1046.2529296875
+				},
+				"class": {
+					"id": "77697265-6811-4C1F-B896-FDAB8BB6ED26",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [],
+				"name": "Transport Play",
+				"thumbnail_visible": true
+			},
+			"13": {
+				"attributes": {
+					"distribution": {
+						"type": "integer",
+						"value": 0
+					},
+					"instances": {
+						"type": "integer",
+						"value": 12
+					},
+					"type": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 1814.5318603515625,
+					"y": -438.968902587890625
+				},
+				"class": {
+					"id": "77697265-5581-4721-8519-0b8fa3d68b4d",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"argument1": {
+						"type": "float",
+						"value": [
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5
+						]
+					},
+					"argument2": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"input": {
+						"type": "trigger",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"precision": {
+						"type": "float",
+						"value": [
+							0.00999999977648258,
+							0.00999999977648258,
+							0.00999999977648258,
+							0.00999999977648258,
+							0.00999999977648258,
+							0.00999999977648258,
+							0.00999999977648258,
+							0.00999999977648258,
+							0.00999999977648258,
+							0.00999999977648258,
+							0.00999999977648258,
+							0.00999999977648258
+						]
+					},
+					"seed": {
+						"type": "integer",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"distribution",
+					"precision",
+					"seed",
+					"type"
+				],
+				"name": "Random Opacities",
+				"thumbnail_visible": true
+			},
+			"14": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 12
+					},
+					"type": {
+						"type": "type",
+						"value": "bool"
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 1814.0318603515625,
+					"y": -257.968902587890625
+				},
+				"class": {
+					"id": "77697265-5581-4721-8519-0b8fa3d68b4d",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "trigger",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"probability": {
+						"type": "float",
+						"value": [
+							0.75,
+							0.75,
+							0.75,
+							0.75,
+							0.75,
+							0.75,
+							0.75,
+							0.75,
+							0.75,
+							0.75,
+							0.75,
+							0.75
+						]
+					},
+					"seed": {
+						"type": "integer",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"seed",
+					"type"
+				],
+				"name": "Random On\/Off",
+				"thumbnail_visible": true
+			},
+			"15": {
+				"attributes": {
+					"channel0": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Flower - Flower Full.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"channel1": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Flower - Flower Pattern.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"channel10": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"channel11": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"channel2": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Merkaba - Boundries Stars.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"channel3": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Merkaba - Hexagons.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"channel4": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Merkaba - Pyramid.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"channel5": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Left and Right.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"channel6": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Top and Bottom.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"channel7": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"channel8": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"channel9": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input10-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input11-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input2-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input3-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input4-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input5-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input6-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input7-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input8-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input9-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"num-channels": {
+						"type": "integer",
+						"value": 12
+					},
+					"type": {
+						"type": "type",
+						"value": "resourceImage"
+					}
+				},
+				"bounds": {
+					"height": 316.307708740234375,
+					"width": 195,
+					"x": 2165.27783203125,
+					"y": 148.98297119140625
+				},
+				"class": {
+					"id": "77697265-3732-42da-653e-b641d4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"input10-dimensions",
+					"input11-dimensions",
+					"input2-dimensions",
+					"input3-dimensions",
+					"input4-dimensions",
+					"input5-dimensions",
+					"input6-dimensions",
+					"input7-dimensions",
+					"input8-dimensions",
+					"input9-dimensions",
+					"num-channels",
+					"type"
+				],
+				"name": "Masks",
+				"thumbnail_visible": true
+			},
+			"158": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": true
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"max": {
+						"type": "float",
+						"value": 1
+					},
+					"min": {
+						"type": "float",
+						"value": 0
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1308.5966796875,
+					"y": -307.83209228515625
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 0.75
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"max",
+					"min",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "On\/Off Probability",
+				"thumbnail_visible": true
+			},
+			"159": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 12
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 29.40650558471679688,
+					"width": 195,
+					"x": 2102.55810546875,
+					"y": -660.92950439453125
+				},
+				"class": {
+					"id": "77697265-326F-4351-83FC-7A7FCFEDAFFC",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0.66999995708465576,
+							0.95999997854232788,
+							0.63999998569488525,
+							0.98999994993209839,
+							0.65999996662139893,
+							0.98999994993209839,
+							0.68000000715255737,
+							0.57999998331069946,
+							0.8399999737739563,
+							0.68999999761581421,
+							0.64999997615814209,
+							0.74000000953674316
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input0-type"
+				],
+				"name": "1 - x",
+				"thumbnail_visible": true
+			},
+			"16": {
+				"attributes": {
+					"container": {
+						"type": "resourceImage",
+						"value": [
+							{
+								"path": {
+									"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Flower - Flower Full.png",
+									"sub": ""
+								},
+								"value": {
+									"alphaType": "straight",
+									"bitDepth": 4,
+									"channelCount": 4,
+									"codec": "PNG",
+									"resolution": {
+										"height": 1080,
+										"width": 1920
+									}
+								}
+							},
+							{
+								"path": {
+									"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Flower - Flower Pattern.png",
+									"sub": ""
+								},
+								"value": {
+									"alphaType": "straight",
+									"bitDepth": 4,
+									"channelCount": 4,
+									"codec": "PNG",
+									"resolution": {
+										"height": 1080,
+										"width": 1920
+									}
+								}
+							},
+							{
+								"path": {
+									"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Merkaba - Boundries Stars.png",
+									"sub": ""
+								},
+								"value": {
+									"alphaType": "straight",
+									"bitDepth": 4,
+									"channelCount": 4,
+									"codec": "PNG",
+									"resolution": {
+										"height": 1080,
+										"width": 1920
+									}
+								}
+							},
+							{
+								"path": {
+									"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Merkaba - Hexagons.png",
+									"sub": ""
+								},
+								"value": {
+									"alphaType": "straight",
+									"bitDepth": 4,
+									"channelCount": 4,
+									"codec": "PNG",
+									"resolution": {
+										"height": 1080,
+										"width": 1920
+									}
+								}
+							},
+							{
+								"path": {
+									"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Merkaba - Pyramid.png",
+									"sub": ""
+								},
+								"value": {
+									"alphaType": "straight",
+									"bitDepth": 4,
+									"channelCount": 4,
+									"codec": "PNG",
+									"resolution": {
+										"height": 1080,
+										"width": 1920
+									}
+								}
+							},
+							{
+								"path": {
+									"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Left and Right.png",
+									"sub": ""
+								},
+								"value": {
+									"alphaType": "straight",
+									"bitDepth": 4,
+									"channelCount": 4,
+									"codec": "PNG",
+									"resolution": {
+										"height": 1080,
+										"width": 1920
+									}
+								}
+							},
+							{
+								"path": {
+									"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Top and Bottom.png",
+									"sub": ""
+								},
+								"value": {
+									"alphaType": "straight",
+									"bitDepth": 4,
+									"channelCount": 4,
+									"codec": "PNG",
+									"resolution": {
+										"height": 1080,
+										"width": 1920
+									}
+								}
+							},
+							{
+								"path": {
+									"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+									"sub": ""
+								},
+								"value": {
+									"alphaType": "straight",
+									"bitDepth": 4,
+									"channelCount": 4,
+									"codec": "PNG",
+									"resolution": {
+										"height": 1080,
+										"width": 1920
+									}
+								}
+							},
+							{
+								"path": {
+									"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+									"sub": ""
+								},
+								"value": {
+									"alphaType": "straight",
+									"bitDepth": 4,
+									"channelCount": 4,
+									"codec": "PNG",
+									"resolution": {
+										"height": 1080,
+										"width": 1920
+									}
+								}
+							},
+							{
+								"path": {
+									"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+									"sub": ""
+								},
+								"value": {
+									"alphaType": "straight",
+									"bitDepth": 4,
+									"channelCount": 4,
+									"codec": "PNG",
+									"resolution": {
+										"height": 1080,
+										"width": 1920
+									}
+								}
+							},
+							{
+								"path": {
+									"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+									"sub": ""
+								},
+								"value": {
+									"alphaType": "straight",
+									"bitDepth": 4,
+									"channelCount": 4,
+									"codec": "PNG",
+									"resolution": {
+										"height": 1080,
+										"width": 1920
+									}
+								}
+							},
+							{
+								"path": {
+									"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+									"sub": ""
+								},
+								"value": {
+									"alphaType": "straight",
+									"bitDepth": 4,
+									"channelCount": 4,
+									"codec": "PNG",
+									"resolution": {
+										"height": 1080,
+										"width": 1920
+									}
+								}
+							}
+						]
+					},
+					"container-dimensions": {
+						"type": "integer",
+						"value": 12
+					},
+					"container-type": {
+						"type": "type",
+						"value": "resourceImage"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 1717.13427734375,
+					"y": 54.945556640625
+				},
+				"class": {
+					"id": "77697265-A712-4C94-96ED-3A1A9756EA6A",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"container-dimensions",
+					"container-type",
+					"flow"
+				],
+				"name": "Size",
+				"thumbnail_visible": true
+			},
+			"161": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": true
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"max": {
+						"type": "float",
+						"value": 1
+					},
+					"min": {
+						"type": "float",
+						"value": 0
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 2199.7275390625,
+					"y": -906.409912109375
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"max",
+					"min",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Brightness Scale",
+				"thumbnail_visible": true
+			},
+			"162": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 12
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 12
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 81.8267974853515625,
+					"width": 195,
+					"x": 2441.37255859375,
+					"y": -813.07623291015625
+				},
+				"class": {
+					"id": "77697265-A0D8-429A-A558-69BC58D0D425",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": [
+							0.33000004291534424,
+							0.04000002145767212,
+							0.36000001430511475,
+							0.01000005006790161,
+							0.34000003337860107,
+							0.01000005006790161,
+							0.31999999284744263,
+							0.42000001668930054,
+							0.1600000262260437,
+							0.31000000238418579,
+							0.35000002384185791,
+							0.25999999046325684
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"size",
+					"type0",
+					"type1"
+				],
+				"name": "Multiply",
+				"thumbnail_visible": true
+			},
+			"163": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 12
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 12
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 81.8267974853515625,
+					"width": 195,
+					"x": 2718.81640625,
+					"y": -759.37738037109375
+				},
+				"class": {
+					"id": "77697265-A9AF-4CB4-B10F-3968B36BB63B",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": [
+							0.66999995708465576,
+							0.95999997854232788,
+							0.63999998569488525,
+							0.98999994993209839,
+							0.65999996662139893,
+							0.98999994993209839,
+							0.68000000715255737,
+							0.57999998331069946,
+							0.8399999737739563,
+							0.68999999761581421,
+							0.64999997615814209,
+							0.74000000953674316
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"size",
+					"type0",
+					"type1"
+				],
+				"name": "Add",
+				"thumbnail_visible": true
+			},
+			"164": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1736.2037353515625,
+					"y": 1453.07568359375
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Mask 9",
+				"thumbnail_visible": true
+			},
+			"165": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1736.2037353515625,
+					"y": 1580.1461181640625
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Mask 10",
+				"thumbnail_visible": true
+			},
+			"166": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1736.2037353515625,
+					"y": 1702.731689453125
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Mask 11",
+				"thumbnail_visible": true
+			},
+			"167": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1736.2037353515625,
+					"y": 1819.33740234375
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Mask 12",
+				"thumbnail_visible": true
+			},
+			"168": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 29.89891624450683594,
+					"width": 195,
+					"x": 1909.57666015625,
+					"y": 1453.0758056640625
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"169": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82.222015380859375,
+					"width": 195,
+					"x": 2164.57666015625,
+					"y": 1453.0758056640625
+				},
+				"class": {
+					"id": "77697265-7FD0-4B80-AAB4-797EEE9A99F6",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"contrast": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"channel",
+					"instances"
+				],
+				"name": "Auto Mask",
+				"thumbnail_visible": true
+			},
+			"170": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 29.89891624450683594,
+					"width": 195,
+					"x": 1909.57666015625,
+					"y": 1580.146240234375
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"171": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82.222015380859375,
+					"width": 195,
+					"x": 2164.57666015625,
+					"y": 1580.146240234375
+				},
+				"class": {
+					"id": "77697265-7FD0-4B80-AAB4-797EEE9A99F6",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"contrast": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"channel",
+					"instances"
+				],
+				"name": "Auto Mask",
+				"thumbnail_visible": true
+			},
+			"172": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 29.89891624450683594,
+					"width": 195,
+					"x": 1909.57666015625,
+					"y": 1702.731689453125
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"173": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82.222015380859375,
+					"width": 195,
+					"x": 2164.57666015625,
+					"y": 1702.731689453125
+				},
+				"class": {
+					"id": "77697265-7FD0-4B80-AAB4-797EEE9A99F6",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"contrast": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"channel",
+					"instances"
+				],
+				"name": "Auto Mask",
+				"thumbnail_visible": true
+			},
+			"174": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 29.89891624450683594,
+					"width": 195,
+					"x": 1909.57666015625,
+					"y": 1819.3375244140625
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"175": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82.222015380859375,
+					"width": 195,
+					"x": 2164.57666015625,
+					"y": 1819.3375244140625
+				},
+				"class": {
+					"id": "77697265-7FD0-4B80-AAB4-797EEE9A99F6",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"contrast": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"channel",
+					"instances"
+				],
+				"name": "Auto Mask",
+				"thumbnail_visible": true
+			},
+			"23": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Flower - Flower Full.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 1927.37548828125,
+					"y": 526.80419921875
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"24": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Flower - Flower Pattern.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 1927.37548828125,
+					"y": 698.80419921875
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"25": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Merkaba - Boundries Stars.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 1927.37548828125,
+					"y": 810.80419921875
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"26": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Merkaba - Hexagons.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 1927.37548828125,
+					"y": 1034.80419921875
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"27": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Merkaba - Pyramid.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 1927.37548828125,
+					"y": 922.80419921875
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"28": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Left and Right.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 1927.37548828125,
+					"y": 1146.80419921875
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"29": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Top and Bottom.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 1927.37548828125,
+					"y": 1258.80419921875
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"30": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Wires.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 1927.37548828125,
+					"y": 1370.80419921875
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"40": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 2182.37548828125,
+					"y": 526.80419921875
+				},
+				"class": {
+					"id": "77697265-7FD0-4B80-AAB4-797EEE9A99F6",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"contrast": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"channel",
+					"instances"
+				],
+				"name": "Auto Mask",
+				"thumbnail_visible": true
+			},
+			"41": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 2182.37548828125,
+					"y": 698.80419921875
+				},
+				"class": {
+					"id": "77697265-7FD0-4B80-AAB4-797EEE9A99F6",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"contrast": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"channel",
+					"instances"
+				],
+				"name": "Auto Mask",
+				"thumbnail_visible": true
+			},
+			"42": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 2182.37548828125,
+					"y": 810.80419921875
+				},
+				"class": {
+					"id": "77697265-7FD0-4B80-AAB4-797EEE9A99F6",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"contrast": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"channel",
+					"instances"
+				],
+				"name": "Auto Mask",
+				"thumbnail_visible": true
+			},
+			"43": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 2182.37548828125,
+					"y": 1034.80419921875
+				},
+				"class": {
+					"id": "77697265-7FD0-4B80-AAB4-797EEE9A99F6",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"contrast": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"channel",
+					"instances"
+				],
+				"name": "Auto Mask",
+				"thumbnail_visible": true
+			},
+			"44": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 2182.37548828125,
+					"y": 922.80419921875
+				},
+				"class": {
+					"id": "77697265-7FD0-4B80-AAB4-797EEE9A99F6",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"contrast": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"channel",
+					"instances"
+				],
+				"name": "Auto Mask",
+				"thumbnail_visible": true
+			},
+			"45": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 2182.37548828125,
+					"y": 1146.80419921875
+				},
+				"class": {
+					"id": "77697265-7FD0-4B80-AAB4-797EEE9A99F6",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"contrast": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"channel",
+					"instances"
+				],
+				"name": "Auto Mask",
+				"thumbnail_visible": true
+			},
+			"46": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 2182.37548828125,
+					"y": 1258.80419921875
+				},
+				"class": {
+					"id": "77697265-7FD0-4B80-AAB4-797EEE9A99F6",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"contrast": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"channel",
+					"instances"
+				],
+				"name": "Auto Mask",
+				"thumbnail_visible": true
+			},
+			"47": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 2182.37548828125,
+					"y": 1370.80419921875
+				},
+				"class": {
+					"id": "77697265-7FD0-4B80-AAB4-797EEE9A99F6",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"contrast": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"channel",
+					"instances"
+				],
+				"name": "Auto Mask",
+				"thumbnail_visible": true
+			},
+			"49": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": true
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"max": {
+						"type": "float",
+						"value": 1
+					},
+					"min": {
+						"type": "float",
+						"value": 0
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1992.37548828125,
+					"y": 586.80419921875
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 0.5
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"max",
+					"min",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Mask Contrast",
+				"thumbnail_visible": true
+			},
+			"5": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Flower - Flower Pattern.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1737.37548828125,
+					"y": 382.80419921875
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Mask 2",
+				"thumbnail_visible": true
+			},
+			"6": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Merkaba - Boundries Stars.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1737.37548828125,
+					"y": 494.80419921875
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Mask 3",
+				"thumbnail_visible": true
+			},
+			"60": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input10-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input11-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input2-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input3-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input4-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input5-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input6-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input7-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input8-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input9-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"num-channels": {
+						"type": "integer",
+						"value": 12
+					},
+					"type": {
+						"type": "type",
+						"value": "texture2d"
+					}
+				},
+				"bounds": {
+					"height": 321.413330078125,
+					"width": 195,
+					"x": 2437.37548828125,
+					"y": 526.80419921875
+				},
+				"class": {
+					"id": "77697265-3732-42da-653e-b641d4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"channel0": {
+						"type": "texture2d",
+						"value": null
+					},
+					"channel1": {
+						"type": "texture2d",
+						"value": null
+					},
+					"channel10": {
+						"type": "texture2d",
+						"value": null
+					},
+					"channel11": {
+						"type": "texture2d",
+						"value": null
+					},
+					"channel2": {
+						"type": "texture2d",
+						"value": null
+					},
+					"channel3": {
+						"type": "texture2d",
+						"value": null
+					},
+					"channel4": {
+						"type": "texture2d",
+						"value": null
+					},
+					"channel5": {
+						"type": "texture2d",
+						"value": null
+					},
+					"channel6": {
+						"type": "texture2d",
+						"value": null
+					},
+					"channel7": {
+						"type": "texture2d",
+						"value": null
+					},
+					"channel8": {
+						"type": "texture2d",
+						"value": null
+					},
+					"channel9": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"input10-dimensions",
+					"input11-dimensions",
+					"input2-dimensions",
+					"input3-dimensions",
+					"input4-dimensions",
+					"input5-dimensions",
+					"input6-dimensions",
+					"input7-dimensions",
+					"input8-dimensions",
+					"input9-dimensions",
+					"num-channels",
+					"type"
+				],
+				"name": "Join",
+				"thumbnail_visible": true
+			},
+			"61": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 12
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 12
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float4"
+					},
+					"type1": {
+						"type": "type",
+						"value": "texture2d"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 3601.036376953125,
+					"y": 492.775543212890625
+				},
+				"class": {
+					"id": "77697265-A0D8-429A-A558-69BC58D0D425",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float4",
+						"value": [
+							[
+								1,
+								1,
+								1,
+								0.8399999737739563
+							],
+							[
+								-1,
+								-1,
+								-1,
+								0.77999997138977051
+							],
+							[
+								-1,
+								-1,
+								-1,
+								0.19999998807907104
+							],
+							[
+								-1,
+								-1,
+								-1,
+								0.43999999761581421
+							],
+							[
+								-1,
+								-1,
+								-1,
+								0.14999999105930328
+							],
+							[
+								-1,
+								-1,
+								-1,
+								0.74000000953674316
+							],
+							[
+								1,
+								1,
+								1,
+								0.31000000238418579
+							],
+							[
+								1,
+								1,
+								1,
+								0.4699999988079071
+							],
+							[
+								1,
+								1,
+								1,
+								0.8399999737739563
+							],
+							[
+								-1,
+								-1,
+								-1,
+								0.77999997138977051
+							],
+							[
+								-1,
+								-1,
+								-1,
+								0.19999998807907104
+							],
+							[
+								-1,
+								-1,
+								-1,
+								0.43999999761581421
+							]
+						]
+					},
+					"input1": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"size",
+					"type0",
+					"type1"
+				],
+				"name": "Multiply",
+				"thumbnail_visible": true
+			},
+			"62": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"input1-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"input2-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"input3-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 12
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 2441.68359375,
+					"y": -380.840484619140625
+				},
+				"class": {
+					"id": "77697265-19E0-4717-BD17-6C7D4A9252C4",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"input2": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"input3": {
+						"type": "float",
+						"value": [
+							0.88999998569488525,
+							0.93000000715255737,
+							0.76999998092651367,
+							0.77999997138977051,
+							0.72999995946884155,
+							0.95999997854232788,
+							0.55000001192092896,
+							0.75,
+							0.88999998569488525,
+							0.93000000715255737,
+							0.76999998092651367,
+							0.77999997138977051
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-type",
+					"input1-type",
+					"input2-type",
+					"input3-type",
+					"instances"
+				],
+				"name": "Float4",
+				"thumbnail_visible": true
+			},
+			"63": {
+				"attributes": {
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"blend_mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 12
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "texture2d"
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"separator-type": {
+						"type": "type",
+						"value": "null"
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 3886.77294921875,
+					"y": 531.0560302734375
+				},
+				"class": {
+					"id": "77697265-3929-2f3f-95e8-49036f686474",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"tex-mode": {
+						"type": "integer",
+						"value": 2
+					}
+				},
+				"hidden": [
+					"bitdepth",
+					"blend_mode",
+					"flow",
+					"input0-dimensions",
+					"input0-type",
+					"resolution-absolute",
+					"resolution-mode",
+					"resolution-relative",
+					"separator-type"
+				],
+				"name": "Merge",
+				"thumbnail_visible": true
+			},
+			"64": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 132,
+					"x": 4765.2900390625,
+					"y": 601.2230224609375
+				},
+				"class": {
+					"id": "77697265-BEEA-4D38-8EE5-0EBA4CBD0AEE",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Texture Out",
+				"thumbnail_visible": true
+			},
+			"7": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Merkaba - Hexagons.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1737.37548828125,
+					"y": 606.80419921875
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Mask 4",
+				"thumbnail_visible": true
+			},
+			"74": {
+				"attributes": {
+					"input-flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input-size": {
+						"type": "integer",
+						"value": 2
+					},
+					"input-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 12
+					},
+					"selection-flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"selection-type": {
+						"type": "type",
+						"value": "bool"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 2134.41259765625,
+					"y": -193.02374267578125
+				},
+				"class": {
+					"id": "77697265-6899-4A9C-82AB-949346033440",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"selection": {
+						"type": "bool",
+						"value": [
+							true,
+							true,
+							true,
+							true,
+							true,
+							true,
+							true,
+							true,
+							true,
+							true,
+							true,
+							true
+						]
+					}
+				},
+				"hidden": [
+					"input-flow",
+					"input-size",
+					"input-type",
+					"instances",
+					"selection-flow",
+					"selection-type"
+				],
+				"name": "Switch",
+				"thumbnail_visible": true
+			},
+			"75": {
+				"attributes": {
+					"input0-type": {
+						"type": "type",
+						"value": "float4"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 12
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 2924.267578125,
+					"y": -209.93475341796875
+				},
+				"class": {
+					"id": "77697265-86ce-4e85-a02d-34f915fca74e",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"duration": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"input0": {
+						"type": "float4",
+						"value": [
+							[
+								0,
+								0,
+								0,
+								0.64999997615814209
+							],
+							[
+								0,
+								0,
+								0,
+								0.75
+							],
+							[
+								1,
+								1,
+								1,
+								0.98999994993209839
+							],
+							[
+								1,
+								1,
+								1,
+								0.90999996662139893
+							],
+							[
+								0,
+								0,
+								0,
+								0.52999997138977051
+							],
+							[
+								1,
+								1,
+								1,
+								0.74000000953674316
+							],
+							[
+								1,
+								1,
+								1,
+								0.5899999737739563
+							],
+							[
+								1,
+								1,
+								1,
+								0.57999998331069946
+							],
+							[
+								0,
+								0,
+								0,
+								0.64999997615814209
+							],
+							[
+								0,
+								0,
+								0,
+								0.75
+							],
+							[
+								1,
+								1,
+								1,
+								0.98999994993209839
+							],
+							[
+								1,
+								1,
+								1,
+								0.90999996662139893
+							]
+						]
+					}
+				},
+				"hidden": [
+					"input0-type",
+					"instances"
+				],
+				"name": "Smooth",
+				"thumbnail_visible": true
+			},
+			"76": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": false
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"min": {
+						"type": "float",
+						"value": 0
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 2613.2529296875,
+					"y": -192.739013671875
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 5
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"min",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Transition Duration",
+				"thumbnail_visible": true
+			},
+			"8": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Merkaba - Pyramid.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1737.37548828125,
+					"y": 718.80419921875
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Mask 5",
+				"thumbnail_visible": true
+			},
+			"85": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": false
+					},
+					"has-min": {
+						"type": "bool",
+						"value": false
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1564.48388671875,
+					"y": -232.6199951171875
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 0.5
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Minimum Opacity",
+				"thumbnail_visible": true
+			},
+			"86": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": false
+					},
+					"has-min": {
+						"type": "bool",
+						"value": false
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1564.48388671875,
+					"y": -151.3310546875
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 1
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Maximum Opacity",
+				"thumbnail_visible": true
+			},
+			"87": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 1498.5841064453125,
+					"y": -530.40087890625
+				},
+				"class": {
+					"id": "77697265-0B6E-4121-BC74-01D626012364",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Collapse Triggers",
+				"thumbnail_visible": true
+			},
+			"9": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "J:\/stages\/sacred_geometry_stage\/Masks 2\/Revised\/Sacred Geometry Stage - Panel - Left and Right.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1737.37548828125,
+					"y": 830.80419921875
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Mask 6",
+				"thumbnail_visible": true
+			}
+		},
+		"ui": {
+			"camera": {
+				"x": 1307.22802734375,
+				"y": -1056.83203125,
+				"zoom": 0.46789878606796265
+			},
+			"selection": []
+		}
+	},
+	"ui": {
+		"audio": {
+			"routing": {
+				"in": {},
+				"out": []
+			}
+		},
+		"deviceConnections": {
+			"input": {}
+		},
+		"transport": {
+			"bpm": 120,
+			"time-signature": [
+				4,
+				4
+			]
+		},
+		"video": {
+			"routing": {
+				"out": {
+					"Display 1": null,
+					"Display 2": null,
+					"Display 3": null,
+					"Display 4": null,
+					"Syphon": null
+				}
+			}
+		}
+	}
+}

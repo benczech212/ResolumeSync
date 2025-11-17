@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Layout version="2">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="23" microVersion="2" revision="51094"/>
+	<Desktop>
+		<Window panel_id="218" main="1" full_screen="1" x="-1818" y="-204" width="1920" height="1177">
+			<FlexContainer panel_id="219" orientation="0">
+				<FlexContainer panel_id="354" orientation="1">
+					<TabbedContainer panel_id="234">
+						<Files width_desired="350" height_desired="300"/>
+						<Compositions width_desired="350" height_desired="300"/>
+						<Effects width_desired="350" height_desired="300"/>
+						<Sources width_desired="350" height_desired="300"/>
+						<Recording width_desired="350" height_desired="300"/>
+					</TabbedContainer>
+				</FlexContainer>
+				<FlexContainer panel_id="222" width_desired="355" orientation="1">
+					<FlexContainer panel_id="226" height_desired="338" orientation="0">
+						<TabbedContainer panel_id="223">
+							<Monitor width_desired="350" height_desired="300" instance="0" subject_type="Composition" checker_board="1" showUI="0"/>
+						</TabbedContainer>
+					</FlexContainer>
+					<FlexContainer panel_id="238" height_desired="985" orientation="0">
+						<TabbedContainer panel_id="239">
+							<Composition width_desired="350" height_desired="300"/>
+						</TabbedContainer>
+					</FlexContainer>
+				</FlexContainer>
+				<FlexContainer panel_id="358" orientation="1">
+					<TabbedContainer panel_id="265">
+						<Monitor width_desired="350" height_desired="300" instance="3" subject_type="Group Preview" checker_board="1" showUI="0"/>
+					</TabbedContainer>
+				</FlexContainer>
+				<FlexContainer panel_id="244" width_desired="348" orientation="1">
+					<FlexContainer panel_id="248" height_desired="277" orientation="0">
+						<TabbedContainer panel_id="249">
+							<Monitor width_desired="350" height_desired="300" instance="2" subject_type="Layer Preview" checker_board="1" showUI="0"/>
+						</TabbedContainer>
+					</FlexContainer>
+					<FlexContainer panel_id="247" height_desired="1047" orientation="0">
+						<TabbedContainer panel_id="245">
+							<Layer width_desired="350" height_desired="300"/>
+						</TabbedContainer>
+					</FlexContainer>
+				</FlexContainer>
+				<FlexContainer panel_id="256" width_desired="417" orientation="1">
+					<FlexContainer panel_id="257" height_desired="274" orientation="0">
+						<TabbedContainer panel_id="255">
+							<Monitor width_desired="350" height_desired="300" instance="1" subject_type="Preview" checker_board="1" showUI="0"/>
+						</TabbedContainer>
+					</FlexContainer>
+					<FlexContainer panel_id="258" height_desired="1050" orientation="0">
+						<TabbedContainer panel_id="259">
+							<Clip width_desired="350" height_desired="300"/>
+						</TabbedContainer>
+					</FlexContainer>
+				</FlexContainer>
+				<FlexContainer panel_id="220" width_desired="1664" orientation="1">
+					<FlexContainer panel_id="208" height_desired="339" orientation="0">
+						<LayersAndClips width_desired="1000" height_desired="318"/>
+					</FlexContainer>
+					<Toolbar width_desired="1000" height_desired="36"/>
+				</FlexContainer>
+			</FlexContainer>
+		</Window>
+	</Desktop>
+	<HiddenPanels>
+		<Column unhide_panel_id="219" unhide_target_index="2" width_desired="350" height_desired="300"/>
+		<Notes unhide_panel_id="234" unhide_target_index="0" width_desired="350" height_desired="300"/>
+		<ClipTime unhide_panel_id="354" unhide_target_index="0" width_desired="350" height_desired="100">
+			<Clocks>
+				<Clock mode="0" show_time_remaining="0"/>
+				<Clock mode="1" show_time_remaining="1"/>
+			</Clocks>
+		</ClipTime>
+		<RenderQueue unhide_panel_id="234" unhide_target_index="4" width_desired="350" height_desired="300"/>
+		<Slices unhide_panel_id="234" unhide_target_index="4" width_desired="350" height_desired="300"/>
+		<Shortcuts unhide_panel_id="234" unhide_target_index="4" width_desired="350" height_desired="300"/>
+		<SMPTE unhide_panel_id="354" unhide_target_index="0" width_desired="350" height_desired="100">
+			<SMPTE1 colorIndex="3"/>
+			<SMPTE2 colorIndex="3"/>
+		</SMPTE>
+		<Group unhide_panel_id="358" unhide_target_index="1" width_desired="350" height_desired="300"/>
+	</HiddenPanels>
+	<Params name="LayoutParams">
+		<Param name="Show Compositions" altName="Show Compositions" T="BOOL" default="1" value="1"/>
+		<Param name="Show Layer" altName="Show Layer" T="BOOL" default="1" value="1"/>
+		<Param name="Show Clip" altName="Show Clip" T="BOOL" default="1" value="1"/>
+		<Param name="Show Column" altName="Show Column" T="BOOL" default="0" value="0"/>
+		<Param name="Show Composition" altName="Show Composition" T="BOOL" default="1" value="1"/>
+		<Param name="Show Group" altName="Show Group" T="BOOL" default="0" value="0"/>
+		<Param name="Show Big Column Triggers" T="BOOL" default="1" value="1"/>
+		<Param name="Show Ableton Link" T="BOOL" default="0" value="0"/>
+		<Param name="Show Audio Controls" T="BOOL" default="1" value="1"/>
+		<Param name="Show Clip Speed Sliders on Layers" T="BOOL" default="1" value="1"/>
+		<Param name="Show Layer Transport Controls" T="BOOL" default="0" value="1"/>
+		<Param name="Show Layer Transition Controls" T="BOOL" default="0" value="1"/>
+		<Param name="Show Crossfader" T="BOOL" default="1" value="1"/>
+		<Param name="Show Help" T="BOOL" default="1" value="1"/>
+		<Param name="Show Dashboard" T="BOOL" default="1" value="1"/>
+		<Param name="Show Autopilot" T="BOOL" default="1" value="1"/>
+		<Param name="Show Cue Points" T="BOOL" default="1" value="1"/>
+		<Param name="Show Beat Looper" T="BOOL" default="1" value="1"/>
+		<Param name="Show FFT Gain" T="BOOL" default="0" value="1"/>
+		<Param name="Show Undo Toolbar" T="BOOL" default="1" value="0"/>
+		<Param name="Show Monitor" altName="Show Monitor" T="BOOL" default="1" value="1"/>
+		<Param name="Show SMPTE" T="BOOL" default="0" value="0"/>
+		<Param name="Show Denon DJ StageLinQ" T="BOOL" default="0" value="0"/>
+		<Param name="Show Pioneer DJ TCNet" T="BOOL" default="0" value="0"/>
+		<Param name="Show FPS &amp; Stats" T="BOOL" default="0" value="0"/>
+		<Param name="Show Shortcuts" T="BOOL" default="0" value="0"/>
+		<Param name="Show Effects" T="BOOL" default="1" value="1"/>
+		<Param name="Show Sources" T="BOOL" default="1" value="1"/>
+		<Param name="Show Clip Time" T="BOOL" default="0" value="0"/>
+		<Param name="Show Notes" T="BOOL" default="0" value="0"/>
+		<Param name="Show Slices" T="BOOL" default="0" value="0"/>
+		<Param name="Show Files" T="BOOL" default="1" value="1"/>
+		<Param name="Show Render Queue" altName="Show Render" T="BOOL" default="0" value="0"/>
+		<Param name="Show Recordings" altName="Show Record" T="BOOL" default="1" value="1"/>
+		<Param name="ShowFileBrowserThumbnails" T="BOOL" default="0" value="0"/>
+		<Param name="showClipTimeRemaining" T="BOOL" default="0" value="1"/>
+	</Params>
+</Layout>
+

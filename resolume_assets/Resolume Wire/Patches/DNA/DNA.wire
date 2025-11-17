@@ -1,0 +1,4930 @@
+{
+	"formatVersion": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"patch": {
+		"connections": [
+			{
+				"from": [
+					23,
+					"one"
+				],
+				"to": [
+					24,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					26,
+					"output"
+				],
+				"to": [
+					25,
+					"size"
+				]
+			},
+			{
+				"from": [
+					24,
+					"output0"
+				],
+				"to": [
+					27,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					25,
+					"pattern"
+				],
+				"to": [
+					27,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					26,
+					"output"
+				],
+				"to": [
+					30,
+					"size"
+				]
+			},
+			{
+				"from": [
+					30,
+					"pattern"
+				],
+				"to": [
+					32,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					32,
+					"output"
+				],
+				"to": [
+					31,
+					"translation"
+				]
+			},
+			{
+				"from": [
+					29,
+					"output"
+				],
+				"to": [
+					31,
+					"input"
+				]
+			},
+			{
+				"from": [
+					27,
+					"output0"
+				],
+				"to": [
+					33,
+					"phase-offset"
+				]
+			},
+			{
+				"from": [
+					27,
+					"output0"
+				],
+				"to": [
+					35,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					35,
+					"output0"
+				],
+				"to": [
+					34,
+					"phase-offset"
+				]
+			},
+			{
+				"from": [
+					30,
+					"pattern"
+				],
+				"to": [
+					36,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					34,
+					"output"
+				],
+				"to": [
+					36,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					29,
+					"output"
+				],
+				"to": [
+					37,
+					"input"
+				]
+			},
+			{
+				"from": [
+					36,
+					"output"
+				],
+				"to": [
+					37,
+					"translation"
+				]
+			},
+			{
+				"from": [
+					31,
+					"output0"
+				],
+				"to": [
+					38,
+					"channel0"
+				]
+			},
+			{
+				"from": [
+					37,
+					"output0"
+				],
+				"to": [
+					38,
+					"channel1"
+				]
+			},
+			{
+				"from": [
+					32,
+					"output"
+				],
+				"to": [
+					39,
+					"begin"
+				]
+			},
+			{
+				"from": [
+					36,
+					"output"
+				],
+				"to": [
+					39,
+					"end"
+				]
+			},
+			{
+				"from": [
+					39,
+					"output"
+				],
+				"to": [
+					47,
+					"input"
+				]
+			},
+			{
+				"from": [
+					38,
+					"output"
+				],
+				"to": [
+					45,
+					"input"
+				]
+			},
+			{
+				"from": [
+					47,
+					"output"
+				],
+				"to": [
+					48,
+					"input"
+				]
+			},
+			{
+				"from": [
+					46,
+					"output0"
+				],
+				"to": [
+					48,
+					"color"
+				]
+			},
+			{
+				"from": [
+					26,
+					"output"
+				],
+				"to": [
+					49,
+					"size"
+				]
+			},
+			{
+				"from": [
+					49,
+					"pattern"
+				],
+				"to": [
+					50,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					50,
+					"output0"
+				],
+				"to": [
+					46,
+					"hue"
+				]
+			},
+			{
+				"from": [
+					23,
+					"one"
+				],
+				"to": [
+					51,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					51,
+					"output0"
+				],
+				"to": [
+					52,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					52,
+					"output0"
+				],
+				"to": [
+					50,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					40,
+					"output"
+				],
+				"to": [
+					53,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					53,
+					"output0"
+				],
+				"to": [
+					40,
+					"input4"
+				]
+			},
+			{
+				"from": [
+					38,
+					"output"
+				],
+				"to": [
+					40,
+					"input3"
+				]
+			},
+			{
+				"from": [
+					45,
+					"output"
+				],
+				"to": [
+					40,
+					"input2"
+				]
+			},
+			{
+				"from": [
+					57,
+					"output0"
+				],
+				"to": [
+					33,
+					"amplitude"
+				]
+			},
+			{
+				"from": [
+					57,
+					"output0"
+				],
+				"to": [
+					34,
+					"amplitude"
+				]
+			},
+			{
+				"from": [
+					33,
+					"output"
+				],
+				"to": [
+					59,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					60,
+					"output"
+				],
+				"to": [
+					59,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					59,
+					"output0"
+				],
+				"to": [
+					61,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					61,
+					"output0"
+				],
+				"to": [
+					32,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					48,
+					"output"
+				],
+				"to": [
+					40,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					40,
+					"output"
+				],
+				"to": [
+					62,
+					"input"
+				]
+			},
+			{
+				"from": [
+					62,
+					"output"
+				],
+				"to": [
+					63,
+					"input"
+				]
+			}
+		],
+		"inputOrder": {
+			"groups": {},
+			"roots": [
+				{
+					"node": 26
+				}
+			]
+		},
+		"meta": {
+			"author": "",
+			"category": null,
+			"deploymentTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 0
+				}
+			},
+			"description": "",
+			"displayName": "DNA",
+			"identifier": "8da15e73-96fd-41c9-93d6-df43c0d72877",
+			"licenseName": "",
+			"mail": "",
+			"originalTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 9
+				}
+			},
+			"quality": 32856,
+			"resolution": {
+				"height": 1080,
+				"width": 1920
+			},
+			"saveTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 9
+				}
+			},
+			"thumbnail": "",
+			"url": "",
+			"vendor": ""
+		},
+		"nextNodeId": 64,
+		"nodes": {
+			"23": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					}
+				},
+				"bounds": {
+					"height": 155.0605621337890625,
+					"width": 195,
+					"x": 1381.10302734375,
+					"y": 776.6925048828125
+				},
+				"class": {
+					"id": "77697265-6707-4A3C-9DFB-0DF782B8DB95",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"three",
+					"six",
+					"twelve"
+				],
+				"name": "Transport Beat",
+				"thumbnail_visible": true
+			},
+			"24": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-type": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 83.12525177001953125,
+					"width": 195,
+					"x": 1636.10302734375,
+					"y": 776.6925048828125
+				},
+				"class": {
+					"id": "77697265-7AB6-4CFB-A7DE-15850425F630",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 1
+					},
+					"input1": {
+						"type": "float",
+						"value": 1
+					}
+				},
+				"hidden": [
+					"input0-type",
+					"input1-type",
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions"
+				],
+				"name": "Modulo",
+				"thumbnail_visible": true
+			},
+			"25": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"include-max": {
+						"type": "bool",
+						"value": false
+					},
+					"max-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"min-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"pattern-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"size": {
+						"type": "integer",
+						"value": 20
+					}
+				},
+				"bounds": {
+					"height": 108.00574493408203125,
+					"width": 195,
+					"x": 1636.10302734375,
+					"y": 961.75311279296875
+				},
+				"class": {
+					"id": "77697265-A48B-4AF9-8975-E3063B037D4C",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"max": {
+						"type": "float",
+						"value": 1
+					},
+					"min": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"include-max",
+					"min-type",
+					"max-type",
+					"pattern-type",
+					"flow"
+				],
+				"name": "Linear",
+				"thumbnail_visible": true
+			},
+			"26": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": false
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"input": {
+						"type": "integer",
+						"value": 20
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"min": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 1446.10302734375,
+					"y": 961.75311279296875
+				},
+				"class": {
+					"id": "77697265-2649-4abb-b38f-4e1005183415",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"instances",
+					"flow",
+					"has-min",
+					"min",
+					"has-max",
+					"options-count",
+					"widget",
+					"unit"
+				],
+				"name": "Size",
+				"thumbnail_visible": true
+			},
+			"27": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 20
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 20
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 83.39684295654296875,
+					"width": 195,
+					"x": 1891.10302734375,
+					"y": 776.6925048828125
+				},
+				"class": {
+					"id": "77697265-A9AF-4CB4-B10F-3968B36BB63B",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"size",
+					"type0",
+					"input0-dimensions",
+					"type1",
+					"input1-dimensions"
+				],
+				"name": "Add",
+				"thumbnail_visible": true
+			},
+			"29": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 57.74282073974609375,
+					"width": 195,
+					"x": 2656.10302734375,
+					"y": 611.94970703125
+				},
+				"class": {
+					"id": "77697265-EA26-47D6-985A-B4CAEC314BF7",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"radius": {
+						"type": "float",
+						"value": 0.10000000149011612
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Circle",
+				"thumbnail_visible": true
+			},
+			"30": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"include-max": {
+						"type": "bool",
+						"value": true
+					},
+					"max-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"min-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"pattern-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"size": {
+						"type": "integer",
+						"value": 20
+					}
+				},
+				"bounds": {
+					"height": 104.7925262451171875,
+					"width": 195,
+					"x": 2401.10302734375,
+					"y": 858.0098876953125
+				},
+				"class": {
+					"id": "77697265-A48B-4AF9-8975-E3063B037D4C",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"max": {
+						"type": "float",
+						"value": 1
+					},
+					"min": {
+						"type": "float",
+						"value": -1
+					}
+				},
+				"hidden": [
+					"include-max",
+					"min-type",
+					"max-type",
+					"pattern-type",
+					"flow"
+				],
+				"name": "Linear",
+				"thumbnail_visible": true
+			},
+			"31": {
+				"attributes": {
+					"anchor-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input-type": {
+						"type": "type",
+						"value": "procedural"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 20
+					},
+					"rotation-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"scale-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"translation-type": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 128.3173828125,
+					"width": 195,
+					"x": 2911.10302734375,
+					"y": 611.94970703125
+				},
+				"class": {
+					"id": "77697265-9225-4009-9D2D-5F898E94CC33",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"anchor": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					},
+					"input": {
+						"type": "procedural",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"rotation": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"translation": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					}
+				},
+				"hidden": [
+					"input-type",
+					"translation-type",
+					"rotation-type",
+					"scale-type",
+					"anchor-type",
+					"flow",
+					"instances"
+				],
+				"name": "Transform",
+				"thumbnail_visible": true
+			},
+			"32": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 20
+					}
+				},
+				"bounds": {
+					"height": 81.267669677734375,
+					"width": 195,
+					"x": 2656.10302734375,
+					"y": 699.6925048828125
+				},
+				"class": {
+					"id": "77697265-E7EF-4944-8FC2-D808EE0433CB",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances"
+				],
+				"name": "Float2",
+				"thumbnail_visible": true
+			},
+			"33": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 20
+					},
+					"unipolar": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false
+						]
+					}
+				},
+				"bounds": {
+					"height": 128.3173828125,
+					"width": 195,
+					"x": 2401.10302734375,
+					"y": 699.6925048828125
+				},
+				"class": {
+					"id": "77697265-ED9B-4BEC-B3D4-43AC04731CBA",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"amplitude": {
+						"type": "float",
+						"value": [
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5
+						]
+					},
+					"frequency": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"offset": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"phase-offset": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"reset-phase": {
+						"type": "trigger",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					}
+				},
+				"hidden": [
+					"instances",
+					"reset-phase",
+					"unipolar"
+				],
+				"name": "Sine Oscillator",
+				"thumbnail_visible": true
+			},
+			"34": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 20
+					},
+					"unipolar": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false
+						]
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 2401.10302734375,
+					"y": 992.80242919921875
+				},
+				"class": {
+					"id": "77697265-ED9B-4BEC-B3D4-43AC04731CBA",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"amplitude": {
+						"type": "float",
+						"value": [
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5,
+							0.5
+						]
+					},
+					"frequency": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"offset": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"phase-offset": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"reset-phase": {
+						"type": "trigger",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					}
+				},
+				"hidden": [
+					"instances",
+					"reset-phase",
+					"unipolar"
+				],
+				"name": "Sine Oscillator",
+				"thumbnail_visible": true
+			},
+			"35": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 20
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 2146.10302734375,
+					"y": 1069.802490234375
+				},
+				"class": {
+					"id": "77697265-A9AF-4CB4-B10F-3968B36BB63B",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": 0.5
+					}
+				},
+				"hidden": [
+					"flow",
+					"size",
+					"type0",
+					"input0-dimensions",
+					"type1",
+					"input1-dimensions"
+				],
+				"name": "Add",
+				"thumbnail_visible": true
+			},
+			"36": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 20
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 2656.10302734375,
+					"y": 992.80242919921875
+				},
+				"class": {
+					"id": "77697265-E7EF-4944-8FC2-D808EE0433CB",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances"
+				],
+				"name": "Float2",
+				"thumbnail_visible": true
+			},
+			"37": {
+				"attributes": {
+					"anchor-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input-type": {
+						"type": "type",
+						"value": "procedural"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 20
+					},
+					"rotation-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"scale-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"translation-type": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 2911.10302734375,
+					"y": 770.26708984375
+				},
+				"class": {
+					"id": "77697265-9225-4009-9D2D-5F898E94CC33",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"anchor": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					},
+					"input": {
+						"type": "procedural",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"rotation": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"translation": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					}
+				},
+				"hidden": [
+					"input-type",
+					"translation-type",
+					"rotation-type",
+					"scale-type",
+					"anchor-type",
+					"flow",
+					"instances"
+				],
+				"name": "Transform",
+				"thumbnail_visible": true
+			},
+			"38": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 20
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 20
+					},
+					"num-channels": {
+						"type": "integer",
+						"value": 2
+					},
+					"type": {
+						"type": "type",
+						"value": "procedural"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 3375.7275390625,
+					"y": 611.94970703125
+				},
+				"class": {
+					"id": "77697265-3732-42da-653e-b641d4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"channel0": {
+						"type": "procedural",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"channel1": {
+						"type": "procedural",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					}
+				},
+				"hidden": [
+					"type",
+					"flow",
+					"num-channels",
+					"input0-dimensions",
+					"input1-dimensions"
+				],
+				"name": "Join",
+				"thumbnail_visible": true
+			},
+			"39": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 20
+					}
+				},
+				"bounds": {
+					"height": 106.31679534912109375,
+					"width": 195,
+					"x": 3395.154296875,
+					"y": 844.76556396484375
+				},
+				"class": {
+					"id": "77697265-ad7a-4f41-8d67-643bf49f2ea4",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"begin": {
+						"type": "float2",
+						"value": [
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							],
+							[
+								-0.5,
+								0.5
+							]
+						]
+					},
+					"end": {
+						"type": "float2",
+						"value": [
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							],
+							[
+								0.5,
+								-0.5
+							]
+						]
+					},
+					"thickness": {
+						"type": "float",
+						"value": [
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903,
+							0.02500000037252903
+						]
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Line",
+				"thumbnail_visible": true
+			},
+			"40": {
+				"attributes": {
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"input-count": {
+						"type": "integer",
+						"value": 4
+					},
+					"instances": {
+						"type": "integer",
+						"value": 40
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					}
+				},
+				"bounds": {
+					"height": 226.6754302978515625,
+					"width": 195,
+					"x": 4459.32568359375,
+					"y": 665.23052978515625
+				},
+				"class": {
+					"id": "77697265-A270-4D60-911C-A88B1BE6369A",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false
+						]
+					},
+					"input1": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"input2": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"input3": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"input4": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"mode": {
+						"type": "integer",
+						"value": [
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10,
+							10
+						]
+					},
+					"opacity1": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"opacity2": {
+						"type": "float",
+						"value": [
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427,
+							0.996815025806427
+						]
+					},
+					"opacity3": {
+						"type": "float",
+						"value": [
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262,
+							0.69642901420593262
+						]
+					},
+					"opacity4": {
+						"type": "float",
+						"value": [
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781,
+							0.3783780038356781
+						]
+					}
+				},
+				"hidden": [
+					"bypass",
+					"input-count",
+					"mode",
+					"resolution-mode",
+					"resolution-relative",
+					"resolution-absolute",
+					"bitdepth",
+					"instances"
+				],
+				"name": "Video Mixer",
+				"thumbnail_visible": true
+			},
+			"45": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 40
+					},
+					"mode": {
+						"type": "integer",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"bounds": {
+					"height": 58.17334365844726562,
+					"width": 195,
+					"x": 3862.547119140625,
+					"y": 641.15887451171875
+				},
+				"class": {
+					"id": "77697265-ab950887-37ee-4fd2-9487-c856b6b75c83",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "procedural",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"thickness": {
+						"type": "float",
+						"value": [
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806,
+							0.05000000074505806
+						]
+					}
+				},
+				"hidden": [
+					"instances",
+					"mode"
+				],
+				"name": "Edge",
+				"thumbnail_visible": true
+			},
+			"46": {
+				"attributes": {
+					"alpha-dimensions": {
+						"type": "integer",
+						"value": 20
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"hue-dimensions": {
+						"type": "integer",
+						"value": 20
+					},
+					"saturation-dimensions": {
+						"type": "integer",
+						"value": 20
+					},
+					"value-dimensions": {
+						"type": "integer",
+						"value": 20
+					}
+				},
+				"bounds": {
+					"height": 130.388519287109375,
+					"width": 195,
+					"x": 2726.1611328125,
+					"y": 1413.460205078125
+				},
+				"class": {
+					"id": "77697265-EEBF-4CDA-AA6E-56148421F0C3",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"alpha": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"hue": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"saturation": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"value": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"hue-dimensions",
+					"saturation-dimensions",
+					"value-dimensions",
+					"alpha-dimensions"
+				],
+				"name": "Color from HSB",
+				"thumbnail_visible": true
+			},
+			"47": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 20
+					},
+					"mode": {
+						"type": "integer",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"bounds": {
+					"height": 58.17334365844726562,
+					"width": 195,
+					"x": 3743.191650390625,
+					"y": 854.79541015625
+				},
+				"class": {
+					"id": "77697265-ab950887-37ee-4fd2-9487-c856b6b75c83",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "procedural",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"thickness": {
+						"type": "float",
+						"value": [
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516,
+							0.01999999955296516
+						]
+					}
+				},
+				"hidden": [
+					"instances",
+					"mode"
+				],
+				"name": "Edge",
+				"thumbnail_visible": true
+			},
+			"48": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 20
+					},
+					"mode": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 106.31679534912109375,
+					"width": 195,
+					"x": 4084.20751953125,
+					"y": 951.082275390625
+				},
+				"class": {
+					"id": "77697265-9518-4E69-899B-66B8C527C6EB",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false
+						]
+					},
+					"color": {
+						"type": "color",
+						"value": [
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							]
+						]
+					},
+					"contrast": {
+						"type": "float",
+						"value": [
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224
+						]
+					},
+					"greysKeep": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false
+						]
+					},
+					"greysTolerance": {
+						"type": "float",
+						"value": [
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896
+						]
+					},
+					"input": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"invert": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false
+						]
+					}
+				},
+				"hidden": [
+					"bypass",
+					"mode",
+					"greysKeep",
+					"greysTolerance",
+					"instances"
+				],
+				"name": "Colorize",
+				"thumbnail_visible": true
+			},
+			"49": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"include-max": {
+						"type": "bool",
+						"value": true
+					},
+					"max-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"min-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"pattern-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"size": {
+						"type": "integer",
+						"value": 20
+					}
+				},
+				"bounds": {
+					"height": 106.31679534912109375,
+					"width": 195,
+					"x": 2393.168701171875,
+					"y": 1469.62744140625
+				},
+				"class": {
+					"id": "77697265-A48B-4AF9-8975-E3063B037D4C",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"max": {
+						"type": "float",
+						"value": 0.10000000149011612
+					},
+					"min": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"include-max",
+					"min-type",
+					"max-type",
+					"pattern-type",
+					"flow"
+				],
+				"name": "Linear",
+				"thumbnail_visible": true
+			},
+			"50": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 20
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 82.2450714111328125,
+					"width": 195,
+					"x": 2558.661865234375,
+					"y": 1268.026611328125
+				},
+				"class": {
+					"id": "77697265-A9AF-4CB4-B10F-3968B36BB63B",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"size",
+					"type0",
+					"input0-dimensions",
+					"type1",
+					"input1-dimensions"
+				],
+				"name": "Add",
+				"thumbnail_visible": true
+			},
+			"51": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 82.2450714111328125,
+					"width": 195,
+					"x": 1635.912353515625,
+					"y": 641.15875244140625
+				},
+				"class": {
+					"id": "77697265-0D55-485E-813D-706DD5DFE88D",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 1
+					},
+					"input1": {
+						"type": "float",
+						"value": 8
+					}
+				},
+				"hidden": [
+					"flow",
+					"size",
+					"type0",
+					"input0-dimensions",
+					"type1",
+					"input1-dimensions"
+				],
+				"name": "Divide",
+				"thumbnail_visible": true
+			},
+			"52": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-type": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 82.2450714111328125,
+					"width": 195,
+					"x": 1927.781982421875,
+					"y": 619.09295654296875
+				},
+				"class": {
+					"id": "77697265-7AB6-4CFB-A7DE-15850425F630",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 1
+					},
+					"input1": {
+						"type": "float",
+						"value": 1
+					}
+				},
+				"hidden": [
+					"input0-type",
+					"input1-type",
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions"
+				],
+				"name": "Modulo",
+				"thumbnail_visible": true
+			},
+			"53": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "texture2d"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 40
+					},
+					"interpolation": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 58.17334365844726562,
+					"width": 195,
+					"x": 4458.9560546875,
+					"y": 553.94952392578125
+				},
+				"class": {
+					"id": "77697265-4BEE-483F-9F28-1BA5F21193DB",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"reset": {
+						"type": "trigger",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					}
+				},
+				"hidden": [
+					"interpolation",
+					"input0-type",
+					"flow",
+					"instances"
+				],
+				"name": "Delay",
+				"thumbnail_visible": true
+			},
+			"57": {
+				"attributes": {
+					"defaultValue-type": {
+						"type": "type",
+						"value": "null"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 58.47713470458984375,
+					"width": 195,
+					"x": 1625.9993896484375,
+					"y": 384.465606689453125
+				},
+				"class": {
+					"id": "77697265-E9E1-4BAC-9742-265E5207A103",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0.5
+					}
+				},
+				"hidden": [
+					"input0-type",
+					"defaultValue-type",
+					"flow",
+					"instances"
+				],
+				"name": "Float",
+				"thumbnail_visible": true
+			},
+			"59": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 20
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 81.7982940673828125,
+					"width": 195,
+					"x": 2531.279052734375,
+					"y": 344.397491455078125
+				},
+				"class": {
+					"id": "77697265-A9AF-4CB4-B10F-3968B36BB63B",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"size",
+					"type0",
+					"input0-dimensions",
+					"type1",
+					"input1-dimensions"
+				],
+				"name": "Add",
+				"thumbnail_visible": true
+			},
+			"60": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"unipolar": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"bounds": {
+					"height": 154.20989990234375,
+					"width": 195,
+					"x": 2190.114990234375,
+					"y": 367.19378662109375
+				},
+				"class": {
+					"id": "77697265-A2EF-44DA-9A81-BB0385C1948C",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"amplitude": {
+						"type": "float",
+						"value": 2
+					},
+					"frequency": {
+						"type": "float",
+						"value": 0.125
+					},
+					"offset": {
+						"type": "float",
+						"value": 0
+					},
+					"reset": {
+						"type": "trigger",
+						"value": null
+					},
+					"seed": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"instances",
+					"unipolar"
+				],
+				"name": "Perlin Generator",
+				"thumbnail_visible": true
+			},
+			"61": {
+				"attributes": {
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 20
+					}
+				},
+				"bounds": {
+					"height": 57.66109085083007812,
+					"width": 195,
+					"x": 2677.443359375,
+					"y": 474.47021484375
+				},
+				"class": {
+					"id": "77697265-86ce-4e85-a02d-34f915fca74e",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"duration": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"input0-type",
+					"instances"
+				],
+				"name": "Smooth",
+				"thumbnail_visible": true
+			},
+			"62": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 40
+					}
+				},
+				"bounds": {
+					"height": 81.7982940673828125,
+					"width": 195,
+					"x": 4738.4921875,
+					"y": 758.7528076171875
+				},
+				"class": {
+					"id": "77697265-E77F-458C-88F7-71C9E15F5BD9",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false,
+							false
+						]
+					},
+					"color": {
+						"type": "color",
+						"value": [
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							],
+							[
+								0,
+								0,
+								0,
+								0.25
+							]
+						]
+					},
+					"input": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"offset": {
+						"type": "float2",
+						"value": [
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							],
+							[
+								10,
+								10
+							]
+						]
+					}
+				},
+				"hidden": [
+					"bypass",
+					"instances"
+				],
+				"name": "Drop Shadow",
+				"thumbnail_visible": true
+			},
+			"63": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 40
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 132,
+					"x": 5034.84375,
+					"y": 746.6842041015625
+				},
+				"class": {
+					"id": "77697265-BEEA-4D38-8EE5-0EBA4CBD0AEE",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+							null
+						]
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Texture Out",
+				"thumbnail_visible": true
+			}
+		},
+		"ui": {
+			"camera": {
+				"x": 2613.07763671875,
+				"y": 241.1439361572265625,
+				"zoom": 0.74573683738708496
+			},
+			"selection": [
+				"63"
+			]
+		}
+	},
+	"ui": {
+		"audio": {
+			"routing": {
+				"in": {},
+				"out": []
+			}
+		},
+		"deviceConnections": {
+			"input": {}
+		},
+		"transport": {
+			"bpm": 120,
+			"time-signature": [
+				4,
+				4
+			]
+		},
+		"video": {
+			"routing": {
+				"out": {
+					"Display 1": null,
+					"Display 2": null,
+					"Display 3": null
+				}
+			}
+		}
+	}
+}

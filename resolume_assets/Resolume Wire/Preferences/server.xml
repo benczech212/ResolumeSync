@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServerController name="ServerController" enabled="1" port="8081" address="0.0.0.0" root="C:\Users\bencz\OneDrive\Documents\Resolume Wire\Webserver">
+	<versionInfo name="Wire Editor" majorVersion="7" minorVersion="23" microVersion="2" revision="51094"/>
+</ServerController>
+

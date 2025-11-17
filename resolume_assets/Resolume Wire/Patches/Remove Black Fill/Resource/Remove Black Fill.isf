@@ -1,0 +1,157 @@
+/*{
+  "CREDIT": "Ben + GPT",
+  "DESCRIPTION": "Keys out ONLY black pixels connected to the border through other black pixels; preserves interior black pockets.",
+  "CATEGORIES": [ "filter", "keying", "alpha" ],
+  "INPUTS": [
+    { "NAME": "inputImage", "TYPE": "image", "LABEL": Image Input },
+    {
+      "NAME": "tolerance",
+      "TYPE": "float",
+      "LABEL": "Black Tolerance",
+      "DEFAULT": 0.0,
+      "MIN": 0.0,
+      "MAX": 0.05
+    },
+    {
+      "NAME": "iterations",
+      "TYPE": "int",
+      "LABEL": "Grow Iterations",
+      "DEFAULT": 24,
+      "MIN": 0,
+      "MAX": 120
+    },
+    {
+      "NAME": "useDiagonal",
+      "TYPE": "bool",
+      "LABEL": "8-way Connectivity",
+      "DEFAULT": false
+    }
+  ],
+  "TARGETS": [
+    { "NAME": "maskA" },
+    { "NAME": "maskB" }
+  ],
+  "PASSES": [
+    { "TARGET": "maskA" },  // 0: threshold -> black mask
+    { "TARGET": "maskB" },  // 1: seeds on border (subset of black mask)
+    { "TARGET": "maskA" },  // 2: dilation 1
+    { "TARGET": "maskB" },  // 3: dilation 2
+    { "TARGET": "maskA" },  // 4
+    { "TARGET": "maskB" },  // 5
+    { "TARGET": "maskA" },  // 6
+    { "TARGET": "maskB" },  // 7
+    { "TARGET": "maskA" },  // 8
+    { "TARGET": "maskB" },  // 9
+    { "TARGET": "maskA" },  // 10
+    { "TARGET": "maskB" },  // 11
+    { "TARGET": "maskA" },  // 12
+    { "TARGET": "maskB" },  // 13
+    { "TARGET": "maskA" },  // 14
+    { "TARGET": "maskB" },  // 15
+    { "TARGET": "maskA" },  // 16
+    { "TARGET": "maskB" },  // 17
+    { "TARGET": "maskA" },  // 18
+    { "TARGET": "maskB" },  // 19
+    { "TARGET": "maskA" },  // 20
+    { "TARGET": "maskB" },  // 21
+    { "TARGET": "maskA" },  // 22
+    { "TARGET": "maskB" },  // 23
+    { "TARGET": "maskA" },  // 24
+    { "TARGET": "maskB" }   // 25  (after this we render final to screen)
+  ]
+}*/
+
+#define MAX_ITERS 24  // number of dilation passes authored above
+// Passes: 0=threshold->maskA, 1=seed->maskB, 2..(2+MAX_ITERS-1)=dilate, final (no target) is implicit after pass 25
+
+bool isBlackPixel(vec3 rgb, float tol) {
+  if (tol <= 0.0) {
+    return (rgb.r == 0.0 && rgb.g == 0.0 && rgb.b == 0.0);
+  } else {
+    return (rgb.r <= tol && rgb.g <= tol && rgb.b <= tol);
+  }
+}
+
+float sampleMask(sampler2D tex, vec2 uv) {
+  return texture(tex, uv).a;
+}
+
+void main() {
+  vec2 uv = isf_FragNormCoord.xy;
+  vec4 c  = IMG_NORM_PIXEL(inputImage, uv);
+  vec2 texel = 1.0 / RENDERSIZE.xy;
+
+#if __PASSINDEX__ == 0
+  // PASS 0: threshold to black mask (store alpha=1 for black, 0 otherwise)
+  float m = isBlackPixel(c.rgb, tolerance) ? 1.0 : 0.0;
+  gl_FragColor = vec4(m, m, m, m);
+
+#elif __PASSINDEX__ == 1
+  // PASS 1: seed only border-touching black pixels (look at maskA)
+  float m = IMG_NORM_PIXEL(maskA, uv).a;
+  bool onBorder = (uv.x <= texel.x*0.5) || (uv.y <= texel.y*0.5) ||
+                  (uv.x >= 1.0 - texel.x*0.5) || (uv.y >= 1.0 - texel.y*0.5);
+  float seed = (m > 0.5 && onBorder) ? 1.0 : 0.0;
+  gl_FragColor = vec4(seed, seed, seed, seed);
+
+#elif __PASSINDEX__ >= 2 && __PASSINDEX__ <= (1 + MAX_ITERS)
+  // PASS 2..(1+MAX_ITERS): iterative dilation from border seeds through black mask
+  // Determine which buffer is "prev" and which we're writing to (ping-pong)
+  bool prevIsB = ( (__PASSINDEX__ - 1) % 2 == 0 ); // after seed(B), first dilation writes A (pass 2), so prev=B at pass 2
+  float connectedPrev = prevIsB ? IMG_NORM_PIXEL(maskB, uv).a
+                                : IMG_NORM_PIXEL(maskA, uv).a;
+
+  // Respect the user-specified cap on iterations:
+  int k = __PASSINDEX__ - 1;                // k=1..MAX_ITERS at passes 2..(1+MAX_ITERS)
+  bool skipGrow = (k > iterations);         // after the requested number, just pass through
+
+  // Always constrain growth to black pixels only:
+  float isBlackHere = IMG_NORM_PIXEL(maskA, uv).a; // 1.0 = black, 0.0 = not black
+
+  float connectedNew = connectedPrev;
+  if (!skipGrow) {
+    if (connectedPrev < 0.5 && isBlackHere > 0.5) {
+      // 4-way neighbors
+      float n = 0.0;
+      n = max(n, prevIsB ? IMG_NORM_PIXEL(maskB, uv + vec2( texel.x, 0.0)).a
+                         : IMG_NORM_PIXEL(maskA, uv + vec2( texel.x, 0.0)).a);
+      n = max(n, prevIsB ? IMG_NORM_PIXEL(maskB, uv + vec2(-texel.x, 0.0)).a
+                         : IMG_NORM_PIXEL(maskA, uv + vec2(-texel.x, 0.0)).a);
+      n = max(n, prevIsB ? IMG_NORM_PIXEL(maskB, uv + vec2(0.0,  texel.y)).a
+                         : IMG_NORM_PIXEL(maskA, uv + vec2(0.0,  texel.y)).a);
+      n = max(n, prevIsB ? IMG_NORM_PIXEL(maskB, uv + vec2(0.0, -texel.y)).a
+                         : IMG_NORM_PIXEL(maskA, uv + vec2(0.0, -texel.y)).a);
+
+      if (useDiagonal) {
+        n = max(n, prevIsB ? IMG_NORM_PIXEL(maskB, uv + vec2( texel.x,  texel.y)).a
+                           : IMG_NORM_PIXEL(maskA, uv + vec2( texel.x,  texel.y)).a);
+        n = max(n, prevIsB ? IMG_NORM_PIXEL(maskB, uv + vec2(-texel.x,  texel.y)).a
+                           : IMG_NORM_PIXEL(maskA, uv + vec2(-texel.x,  texel.y)).a);
+        n = max(n, prevIsB ? IMG_NORM_PIXEL(maskB, uv + vec2( texel.x, -texel.y)).a
+                           : IMG_NORM_PIXEL(maskA, uv + vec2( texel.x, -texel.y)).a);
+        n = max(n, prevIsB ? IMG_NORM_PIXEL(maskB, uv + vec2(-texel.x, -texel.y)).a
+                           : IMG_NORM_PIXEL(maskA, uv + vec2(-texel.x, -texel.y)).a);
+      }
+      if (n > 0.5) connectedNew = 1.0;
+    }
+  }
+
+  gl_FragColor = vec4(connectedNew, connectedNew, connectedNew, connectedNew);
+
+#else
+  // FINAL: choose the latest ping-pong result, then key only border-connected black
+  // seeds live in B (pass 1). After t dilations:
+  //   t odd -> latest in A, t even -> latest in B.
+  int t = clamp(iterations, 0, MAX_ITERS);
+  bool latestInA = ( (t % 2) == 1 );
+  float connected = latestInA ? IMG_NORM_PIXEL(maskA, uv).a
+                              : IMG_NORM_PIXEL(maskB, uv).a;
+
+  // Set alpha to 0 for border-connected black; keep pockets untouched.
+  float outA = (connected > 0.5) ? 0.0 : c.a;
+  gl_FragColor = vec4(c.rgb, outA);
+
+  // Optional premult: uncomment if your pipeline expects premultiplied alpha
+  // gl_FragColor.rgb *= gl_FragColor.a;
+#endif
+}

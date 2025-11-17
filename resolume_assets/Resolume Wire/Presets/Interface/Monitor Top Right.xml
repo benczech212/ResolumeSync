@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Layout version="1">
+	<versionInfo name="Wire Editor" majorVersion="7" minorVersion="7" microVersion="0" revision="11365"/>
+	<Desktop>
+		<Window panel_id="59" main="1" full_screen="1" x="20" y="45" width="2520" height="1328">
+			<FlexContainer panel_id="60" orientation="0">
+				<FlexContainer panel_id="61" orientation="1">
+					<Toolbar height_desired="36"/>
+					<FlexContainer panel_id="50" orientation="0">
+						<FlexContainer panel_id="128" orientation="1">
+							<PatchCanvas height_desired="700"/>
+						</FlexContainer>
+						<FlexContainer panel_id="52" width_desired="616" orientation="1">
+							<FlexContainer panel_id="65" height_desired="400" orientation="0">
+								<TabbedContainer panel_id="66">
+									<Monitor width_desired="550" height_desired="360" instance="0"/>
+								</TabbedContainer>
+							</FlexContainer>
+							<FlexContainer panel_id="53" height_desired="871" orientation="0">
+								<FlexContainer panel_id="63" orientation="1">
+									<TabbedContainer panel_id="64">
+										<NodeInspector width_desired="400"/>
+										<PatchInspector width_desired="400"/>
+									</TabbedContainer>
+								</FlexContainer>
+								<FlexContainer panel_id="62" orientation="1">
+									<TabbedContainer panel_id="54">
+										<Library width_desired="400"/>
+										<Dashboard width_desired="400"/>
+										<Resources width_desired="400"/>
+										<Log width_desired="400"/>
+									</TabbedContainer>
+									<FlexContainer panel_id="67" orientation="0">
+										<TabbedContainer panel_id="68">
+											<Help height_desired="100"/>
+										</TabbedContainer>
+									</FlexContainer>
+								</FlexContainer>
+							</FlexContainer>
+						</FlexContainer>
+					</FlexContainer>
+				</FlexContainer>
+			</FlexContainer>
+		</Window>
+	</Desktop>
+	<HiddenPanels>
+		<TextEditor unhide_panel_id="60" unhide_target_index="0" width_desired="350" height_desired="200"/>
+	</HiddenPanels>
+</Layout>
+

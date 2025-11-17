@@ -1,0 +1,663 @@
+{
+	"formatVersion": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"patch": {
+		"connections": [
+			{
+				"from": [
+					73,
+					"output"
+				],
+				"to": [
+					80,
+					"input"
+				]
+			}
+		],
+		"inputOrder": {
+			"groups": {},
+			"roots": []
+		},
+		"meta": {
+			"author": "Mark Buitenwerf",
+			"category": null,
+			"deploymentTarget": {
+				"branch": "unknown",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 0
+				}
+			},
+			"description": "Explains what this node does",
+			"displayName": "ISF Example",
+			"identifier": "b66ff0cc-6321-42bc-b7c8-81134d9f65af",
+			"licenseName": "",
+			"mail": "mail@resolume.com",
+			"originalTarget": {
+				"branch": "unknown",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 11,
+					"patch": 0
+				}
+			},
+			"quality": 32856,
+			"resolution": {
+				"height": 1080,
+				"width": 1920
+			},
+			"saveTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 2
+				}
+			},
+			"thumbnail": "",
+			"url": "www.resolume.com",
+			"vendor": "Resolume"
+		},
+		"nextNodeId": 86,
+		"nodes": {
+			"71": {
+				"attributes": {
+					"alignment": {
+						"type": "integer",
+						"value": 0
+					},
+					"fill": {
+						"type": "bool",
+						"value": true
+					},
+					"font-size": {
+						"type": "float",
+						"value": 19
+					},
+					"text": {
+						"type": "string",
+						"value": "ISF\n\nISF, also known as Interactive Shader Format, is a format for writing your own GLSL shaders. \nYou can create or import a shader in the node panel or assign an ISF resource using the main inlet.\n\nNote that Wire does not support vertex shaders.\n\nIf you are taking shaders from the internet and use them in your own commercial projects, please respect the license under which the shader has been released."
+					}
+				},
+				"bounds": {
+					"height": 212.09161376953125,
+					"width": 1086.589111328125,
+					"x": -180.4122161865234375,
+					"y": 198.2236175537109375
+				},
+				"class": {
+					"id": "77697265-3C1D-467D-A722-0FC566538374",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffd0c117",
+				"constants": {},
+				"hidden": [
+					"alignment",
+					"fill",
+					"font-size",
+					"text"
+				],
+				"name": "Comment",
+				"thumbnail_visible": true
+			},
+			"73": {
+				"attributes": {
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"fragment-shader": {
+						"type": "resourceIsf",
+						"value": {
+							"path": {
+								"main": "Resource\/ISF\/ISF_Example.isf",
+								"sub": ""
+							},
+							"value": {
+								"inputs": [
+									{
+										"defaultValue": 1,
+										"label": "Mod Red",
+										"name": "MR",
+										"type": "float"
+									},
+									{
+										"defaultValue": 1,
+										"label": "Mod Blue",
+										"name": "MB",
+										"type": "float"
+									}
+								]
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					}
+				},
+				"bounds": {
+					"height": 106.66034698486328125,
+					"width": 195,
+					"x": 240.173828125,
+					"y": 547.42047119140625
+				},
+				"class": {
+					"id": "77697265-4576-4C11-899B-6F11F3275D36",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"MB": {
+						"type": "float",
+						"value": 1
+					},
+					"MR": {
+						"type": "float",
+						"value": 1
+					},
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"time": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"bitdepth",
+					"bypass",
+					"instances",
+					"resolution-absolute",
+					"resolution-mode",
+					"resolution-relative"
+				],
+				"name": "ISF",
+				"thumbnail_visible": true
+			},
+			"78": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"unipolar": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 130.711212158203125,
+					"width": 195,
+					"x": -14.826171875,
+					"y": 600.42047119140625
+				},
+				"class": {
+					"id": "77697265-ED9B-4BEC-B3D4-43AC04731CBA",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"amplitude": {
+						"type": "float",
+						"value": 1
+					},
+					"frequency": {
+						"type": "float",
+						"value": 0.25
+					},
+					"offset": {
+						"type": "float",
+						"value": 0
+					},
+					"phase-offset": {
+						"type": "float",
+						"value": 0
+					},
+					"reset-phase": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances",
+					"reset-phase",
+					"unipolar"
+				],
+				"name": "Sine",
+				"thumbnail_visible": true
+			},
+			"79": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"unipolar": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 130.711212158203125,
+					"width": 195,
+					"x": -14.826171875,
+					"y": 760.42047119140625
+				},
+				"class": {
+					"id": "77697265-ED9B-4BEC-B3D4-43AC04731CBA",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"amplitude": {
+						"type": "float",
+						"value": 1
+					},
+					"frequency": {
+						"type": "float",
+						"value": 0.25
+					},
+					"offset": {
+						"type": "float",
+						"value": 0
+					},
+					"phase-offset": {
+						"type": "float",
+						"value": 0.5
+					},
+					"reset-phase": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances",
+					"reset-phase",
+					"unipolar"
+				],
+				"name": "Sine",
+				"thumbnail_visible": true
+			},
+			"80": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 132,
+					"x": 495.173828125,
+					"y": 547.42047119140625
+				},
+				"class": {
+					"id": "77697265-BEEA-4D38-8EE5-0EBA4CBD0AEE",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Texture Out",
+				"thumbnail_visible": true
+			},
+			"81": {
+				"attributes": {
+					"alignment": {
+						"type": "integer",
+						"value": 0
+					},
+					"fill": {
+						"type": "bool",
+						"value": false
+					},
+					"font-size": {
+						"type": "float",
+						"value": 19
+					},
+					"text": {
+						"type": "string",
+						"value": "EXAMPLE\nIn this example we’ve created two inputs called Mod Red and Mod Blue by writing a tag for them in the JSON blob of the shader. This gives us new inputs to play with. "
+					}
+				},
+				"bounds": {
+					"height": 475.093475341796875,
+					"width": 1085.7470703125,
+					"x": -180.826171875,
+					"y": 445.3270263671875
+				},
+				"class": {
+					"id": "77697265-3C1D-467D-A722-0FC566538374",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"alignment",
+					"fill",
+					"font-size",
+					"text"
+				],
+				"name": "Group",
+				"thumbnail_visible": true
+			},
+			"82": {
+				"attributes": {
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"fragment-shader": {
+						"type": "resourceIsf",
+						"value": {
+							"path": {
+								"main": "",
+								"sub": ""
+							},
+							"value": null
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 444.5,
+					"y": 743
+				},
+				"class": {
+					"id": "77697265-4576-4C11-899B-6F11F3275D36",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"time": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"bitdepth",
+					"bypass",
+					"instances",
+					"resolution-absolute",
+					"resolution-mode",
+					"resolution-relative"
+				],
+				"name": "ISF",
+				"thumbnail_visible": true
+			},
+			"83": {
+				"attributes": {
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"fragment-shader": {
+						"type": "resourceIsf",
+						"value": {
+							"path": {
+								"main": "",
+								"sub": ""
+							},
+							"value": null
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 391.5,
+					"y": 77
+				},
+				"class": {
+					"id": "77697265-4576-4C11-899B-6F11F3275D36",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"time": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"bitdepth",
+					"bypass",
+					"instances",
+					"resolution-absolute",
+					"resolution-mode",
+					"resolution-relative"
+				],
+				"name": "ISF",
+				"thumbnail_visible": true
+			},
+			"85": {
+				"attributes": {
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"fragment-shader": {
+						"type": "resourceIsf",
+						"value": {
+							"path": {
+								"main": "Resource\/ISF\/ISF_Example.isf",
+								"sub": ""
+							},
+							"value": {
+								"inputs": [
+									{
+										"defaultValue": 1,
+										"label": "Mod Red",
+										"name": "MR",
+										"type": "float"
+									},
+									{
+										"defaultValue": 1,
+										"label": "Mod Blue",
+										"name": "MB",
+										"type": "float"
+									}
+								]
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 6,
+					"y": 28.6697998046875
+				},
+				"class": {
+					"id": "77697265-4576-4C11-899B-6F11F3275D36",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"MB": {
+						"type": "float",
+						"value": 1
+					},
+					"MR": {
+						"type": "float",
+						"value": 1
+					},
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"time": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"bitdepth",
+					"bypass",
+					"instances",
+					"resolution-absolute",
+					"resolution-mode",
+					"resolution-relative"
+				],
+				"name": "ISF",
+				"thumbnail_visible": true
+			}
+		},
+		"ui": {
+			"camera": {
+				"x": -375.5,
+				"y": -83,
+				"zoom": 1
+			},
+			"selection": [
+				"73"
+			]
+		}
+	},
+	"ui": {
+		"audio": {
+			"routing": {
+				"in": {},
+				"out": []
+			}
+		},
+		"deviceConnections": {
+			"input": {}
+		},
+		"transport": {
+			"bpm": 120,
+			"time-signature": [
+				4,
+				4
+			]
+		},
+		"video": {
+			"routing": {
+				"out": {
+					"Display 1": null,
+					"Display 2": null,
+					"Display 3": null,
+					"Display 4": null
+				}
+			}
+		}
+	}
+}

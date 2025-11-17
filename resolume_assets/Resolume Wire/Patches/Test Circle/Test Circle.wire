@@ -1,0 +1,324 @@
+{
+	"formatVersion": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"patch": {
+		"connections": [
+			{
+				"from": [
+					6,
+					"output0"
+				],
+				"to": [
+					9,
+					"channel0"
+				]
+			},
+			{
+				"from": [
+					7,
+					"output0"
+				],
+				"to": [
+					9,
+					"channel1"
+				]
+			}
+		],
+		"inputOrder": {
+			"groups": {},
+			"roots": []
+		},
+		"meta": {
+			"author": "",
+			"category": "source",
+			"deploymentTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 0
+				}
+			},
+			"description": "",
+			"displayName": "Test Circle",
+			"identifier": "a98ce7ff-05e0-48b8-81ae-85c72b698138",
+			"licenseName": "",
+			"mail": "",
+			"originalTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 9
+				}
+			},
+			"quality": 32856,
+			"resolution": {
+				"height": 1080,
+				"width": 1920
+			},
+			"saveTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 9
+				}
+			},
+			"thumbnail": "",
+			"url": "",
+			"vendor": ""
+		},
+		"nextNodeId": 11,
+		"nodes": {
+			"1": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"resolution": {
+						"type": "integer",
+						"value": 48
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 1317,
+					"y": 331
+				},
+				"class": {
+					"id": "77697265-E5C4-924B-BE62-F4FB3F2F3CA9",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"radius": {
+						"type": "float",
+						"value": 1
+					},
+					"uvs": {
+						"type": "box2d",
+						"value": {
+							"max": [
+								1,
+								1
+							],
+							"min": [
+								0,
+								0
+							]
+						}
+					}
+				},
+				"hidden": [
+					"resolution",
+					"instances",
+					"uvs"
+				],
+				"name": "Circle",
+				"thumbnail_visible": true
+			},
+			"6": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"resolution": {
+						"type": "integer",
+						"value": 48
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 1406,
+					"y": 548
+				},
+				"class": {
+					"id": "77697265-E5C4-924B-BE62-F4FB3F2F3CA9",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"radius": {
+						"type": "float",
+						"value": 0.33333298563957214
+					},
+					"uvs": {
+						"type": "box2d",
+						"value": {
+							"max": [
+								1,
+								1
+							],
+							"min": [
+								0,
+								0
+							]
+						}
+					}
+				},
+				"hidden": [
+					"resolution",
+					"instances",
+					"uvs"
+				],
+				"name": "Circle",
+				"thumbnail_visible": true
+			},
+			"7": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"resolution": {
+						"type": "integer",
+						"value": 48
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 1414,
+					"y": 631
+				},
+				"class": {
+					"id": "77697265-E5C4-924B-BE62-F4FB3F2F3CA9",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"radius": {
+						"type": "float",
+						"value": 0.34999999403953552
+					},
+					"uvs": {
+						"type": "box2d",
+						"value": {
+							"max": [
+								1,
+								1
+							],
+							"min": [
+								0,
+								0
+							]
+						}
+					}
+				},
+				"hidden": [
+					"resolution",
+					"instances",
+					"uvs"
+				],
+				"name": "Circle",
+				"thumbnail_visible": true
+			},
+			"9": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"num-channels": {
+						"type": "integer",
+						"value": 2
+					},
+					"type": {
+						"type": "type",
+						"value": "geometry2d"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 1740,
+					"y": 577
+				},
+				"class": {
+					"id": "77697265-3732-42da-653e-b641d4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"channel0": {
+						"type": "geometry2d",
+						"value": null
+					},
+					"channel1": {
+						"type": "geometry2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"type",
+					"flow",
+					"num-channels",
+					"input0-dimensions",
+					"input1-dimensions"
+				],
+				"name": "Join",
+				"thumbnail_visible": true
+			}
+		},
+		"ui": {
+			"camera": {
+				"x": 781,
+				"y": 9,
+				"zoom": 1
+			},
+			"selection": []
+		}
+	},
+	"ui": {
+		"audio": {
+			"routing": {
+				"in": {},
+				"out": []
+			}
+		},
+		"deviceConnections": {
+			"input": {}
+		},
+		"transport": {
+			"bpm": 120,
+			"time-signature": [
+				4,
+				4
+			]
+		},
+		"video": {
+			"routing": {
+				"out": {
+					"Display 1": null,
+					"Display 2": null,
+					"Display 3": null,
+					"Display 4": null,
+					"Syphon": null
+				}
+			}
+		}
+	}
+}

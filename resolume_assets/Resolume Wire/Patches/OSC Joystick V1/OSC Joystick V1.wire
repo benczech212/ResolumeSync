@@ -1,0 +1,1037 @@
+{
+	"formatVersion": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"patch": {
+		"connections": [
+			{
+				"from": [
+					3,
+					"output"
+				],
+				"to": [
+					5,
+					"osc"
+				]
+			},
+			{
+				"from": [
+					9,
+					"pattern"
+				],
+				"to": [
+					10,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					10,
+					"output0"
+				],
+				"to": [
+					5,
+					"address"
+				]
+			},
+			{
+				"from": [
+					5,
+					"parameter1"
+				],
+				"to": [
+					21,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					23,
+					"output"
+				],
+				"to": [
+					24,
+					"input"
+				]
+			},
+			{
+				"from": [
+					21,
+					"output0"
+				],
+				"to": [
+					23,
+					"input"
+				]
+			},
+			{
+				"from": [
+					26,
+					"output0"
+				],
+				"to": [
+					9,
+					"size"
+				]
+			},
+			{
+				"from": [
+					26,
+					"output0"
+				],
+				"to": [
+					25,
+					"size"
+				]
+			},
+			{
+				"from": [
+					25,
+					"pattern"
+				],
+				"to": [
+					27,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					27,
+					"output"
+				],
+				"to": [
+					23,
+					"position"
+				]
+			}
+		],
+		"inputOrder": {
+			"groups": {},
+			"roots": [
+				{
+					"node": 3
+				}
+			]
+		},
+		"meta": {
+			"author": "",
+			"category": "source",
+			"deploymentTarget": {
+				"branch": "unknown",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 0
+				}
+			},
+			"description": "",
+			"displayName": "OSC Joystick V1",
+			"identifier": "c7ef76bf-bee5-4e35-a6af-703232cf3bcf",
+			"licenseName": "",
+			"mail": "",
+			"originalTarget": {
+				"branch": "unknown",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 11,
+					"patch": 0
+				}
+			},
+			"quality": 32856,
+			"resolution": {
+				"height": 1080,
+				"width": 1920
+			},
+			"saveTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 9
+				}
+			},
+			"thumbnail": "",
+			"url": "",
+			"vendor": ""
+		},
+		"nextNodeId": 28,
+		"nodes": {
+			"10": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 223,
+					"y": 832
+				},
+				"class": {
+					"id": "77697265-5852-33AB-89e5-F52a24ca2d50",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "string",
+						"value": "\/czechb\/joystick\/axis\/"
+					},
+					"input1": {
+						"type": "string",
+						"value": [
+							"",
+							"",
+							"",
+							""
+						]
+					},
+					"separator": {
+						"type": "string",
+						"value": ""
+					}
+				},
+				"hidden": [
+					"flow",
+					"size",
+					"input0-dimensions",
+					"input1-dimensions"
+				],
+				"name": "Concatenate",
+				"thumbnail_visible": true
+			},
+			"2": {
+				"attributes": {
+					"alignment": {
+						"type": "integer",
+						"value": 0
+					},
+					"fill": {
+						"type": "bool",
+						"value": true
+					},
+					"font-size": {
+						"type": "float",
+						"value": 19
+					},
+					"text": {
+						"type": "string",
+						"value": "OSC\n\nWire can both read and write OSC. This enables you to get OSC data into your patch. A common use case is to create a custom TouchOSC application on an Ipad or smartphone to control your patch, source or effect.\n\nWriting OSC enables you to get data out of your patch into other applications. Let's say you want to send the luminescence of your output to Ableton where it will modulate a filter. OSC Write is the node for you.\n\nTo get OSC into Wire simply use the OSC In node and connect it to the Read OSC node. Specify the address and you are off to the races.\n\nTo get  OSC out of wire use the Write OSC in conjunction with the OSC Out node.\n\nThe amount of parameters can be set in the inspector."
+					}
+				},
+				"bounds": {
+					"height": 279.40350341796875,
+					"width": 1046.9403076171875,
+					"x": 227.574859619140625,
+					"y": 270.811767578125
+				},
+				"class": {
+					"id": "77697265-3C1D-467D-A722-0FC566538374",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffd0c117",
+				"constants": {},
+				"hidden": [
+					"text",
+					"alignment",
+					"font-size",
+					"fill"
+				],
+				"name": "Comment",
+				"thumbnail_visible": true
+			},
+			"21": {
+				"attributes": {
+					"decimals-type": {
+						"type": "type",
+						"value": "integer"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 4
+					},
+					"trimZeroes-type": {
+						"type": "type",
+						"value": "bool"
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 844.58349609375,
+					"y": 747.8939208984375
+				},
+				"class": {
+					"id": "77697265-5852-4454-89e5-61a24cea2d50",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"decimals": {
+						"type": "integer",
+						"value": [
+							3,
+							3,
+							3,
+							3
+						]
+					},
+					"input0": {
+						"type": "float",
+						"value": [
+							0.00347275519743562,
+							-0.00244818790815771,
+							0,
+							0.01195992343127728
+						]
+					},
+					"trimZeroes": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false
+						]
+					}
+				},
+				"hidden": [
+					"input0-type",
+					"decimals-type",
+					"trimZeroes-type",
+					"flow",
+					"instances"
+				],
+				"name": "String",
+				"thumbnail_visible": true
+			},
+			"23": {
+				"attributes": {
+					"alignment-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"alignmentvert-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"bypass-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"font": {
+						"type": "string",
+						"value": "Arial"
+					},
+					"glowin-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"glowout-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"linewidth-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"material-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"outlinecolor-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"outlinewidth-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"position-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"reduce": {
+						"type": "bool",
+						"value": false
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"rotation-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"scale-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"spacing-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"style": {
+						"type": "string",
+						"value": "Regular"
+					}
+				},
+				"bounds": {
+					"height": 226,
+					"width": 195,
+					"x": 1456.925048828125,
+					"y": 753.36126708984375
+				},
+				"class": {
+					"id": "77697265-E2EC-4F1B-901A-CEFC474D3C07",
+					"version": 5
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"alignment": {
+						"type": "integer",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"alignmentvert": {
+						"type": "integer",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"bypass": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false
+						]
+					},
+					"glowin": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"glowout": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input": {
+						"type": "string",
+						"value": [
+							"0.003",
+							"-0.002",
+							"0.000",
+							"0.012"
+						]
+					},
+					"linewidth": {
+						"type": "float",
+						"value": [
+							1920,
+							1920,
+							1920,
+							1920
+						]
+					},
+					"material": {
+						"type": "color",
+						"value": [
+							[
+								1,
+								1,
+								1,
+								1
+							],
+							[
+								1,
+								1,
+								1,
+								1
+							],
+							[
+								1,
+								1,
+								1,
+								1
+							],
+							[
+								1,
+								1,
+								1,
+								1
+							]
+						]
+					},
+					"outlinecolor": {
+						"type": "color",
+						"value": [
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							]
+						]
+					},
+					"outlinewidth": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					},
+					"rotation": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"spacing": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					}
+				},
+				"hidden": [
+					"font",
+					"style",
+					"bypass-dimensions",
+					"input-dimensions",
+					"linewidth-dimensions",
+					"position-dimensions",
+					"alignment-dimensions",
+					"alignmentvert-dimensions",
+					"material-dimensions",
+					"spacing-dimensions",
+					"scale-dimensions",
+					"rotation-dimensions",
+					"outlinecolor-dimensions",
+					"outlinewidth-dimensions",
+					"glowin-dimensions",
+					"glowout-dimensions",
+					"bypass",
+					"rotation",
+					"outlinecolor",
+					"outlinewidth",
+					"glowin",
+					"glowout",
+					"resolution-mode",
+					"resolution-relative",
+					"resolution-absolute",
+					"bitdepth",
+					"reduce"
+				],
+				"name": "Text Render",
+				"thumbnail_visible": true
+			},
+			"24": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 132,
+					"x": 1780.59130859375,
+					"y": 751.17431640625
+				},
+				"class": {
+					"id": "77697265-BEEA-4D38-8EE5-0EBA4CBD0AEE",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Texture Out",
+				"thumbnail_visible": true
+			},
+			"25": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"include-max": {
+						"type": "bool",
+						"value": true
+					},
+					"max-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"min-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"pattern-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"size": {
+						"type": "integer",
+						"value": 4
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 1111.5,
+					"y": 919
+				},
+				"class": {
+					"id": "77697265-A48B-4AF9-8975-E3063B037D4C",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"max": {
+						"type": "float",
+						"value": 200
+					},
+					"min": {
+						"type": "float",
+						"value": -200
+					}
+				},
+				"hidden": [
+					"include-max",
+					"min-type",
+					"max-type",
+					"pattern-type",
+					"flow"
+				],
+				"name": "Linear",
+				"thumbnail_visible": true
+			},
+			"26": {
+				"attributes": {
+					"defaultValue-type": {
+						"type": "type",
+						"value": "null"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input0": {
+						"type": "integer",
+						"value": 4
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "integer"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": -247.5,
+					"y": 1056
+				},
+				"class": {
+					"id": "77697265-0A11-4E95-9584-4ECE0708B834",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"input0-type",
+					"defaultValue-type",
+					"flow",
+					"instances"
+				],
+				"name": "Int",
+				"thumbnail_visible": true
+			},
+			"27": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 4
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 1395.5,
+					"y": 1123
+				},
+				"class": {
+					"id": "77697265-E7EF-4944-8FC2-D808EE0433CB",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances"
+				],
+				"name": "Float2",
+				"thumbnail_visible": true
+			},
+			"3": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 227,
+					"y": 610
+				},
+				"class": {
+					"id": "77697265-6489-4B7E-A024-A50A1F4C47E4",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "osc",
+						"value": null
+					}
+				},
+				"hidden": [
+					"input",
+					"instances",
+					"flow"
+				],
+				"name": "OSC In",
+				"thumbnail_visible": true
+			},
+			"5": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 4
+					},
+					"parameter-number": {
+						"type": "integer",
+						"value": 1
+					},
+					"parameter-type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 483,
+					"y": 692
+				},
+				"class": {
+					"id": "77697265-48C4-40C4-A756-81D6711CD472",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"address": {
+						"type": "string",
+						"value": [
+							"\/czechb\/joystick\/axis\/",
+							"\/czechb\/joystick\/axis\/",
+							"\/czechb\/joystick\/axis\/",
+							"\/czechb\/joystick\/axis\/"
+						]
+					},
+					"osc": {
+						"type": "osc",
+						"value": [
+							null,
+							null,
+							null,
+							null
+						]
+					}
+				},
+				"hidden": [
+					"parameter-number",
+					"parameter-type1",
+					"instances"
+				],
+				"name": "Read OSC",
+				"thumbnail_visible": true
+			},
+			"9": {
+				"attributes": {
+					"begin-type": {
+						"type": "type",
+						"value": "integer"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"pattern-type": {
+						"type": "type",
+						"value": "integer"
+					},
+					"size": {
+						"type": "integer",
+						"value": 4
+					},
+					"step-type": {
+						"type": "type",
+						"value": "integer"
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": -300,
+					"y": 778
+				},
+				"class": {
+					"id": "77697265-4b9a-a7f6-922e86685f6c",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"begin": {
+						"type": "integer",
+						"value": 0
+					},
+					"step": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"hidden": [
+					"begin-type",
+					"step-type",
+					"pattern-type",
+					"flow"
+				],
+				"name": "Sequence",
+				"thumbnail_visible": true
+			}
+		},
+		"ui": {
+			"camera": {
+				"x": -652.16278076171875,
+				"y": 375.2803955078125,
+				"zoom": 0.89432001113891602
+			},
+			"selection": []
+		}
+	},
+	"ui": {
+		"audio": {
+			"routing": {
+				"in": {},
+				"out": []
+			}
+		},
+		"deviceConnections": {
+			"input": {}
+		},
+		"transport": {
+			"bpm": 120,
+			"time-signature": [
+				4,
+				4
+			]
+		},
+		"video": {
+			"routing": {
+				"out": {
+					"Display 1": null,
+					"Display 2": null,
+					"Display 3": null,
+					"Display 4": null,
+					"Syphon": null
+				}
+			}
+		}
+	}
+}

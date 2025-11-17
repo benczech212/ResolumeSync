@@ -1,0 +1,44 @@
+/*{
+    "CREDIT": "Ben + GPT",
+    "DESCRIPTION": "Turns black to transparent. Optional tolerance for near-black and an invert toggle.",
+    "CATEGORIES": [ "filter", "keying", "alpha" ],
+    "INPUTS": [
+        { "NAME": "inputImage", "TYPE": "image" },
+        {
+            "NAME": "tolerance",
+            "TYPE": "float",
+            "LABEL": "Black Tolerance",
+            "DEFAULT": 0.0,
+            "MIN": 0.0,
+            "MAX": 0.05
+        },
+        {
+            "NAME": "invert",
+            "TYPE": "bool",
+            "LABEL": "Invert Mask",
+            "DEFAULT": false
+        }
+    ]
+}*/
+
+void main() {
+    vec2 uv = isf_FragNormCoord.xy;
+    vec4 c = IMG_NORM_PIXEL(inputImage, uv);
+
+    bool isBlack = false;
+
+    if (tolerance <= 0.0) {
+        // Exact black only
+        isBlack = (c.r == 0.0 && c.g == 0.0 && c.b == 0.0);
+    } else {
+        // Near-black within tolerance
+        isBlack = (c.r <= tolerance && c.g <= tolerance && c.b <= tolerance);
+    }
+
+    if (invert) {
+        isBlack = !isBlack;
+    }
+
+    // Make black transparent, keep original RGB (alpha-aware pipeline will handle it)
+    gl_FragColor = vec4(c.rgb, isBlack ? 0.0 : c.a);
+}

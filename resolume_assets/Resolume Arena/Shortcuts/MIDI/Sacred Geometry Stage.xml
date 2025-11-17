@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MidiShortcutPreset name="Sacred Geometry Stage" presetId="598456687">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="22" microVersion="9" revision="47596"/>
+	<ShortcutManager name="MIDIShortcutManagerShortcuts">
+		<Shortcut name="Shortcut" uniqueId="1752159980889" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/layers/12/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/12/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659314" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1752159980885" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659312" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1752159980838" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/layers/21/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/21/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713661104" value="0.32283464566929132022" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1752159980887" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/groups/2/master" translationType="1" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/groups/2/master" translationType="1" allowedTranslationTypes="19"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659313" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1752159980893" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/layers/18/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/18/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659316" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1752159980895" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/groups/4/master" translationType="1" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/groups/4/master" translationType="1" allowedTranslationTypes="19"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659317" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1752159980872" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/layers/19/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/19/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659318" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1752159980898" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/layers/20/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/20/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659319" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1752159980891" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/groups/3/master" translationType="1" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/groups/3/master" translationType="1" allowedTranslationTypes="19"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659315" value="0" numSteps="128"/>
+		</Shortcut>
+	</ShortcutManager>
+</MidiShortcutPreset>
+

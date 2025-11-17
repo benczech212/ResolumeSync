@@ -1,0 +1,1898 @@
+{
+	"formatVersion": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"patch": {
+		"connections": [
+			{
+				"from": [
+					0,
+					"output"
+				],
+				"to": [
+					4,
+					"channel0"
+				]
+			},
+			{
+				"from": [
+					1,
+					"output"
+				],
+				"to": [
+					4,
+					"channel1"
+				]
+			},
+			{
+				"from": [
+					2,
+					"output"
+				],
+				"to": [
+					4,
+					"channel2"
+				]
+			},
+			{
+				"from": [
+					3,
+					"output"
+				],
+				"to": [
+					4,
+					"channel3"
+				]
+			},
+			{
+				"from": [
+					4,
+					"output"
+				],
+				"to": [
+					11,
+					"input"
+				]
+			},
+			{
+				"from": [
+					11,
+					"output"
+				],
+				"to": [
+					5,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					15,
+					"output0"
+				],
+				"to": [
+					16,
+					"input"
+				]
+			},
+			{
+				"from": [
+					5,
+					"output0"
+				],
+				"to": [
+					17,
+					"palette"
+				]
+			},
+			{
+				"from": [
+					17,
+					"output"
+				],
+				"to": [
+					15,
+					"input"
+				]
+			},
+			{
+				"from": [
+					16,
+					"output0"
+				],
+				"to": [
+					14,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					15,
+					"output0"
+				],
+				"to": [
+					14,
+					"input2"
+				]
+			},
+			{
+				"from": [
+					14,
+					"output"
+				],
+				"to": [
+					19,
+					"input"
+				]
+			},
+			{
+				"from": [
+					19,
+					"output"
+				],
+				"to": [
+					18,
+					"input"
+				]
+			}
+		],
+		"inputOrder": {
+			"groups": {},
+			"roots": [
+				{
+					"node": 0
+				},
+				{
+					"node": 1
+				},
+				{
+					"node": 2
+				},
+				{
+					"node": 3
+				}
+			]
+		},
+		"meta": {
+			"author": "Benjamin Czech",
+			"category": "source",
+			"deploymentTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 0
+				}
+			},
+			"description": "",
+			"displayName": "Present Wrappig",
+			"identifier": "439514d5-9481-416e-be32-df22f3ae62bf",
+			"licenseName": "",
+			"mail": "",
+			"originalTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 2
+				}
+			},
+			"quality": 32856,
+			"resolution": {
+				"height": 1080,
+				"width": 1920
+			},
+			"saveTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 2
+				}
+			},
+			"thumbnail": "",
+			"url": "",
+			"vendor": "Watt"
+		},
+		"nextNodeId": 20,
+		"nodes": {
+			"0": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 511,
+					"y": 371
+				},
+				"class": {
+					"id": "77697265-4C9E-4F75-B4F0-5415B713EA1B",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "color",
+						"value": [
+							1,
+							0,
+							0,
+							1
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Color 1",
+				"thumbnail_visible": true
+			},
+			"1": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 511,
+					"y": 479
+				},
+				"class": {
+					"id": "77697265-4C9E-4F75-B4F0-5415B713EA1B",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "color",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Color 2",
+				"thumbnail_visible": true
+			},
+			"11": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"output-size": {
+						"type": "integer",
+						"value": 128
+					},
+					"type": {
+						"type": "type",
+						"value": "color"
+					},
+					"wrapping": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 1113,
+					"y": 391
+				},
+				"class": {
+					"id": "77697265-3732-42da-773e-b531E4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "color",
+						"value": [
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							]
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input-dimensions",
+					"type",
+					"wrapping"
+				],
+				"name": "Expand",
+				"thumbnail_visible": true
+			},
+			"14": {
+				"attributes": {
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"input-count": {
+						"type": "integer",
+						"value": 2
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 2516,
+					"y": 249
+				},
+				"class": {
+					"id": "77697265-A270-4D60-911C-A88B1BE6369A",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"input1": {
+						"type": "texture2d",
+						"value": null
+					},
+					"input2": {
+						"type": "texture2d",
+						"value": null
+					},
+					"mode": {
+						"type": "integer",
+						"value": 7
+					},
+					"opacity1": {
+						"type": "float",
+						"value": 1
+					},
+					"opacity2": {
+						"type": "float",
+						"value": 1
+					}
+				},
+				"hidden": [
+					"bitdepth",
+					"bypass",
+					"input-count",
+					"instances",
+					"mode",
+					"resolution-absolute",
+					"resolution-mode",
+					"resolution-relative"
+				],
+				"name": "Video Mixer",
+				"thumbnail_visible": true
+			},
+			"15": {
+				"attributes": {
+					"anchor-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input-type": {
+						"type": "type",
+						"value": "texture2d"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"rotation-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"scale-anchor-type": {
+						"type": "type",
+						"value": "bool"
+					},
+					"scale-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"translation-type": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 1991,
+					"y": 270
+				},
+				"class": {
+					"id": "77697265-9225-4009-9D2D-5F898E94CC33",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"anchor": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"rotation": {
+						"type": "float",
+						"value": 0.125
+					},
+					"scale": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"scale-anchor": {
+						"type": "bool",
+						"value": true
+					},
+					"translation": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"anchor-type",
+					"flow",
+					"input-type",
+					"instances",
+					"rotation-type",
+					"scale-anchor",
+					"scale-anchor-type",
+					"scale-type",
+					"translation-type"
+				],
+				"name": "Transform",
+				"thumbnail_visible": true
+			},
+			"16": {
+				"attributes": {
+					"anchor-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input-type": {
+						"type": "type",
+						"value": "texture2d"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"rotation-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"scale-anchor-type": {
+						"type": "type",
+						"value": "bool"
+					},
+					"scale-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"translation-type": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 2246,
+					"y": 335
+				},
+				"class": {
+					"id": "77697265-9225-4009-9D2D-5F898E94CC33",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"anchor": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"rotation": {
+						"type": "float",
+						"value": 0.25
+					},
+					"scale": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"scale-anchor": {
+						"type": "bool",
+						"value": true
+					},
+					"translation": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"anchor-type",
+					"flow",
+					"input-type",
+					"instances",
+					"rotation-type",
+					"scale-anchor",
+					"scale-anchor-type",
+					"scale-type",
+					"translation-type"
+				],
+				"name": "Transform",
+				"thumbnail_visible": true
+			},
+			"17": {
+				"attributes": {
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"method": {
+						"type": "integer",
+						"value": 1
+					},
+					"mode": {
+						"type": "integer",
+						"value": 1
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							3840,
+							3840
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							2,
+							2
+						]
+					},
+					"type": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 1717,
+					"y": 289
+				},
+				"class": {
+					"id": "77697265-FCE2-4EBE-8C81-99C578524A24",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"dither": {
+						"type": "float",
+						"value": 0
+					},
+					"palette": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"bitdepth",
+					"bypass",
+					"dither",
+					"instances",
+					"method",
+					"mode",
+					"resolution-absolute",
+					"resolution-mode",
+					"resolution-relative",
+					"type"
+				],
+				"name": "Gradient",
+				"thumbnail_visible": true
+			},
+			"18": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 132,
+					"x": 3137.50146484375,
+					"y": 208.7566986083984375
+				},
+				"class": {
+					"id": "77697265-BEEA-4D38-8EE5-0EBA4CBD0AEE",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Texture Out",
+				"thumbnail_visible": true
+			},
+			"19": {
+				"attributes": {
+					"input-type": {
+						"type": "type",
+						"value": "texture2d"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 153.045745849609375,
+					"width": 195,
+					"x": 2722.427490234375,
+					"y": 234.6530609130859375
+				},
+				"class": {
+					"id": "77697265-E166-45AA-AD5C-314582E985B4",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"flipX": {
+						"type": "bool",
+						"value": false
+					},
+					"flipY": {
+						"type": "bool",
+						"value": false
+					},
+					"inOut": {
+						"type": "float",
+						"value": 1
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"x": {
+						"type": "float",
+						"value": 0.5
+					},
+					"y": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"bypass",
+					"input-type",
+					"instances"
+				],
+				"name": "Mirror",
+				"thumbnail_visible": true
+			},
+			"2": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 511,
+					"y": 581
+				},
+				"class": {
+					"id": "77697265-4C9E-4F75-B4F0-5415B713EA1B",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "color",
+						"value": [
+							0,
+							0,
+							1,
+							1
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Color 3",
+				"thumbnail_visible": true
+			},
+			"3": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 511,
+					"y": 687
+				},
+				"class": {
+					"id": "77697265-4C9E-4F75-B4F0-5415B713EA1B",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "color",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Color 4",
+				"thumbnail_visible": true
+			},
+			"4": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input2-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input3-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"num-channels": {
+						"type": "integer",
+						"value": 4
+					},
+					"type": {
+						"type": "type",
+						"value": "color"
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 902,
+					"y": 379
+				},
+				"class": {
+					"id": "77697265-3732-42da-653e-b641d4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"channel0": {
+						"type": "color",
+						"value": [
+							0,
+							0,
+							0,
+							1
+						]
+					},
+					"channel1": {
+						"type": "color",
+						"value": [
+							0,
+							0,
+							0,
+							1
+						]
+					},
+					"channel2": {
+						"type": "color",
+						"value": [
+							0,
+							0,
+							0,
+							1
+						]
+					},
+					"channel3": {
+						"type": "color",
+						"value": [
+							0,
+							0,
+							0,
+							1
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"input2-dimensions",
+					"input3-dimensions",
+					"num-channels",
+					"type"
+				],
+				"name": "Join",
+				"thumbnail_visible": true
+			},
+			"5": {
+				"attributes": {
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 128
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "color"
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 2
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"sampling": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 1360,
+					"y": 408
+				},
+				"class": {
+					"id": "77697265-14E8-4C51-958C-950B50C10C70",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "color",
+						"value": [
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							],
+							[
+								0,
+								0,
+								0,
+								1
+							]
+						]
+					}
+				},
+				"hidden": [
+					"bitdepth",
+					"input0-dimensions",
+					"input0-type",
+					"resolution-absolute",
+					"resolution-mode",
+					"resolution-relative",
+					"sampling"
+				],
+				"name": "Texture from Data",
+				"thumbnail_visible": true
+			}
+		},
+		"ui": {
+			"camera": {
+				"x": 549.89520263671875,
+				"y": -242.41925048828125,
+				"zoom": 0.83635121583938599
+			},
+			"selection": []
+		}
+	},
+	"ui": {
+		"audio": {
+			"routing": {
+				"in": {},
+				"out": []
+			}
+		},
+		"deviceConnections": {
+			"input": {}
+		},
+		"transport": {
+			"bpm": 120,
+			"time-signature": [
+				4,
+				4
+			]
+		},
+		"video": {
+			"routing": {
+				"out": {
+					"Display 1": null,
+					"Display 2": null,
+					"Display 3": null
+				}
+			}
+		}
+	}
+}

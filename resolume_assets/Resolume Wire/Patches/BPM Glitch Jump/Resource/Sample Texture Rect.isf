@@ -1,0 +1,111 @@
+/*{
+  "CREDIT": "Ben Czech + ChatGPT",
+  "DESCRIPTION": "Keep/extract the part of a texture that overlaps a rotatable rectangle, with feather, border, and invert.",
+  "CATEGORIES": [ "filter", "mask", "alpha", "transform" ],
+  "INPUTS": [
+    { "NAME": "inputImage", "TYPE": "image", "LABEL": "Input Image" },
+
+    { "NAME": "rectCenter", "TYPE": "point2D", "LABEL": "Center (UV)", "DEFAULT": [0.5, 0.5] },
+    { "NAME": "rectSize",   "TYPE": "point2D", "LABEL": "Size (UV)",   "DEFAULT": [0.4, 0.4], "MIN": [0.0, 0.0], "MAX": [1.0, 1.0] },
+    { "NAME": "rectAngle",  "TYPE": "float",   "LABEL": "Angle (deg)", "DEFAULT": 0.0, "MIN": -360.0, "MAX": 360.0 },
+
+    { "NAME": "feather",    "TYPE": "float",   "LABEL": "Feather (UV)", "DEFAULT": 0.02, "MIN": 0.0, "MAX": 0.25 },
+    { "NAME": "invert",     "TYPE": "bool",    "LABEL": "Invert (keep outside)", "DEFAULT": false },
+
+    { "NAME": "mode",       "TYPE": "long",    "LABEL": "Mode", "DEFAULT": 0,
+      "VALUES": [0, 1],
+      "LABELS": ["Mask In Place", "Extract (stretch to full)"]
+    },
+
+    { "NAME": "border",       "TYPE": "float", "LABEL": "Border Thk (UV)", "DEFAULT": 0.0, "MIN": 0.0, "MAX": 0.1 },
+    { "NAME": "borderColor",  "TYPE": "color", "LABEL": "Border Color", "DEFAULT": [1.0, 1.0, 1.0, 1.0] }
+  ]
+}*/
+
+vec2 rotate2D(vec2 p, float rad) {
+    float s = sin(rad), c = cos(rad);
+    return mat2(c, -s, s, c) * p;
+}
+
+// Signed distance to axis-aligned box (centered at origin) with half-size hs
+// Negative inside, positive outside.
+float sdBox(vec2 p, vec2 hs) {
+    vec2 d = abs(p) - hs;
+    return length(max(d, 0.0)) + min(max(d.x, d.y), 0.0);
+}
+
+// Feathered inside mask from a box SDF
+float featherMask(float dist, float f) {
+    // dist <= 0 inside, > 0 outside. Feather f is width of falloff band.
+    float fw = max(f, 1e-6);
+    return 1.0 - smoothstep(0.0, fw, dist);
+}
+
+void main() {
+    // Normalized UV 0..1
+    vec2 uv = isf_FragNormCoord.xy;
+    vec2 center = rectCenter;
+    vec2 sizeUV = max(rectSize, vec2(1e-6));  // avoid degenerate
+    vec2 hs = 0.5 * sizeUV;
+
+    // Convert degrees to radians for rotation
+    float angleRad = radians(rectAngle);
+
+    // Rect-local space: translate, then rotate so the rect is axis-aligned
+    vec2 p = uv - center;
+    p = rotate2D(p, -angleRad);
+
+    // Distance from rect edge
+    float dist = sdBox(p, hs);
+
+    // Base inside mask with feather
+    float m = featherMask(dist, feather);
+
+    // Optional inversion (keep outside instead of inside)
+    if (invert) {
+        m = 1.0 - m;
+    }
+
+    // Border band (centered on the edge). If invert=false, show border just inside;
+    // if invert=true, show border just outside. We do that by multiplying by the
+    // appropriate side of the mask.
+    float borderMask = 0.0;
+    if (border > 0.0) {
+        float fw = max(feather, 1e-6);
+        // Band around |dist| ≈ 0, thickness 'border' with soft falloff = feather
+        float ring = 1.0 - smoothstep(border, border + fw, abs(dist));
+        if (!invert) {
+            // inside side
+            float inside = 1.0 - smoothstep(0.0, fw, dist);
+            borderMask = ring * inside;
+        } else {
+            // outside side
+            float outside = smoothstep(0.0, fw, dist);
+            borderMask = ring * outside;
+        }
+    }
+
+    vec4 baseCol = IMG_NORM_PIXEL(inputImage, uv);
+    vec4 outCol;
+
+    if (mode == 0) {
+        // MASK IN PLACE:
+        // Composite border over base, then cut alpha by mask.
+        vec4 withBorder = mix(baseCol, borderColor, clamp(borderMask, 0.0, 1.0));
+        outCol = vec4(withBorder.rgb, withBorder.a * clamp(m, 0.0, 1.0));
+    } else {
+        // EXTRACT (stretch rect to full frame):
+        // Map rect-local coordinates p (-hs..hs) to [0..1] inside the rectangle,
+        // then sample original texture at the corresponding rotated/translated coords.
+        // Outside region remains transparent via m.
+        vec2 inRectUV = (p / hs) * 0.5 + 0.5;       // [-1..1] -> [0..1]
+        // Map back to source UV space:
+        vec2 srcUV = center + rotate2D((inRectUV - 0.5) * sizeUV, angleRad);
+        vec4 sampled = IMG_NORM_PIXEL(inputImage, fract(srcUV));
+
+        vec4 withBorder = mix(sampled, borderColor, clamp(borderMask, 0.0, 1.0));
+        outCol = vec4(withBorder.rgb, withBorder.a * clamp(m, 0.0, 1.0));
+    }
+
+    gl_FragColor = outCol;
+}

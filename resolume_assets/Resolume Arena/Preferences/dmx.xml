@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DmxController automapEnabled="1" artNetName="Arena DESKTOP-F0ODB0E" bindAdapter="ethernet_32769" sendArtSync="1">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="23" microVersion="2" revision="51094"/>
+	<Inputs/>
+</DmxController>
+

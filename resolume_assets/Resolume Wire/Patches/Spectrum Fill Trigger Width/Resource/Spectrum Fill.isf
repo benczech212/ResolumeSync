@@ -1,0 +1,88 @@
+/*{
+    "CREDIT": "Ben Czech + AI co-pilot",
+    "DESCRIPTION": "Keep only pixels within a hue band (circular), with Sat/Val gates, feather, and invert. Outputs original RGB where mask>0 and makes others transparent.",
+    "CATEGORIES": [ "filter", "keying", "color" ],
+    "INPUTS": [
+        { "NAME":"inputImage", "TYPE":"image", "LABEL":"Input Image" },
+
+        { "NAME":"hueCenterDeg", "TYPE":"float", "LABEL":"Hue Center (°)", "DEFAULT": 0.0, "MIN":0.0, "MAX":360.0 },
+        { "NAME":"hueWidthDeg",  "TYPE":"float", "LABEL":"Hue Width (° full band)", "DEFAULT": 40.0, "MIN": 0.0, "MAX": 180.0 },
+
+        { "NAME":"satMin", "TYPE":"float", "LABEL":"Min Saturation", "DEFAULT":0.15, "MIN":0.0, "MAX":1.0 },
+        { "NAME":"valMin", "TYPE":"float", "LABEL":"Min Value",      "DEFAULT":0.10, "MIN":0.0, "MAX":1.0 },
+
+        { "NAME":"feather", "TYPE":"float", "LABEL":"Feather (0..0.2)", "DEFAULT":0.05, "MIN":0.0, "MAX":0.3 },
+
+        { "NAME":"invert",   "TYPE":"bool",  "LABEL":"Invert Selection", "DEFAULT": false },
+        { "NAME":"maskOnly", "TYPE":"bool",  "LABEL":"Show Mask Only",   "DEFAULT": false },
+        { "NAME":"keepSrcAlpha", "TYPE":"bool", "LABEL":"Multiply by Source Alpha", "DEFAULT": true }
+    ]
+}*/
+
+vec3 rgb2hsv(vec3 c) {
+    float maxc = max(c.r, max(c.g, c.b));
+    float minc = min(c.r, min(c.g, c.b));
+    float delta = maxc - minc;
+
+    float h = 0.0;
+    if (delta > 1e-6) {
+        if (maxc == c.r) {
+            h = mod((c.g - c.b) / delta, 6.0);
+        } else if (maxc == c.g) {
+            h = ((c.b - c.r) / delta) + 2.0;
+        } else {
+            h = ((c.r - c.g) / delta) + 4.0;
+        }
+        h /= 6.0;              // 0..6 -> 0..1
+        if (h < 0.0) h += 1.0; // wrap
+    }
+    float s = (maxc <= 0.0) ? 0.0 : (delta / maxc);
+    float v = maxc;
+    return vec3(h, s, v);
+}
+
+// shortest distance on circular hue ring [0,1)
+float hueDistance(float h, float center) {
+    float d = abs(h - center);
+    return min(d, 1.0 - d);
+}
+
+void main() {
+    vec2 uv = isf_FragNormCoord.xy;
+    vec4 src = IMG_NORM_PIXEL(inputImage, uv);
+
+    // If the source is fully transparent, early out (saves a little work)
+    if (src.a <= 0.0) {
+        gl_FragColor = vec4(0.0);
+        return;
+    }
+
+    vec3 hsv = rgb2hsv(src.rgb);
+
+    // Convert degrees to normalized [0..1] hue units
+    float center = clamp(hueCenterDeg / 360.0, 0.0, 1.0);
+    float halfWidth = clamp(hueWidthDeg / 360.0, 0.0, 0.5);
+
+    // Gate out low saturation / low value before hue test
+    float gate = 1.0;
+    gate *= step(satMin, hsv.y);
+    gate *= step(valMin, hsv.z);
+
+    // Circular distance from center and smooth band edge
+    float d = hueDistance(hsv.x, center);
+    float edge = max(1e-6, feather);
+    float band = 1.0 - smoothstep(halfWidth, halfWidth + edge, d);
+
+    float mask = band * gate;
+    if (invert) mask = 1.0 - mask;
+
+    // Alpha policy
+    float outA = keepSrcAlpha ? (mask * src.a) : mask;
+
+    if (maskOnly) {
+        gl_FragColor = vec4(vec3(mask), outA);
+    } else {
+        // Premultiplied-friendly output: color scaled by mask
+        gl_FragColor = vec4(src.rgb * mask, outA);
+    }
+}

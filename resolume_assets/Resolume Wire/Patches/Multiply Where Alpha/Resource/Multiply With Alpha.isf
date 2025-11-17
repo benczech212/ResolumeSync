@@ -1,0 +1,62 @@
+/*{
+  "CREDIT": "Ben Czech",
+  "DESCRIPTION": "Multiply blend of two textures; final alpha = A.a * B.a. Optional gamma-correct multiply.",
+  "CATEGORIES": [ "mixer", "blend", "compositing" ],
+  "INPUTS": [
+    { "NAME": "inputA", "TYPE": "image", "LABEL": "Texture 1 (A)" },
+    { "NAME": "inputB", "TYPE": "image", "LABEL": "Texture 2 (B)" },
+
+    {
+      "NAME": "gammaCorrect",
+      "TYPE": "bool",
+      "LABEL": "Gamma-Correct Multiply",
+      "DEFAULT": true
+    },
+    {
+      "NAME": "gamma",
+      "TYPE": "float",
+      "LABEL": "Gamma Value",
+      "DEFAULT": 2.2,
+      "MIN": 1.0,
+      "MAX": 3.0
+    },
+    {
+      "NAME": "opacity",
+      "TYPE": "float",
+      "LABEL": "Output Opacity",
+      "DEFAULT": 1.0,
+      "MIN": 0.0,
+      "MAX": 1.0
+    }
+  ]
+}*/
+
+vec3 toLinear(vec3 c, float g)   { return pow(max(c, vec3(0.0)), vec3(g)); }
+vec3 toGamma(vec3 c, float gInv) { return pow(max(c, vec3(0.0)), vec3(gInv)); }
+
+void main() {
+    vec2 uv = isf_FragNormCoord.xy;
+
+    vec4 A = IMG_NORM_PIXEL(inputA, uv);
+    vec4 B = IMG_NORM_PIXEL(inputB, uv);
+
+    vec3 rgbOut;
+    if (gammaCorrect) {
+        // Convert to linear space, multiply, then go back to display gamma
+        float g = gamma;
+        float invG = 1.0 / max(g, 1e-6);
+        vec3 Al = toLinear(A.rgb, g);
+        vec3 Bl = toLinear(B.rgb, g);
+        vec3 Rl = Al * Bl;
+        rgbOut = toGamma(Rl, invG);
+    } else {
+        // Straight gamma-space multiply
+        rgbOut = A.rgb * B.rgb;
+    }
+
+    // Final alpha: A.a * B.a (B’s alpha gates the result as requested).
+    float aOut = A.a * B.a;
+    aOut *= opacity;
+
+    gl_FragColor = vec4(rgbOut, aOut);
+}

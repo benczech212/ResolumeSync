@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arena>
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="23" microVersion="2" revision="51094"/>
+	<Application name="Application" showSplash="1" recentCompositions="C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Snow Place 2025.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Lotus Stage.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Snow Place Like Tarpon.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Bens Workspace.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\SQR Beats Template.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Pyramid Stage.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Spectrum Fill Testing.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Halloween Window 2025.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Sacred Geometry Stage Workspace.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Petrichor Logo.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Sacred Geometry Stage WorkspaceBackup.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Flower Autofill.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Sacred Geometry Stage.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Flower of Life V2.avc
+C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Flower of Life - Practice 1.avc">
+		<Params name="Settings">
+			<Param name="CurrentCompositionFile" T="STRING" default="C:\Program Files\Resolume Arena\default\Example.avc" value="C:\Users\bencz\OneDrive\Documents\Resolume Arena\Compositions\Snow Place 2025.avc"/>
+			<ParamRange name="DefaultCompositionWidth" T="DOUBLE" default="1920" value="1920.0000000000002274">
+				<PhaseSourceStatic name="PhaseSourceStatic"/>
+			</ParamRange>
+			<ParamRange name="DefaultCompositionHeight" T="DOUBLE" default="1080" value="1080">
+				<PhaseSourceStatic name="PhaseSourceStatic"/>
+			</ParamRange>
+			<Param name="DefaultDeckCount" T="UINT32" default="3" value="3"/>
+			<Param name="DefaultLayerCount" T="UINT32" default="3" value="3"/>
+			<Param name="DefaultColumnCount" T="UINT32" default="9" value="9"/>
+			<ParamChoice name="Texture Path" default="TUP_AUTODETECT" value="TUP_AUTODETECT" storeChoices="0"/>
+			<Param name="RecordDirectory" T="STRING" default="C:\Users\bencz\OneDrive\Documents\Resolume Arena\Recorded" value="J:\recordings"/>
+			<Param name="SnapshotDirectory" T="STRING" default="C:\Users\bencz\OneDrive\Documents\Resolume Arena\Recorded" value="J:\recordings"/>
+			<Param name="RenderDirectory" T="STRING" default="C:\Users\bencz\OneDrive\Documents\Resolume Arena\Renders" value="J:\renderings"/>
+			<Param name="LastFileBrowserDirectory" T="FILE" default="C:\Program Files\Resolume Arena" value="E:"/>
+		</Params>
+		<RecordSettings>
+			<Conversion name="Conversion" Name="DXV 3 Normal Quality No Alpha" Codec="DXV 3" Format="Normal Quality, No Alpha" AutoSize="Fit" CustomSize="0" AudioEnabled="1" SampleRate="44100" BitDepth="16">
+				<OutputPath Type="2" Path="/Users/bart/Documents/Resolume Arena/Recorded"/>
+			</Conversion>
+		</RecordSettings>
+		<RenderSettings>
+			<Conversion name="Conversion" Name="DXV 3 High Quality With Alpha" Codec="DXV 3" Format="High Quality, With Alpha" AutoSize="Fit" CustomSize="0" AudioEnabled="1" SampleRate="44100" BitDepth="16">
+				<OutputPath Type="2" Path="/Users/bart/Documents/Resolume Arena/Recorded"/>
+			</Conversion>
+		</RenderSettings>
+	</Application>
+	<VideoEngine name="VideoEngine"/>
+	<AudioEngine name="AudioEngine">
+		<AudioDeviceManager name="AudioDeviceManager">
+			<AudioDeviceManagerSettings name="AudioDeviceManagerSettings" channelsUseBitmask="1">
+				<Params name="Settings">
+					<Param name="FFT Input" T="UINT64" default="0" value="3"/>
+					<Param name="SMPTE1 Input" T="UINT64" default="0" value="1"/>
+				</Params>
+			</AudioDeviceManagerSettings>
+			<AudioDeviceSettings>
+				<DEVICESETUP deviceType="Windows Audio" audioOutputDeviceName="Voicemeeter Input (VB-Audio Voicemeeter VAIO)" audioInputDeviceName="Voicemeeter Out B1 (VB-Audio Voicemeeter VAIO)" audioDeviceRate="48000.0" audioDeviceInChans="11" audioDeviceOutChans="11"/>
+			</AudioDeviceSettings>
+		</AudioDeviceManager>
+		<AudioEffectManager name="AudioEffectManager"/>
+	</AudioEngine>
+	<SmpteController name="SmpteController">
+		<Params name="Params">
+			<ParamRange name="Smpte1AudioLevel" T="DOUBLE" default="0" value="0.39634609222412109375">
+				<PhaseSourceStatic name="PhaseSourceStatic"/>
+			</ParamRange>
+		</Params>
+	</SmpteController>
+</Arena>
+

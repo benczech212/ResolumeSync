@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XmlState name="Lotus Stage - OFfice">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="23" microVersion="2" revision="51094"/>
+	<ScreenSetup name="ScreenSetup">
+		<Params name="ScreenSetupParams"/>
+		<CurrentCompositionTextureSize width="1920" height="1080"/>
+		<screens>
+			<Screen name="Screen 1" uniqueId="1760379554546">
+				<Params name="Params">
+					<Param name="Name" T="STRING" default="" value="Screen 1"/>
+					<Param name="Enabled" T="BOOL" default="1" value="1"/>
+					<Param name="Hidden" T="BOOL" default="0" value="0"/>
+				</Params>
+				<Params name="Output">
+					<ParamRange name="Opacity" T="DOUBLE" default="1" value="1">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="0" max="1"/>
+						<ValueRange name="minMax" min="0" max="1"/>
+						<ValueRange name="startStop" min="0" max="1"/>
+					</ParamRange>
+					<ParamRange name="Brightness" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Contrast" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Red" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Green" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+					<ParamRange name="Blue" T="DOUBLE" default="0" value="0">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+						<BehaviourDouble name="BehaviourDouble"/>
+						<ValueRange name="defaultRange" min="-1" max="1"/>
+						<ValueRange name="minMax" min="-1" max="1"/>
+						<ValueRange name="startStop" min="-1" max="1"/>
+					</ParamRange>
+				</Params>
+				<guides>
+					<ScreenGuide name="ScreenGuide" type="0">
+						<Params name="Params">
+							<ParamPixels name="Image"/>
+							<ParamRange name="Opacity" T="DOUBLE" default="0.25" value="0.25">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="1"/>
+								<ValueRange name="minMax" min="0" max="1"/>
+								<ValueRange name="startStop" min="0" max="1"/>
+							</ParamRange>
+						</Params>
+					</ScreenGuide>
+					<ScreenGuide name="ScreenGuide" type="1">
+						<Params name="Params">
+							<ParamPixels name="Image"/>
+							<ParamRange name="Opacity" T="DOUBLE" default="0.25" value="0.25">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="1"/>
+								<ValueRange name="minMax" min="0" max="1"/>
+								<ValueRange name="startStop" min="0" max="1"/>
+							</ParamRange>
+						</Params>
+					</ScreenGuide>
+				</guides>
+				<layers>
+					<Slice uniqueId="1760379554547">
+						<Params name="Common">
+							<Param name="Name" T="STRING" default="Layer" value="Slice"/>
+							<Param name="Enabled" T="BOOL" default="1" value="1"/>
+						</Params>
+						<Params name="Input">
+							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
+							<Param name="Input Opacity" T="BOOL" default="1" value="1"/>
+							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
+							<Param name="SoftEdgeEnable" T="BOOL" default="0" value="0"/>
+						</Params>
+						<Params name="Output">
+							<Param name="Flip" T="UINT8" default="0" value="0"/>
+							<ParamRange name="Brightness" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Contrast" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Red" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Green" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Blue" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<Param name="Is Key" T="BOOL" default="0" value="0"/>
+							<Param name="Black BG" T="BOOL" default="0" value="0"/>
+							<ParamRange name="BRed" altName="Red" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+							<ParamRange name="BGreen" altName="Green" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+							<ParamRange name="BBlue" altName="Blue" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+						</Params>
+						<InputRect orientation="0">
+							<v x="0" y="0"/>
+							<v x="1920" y="0"/>
+							<v x="1920" y="1080.0001220703125"/>
+							<v x="0" y="1080.0001220703125"/>
+						</InputRect>
+						<OutputRect orientation="0">
+							<v x="-29.50482177734375" y="-1.404998779296875"/>
+							<v x="1312.31494140625" y="-1.404998779296875"/>
+							<v x="1312.31494140625" y="771.900146484375"/>
+							<v x="-29.50482177734375" y="771.900146484375"/>
+						</OutputRect>
+						<Warper>
+							<Params name="Warper">
+								<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_LINEAR" storeChoices="0"/>
+								<Param name="Flip" T="UINT8" default="0" value="0"/>
+							</Params>
+							<BezierWarper controlWidth="7" controlHeight="7">
+								<vertices>
+									<v x="-16.85986328125" y="11.23992919921875"/>
+									<v x="204.669281005859375" y="9.132442474365234375"/>
+									<v x="426.198394775390625" y="7.02495574951171875"/>
+									<v x="647.7275390625" y="4.917469024658203125"/>
+									<v x="869.2567138671875" y="2.8099822998046875"/>
+									<v x="1090.7857666015625" y="0.702495574951171875"/>
+									<v x="1312.31494140625" y="-1.40499114990234375"/>
+									<v x="-16.157379150390625" y="136.8458251953125"/>
+									<v x="204.4741058349609375" y="134.5822296142578125"/>
+									<v x="425.10565185546875" y="132.3186187744140625"/>
+									<v x="645.73712158203125" y="130.055023193359375"/>
+									<v x="867.149169921875" y="129.6647796630859375"/>
+									<v x="1088.561279296875" y="129.2744903564453125"/>
+									<v x="1309.9732666015625" y="128.88421630859375"/>
+									<v x="-15.45489501953125" y="262.451690673828125"/>
+									<v x="204.2789764404296875" y="260.031951904296875"/>
+									<v x="424.012786865234375" y="257.61224365234375"/>
+									<v x="643.7467041015625" y="255.1925811767578125"/>
+									<v x="865.04168701171875" y="256.51953125"/>
+									<v x="1086.336669921875" y="257.846466064453125"/>
+									<v x="1307.631591796875" y="259.17340087890625"/>
+									<v x="-14.752410888671875" y="388.057586669921875"/>
+									<v x="204.0838165283203125" y="385.481781005859375"/>
+									<v x="422.9200439453125" y="382.90594482421875"/>
+									<v x="641.75628662109375" y="380.33013916015625"/>
+									<v x="862.9342041015625" y="383.374298095703125"/>
+									<v x="1084.112060546875" y="386.418426513671875"/>
+									<v x="1305.2899169921875" y="389.46258544921875"/>
+									<v x="-19.669881820678710938" y="510.853515625"/>
+									<v x="200.6103668212890625" y="508.58990478515625"/>
+									<v x="420.890594482421875" y="506.326263427734375"/>
+									<v x="641.17083740234375" y="504.062713623046875"/>
+									<v x="861.45111083984375" y="508.355743408203125"/>
+									<v x="1081.7313232421875" y="512.64874267578125"/>
+									<v x="1302.0115966796875" y="516.9417724609375"/>
+									<v x="-24.587350845336914062" y="633.6494140625"/>
+									<v x="197.1368865966796875" y="631.69793701171875"/>
+									<v x="418.8612060546875" y="629.74664306640625"/>
+									<v x="640.58544921875" y="627.7952880859375"/>
+									<v x="859.968017578125" y="633.33709716796875"/>
+									<v x="1079.3505859375" y="638.87908935546875"/>
+									<v x="1298.733154296875" y="644.4210205078125"/>
+									<v x="-29.50482177734375" y="756.4453125"/>
+									<v x="193.6634521484375" y="754.80615234375"/>
+									<v x="416.83172607421875" y="753.1669921875"/>
+									<v x="640" y="751.52783203125"/>
+									<v x="858.4849853515625" y="758.318603515625"/>
+									<v x="1076.9698486328125" y="765.10943603515625"/>
+									<v x="1295.454833984375" y="771.90020751953125"/>
+								</vertices>
+							</BezierWarper>
+							<Homography>
+								<src>
+									<v x="-29.50482177734375" y="-1.404998779296875"/>
+									<v x="1312.31494140625" y="-1.404998779296875"/>
+									<v x="1312.31494140625" y="771.900146484375"/>
+									<v x="-29.50482177734375" y="771.900146484375"/>
+								</src>
+								<dst>
+									<v x="-29.50482177734375" y="-1.404998779296875"/>
+									<v x="1312.31494140625" y="-1.404998779296875"/>
+									<v x="1312.31494140625" y="771.900146484375"/>
+									<v x="-29.50482177734375" y="771.900146484375"/>
+								</dst>
+							</Homography>
+						</Warper>
+					</Slice>
+				</layers>
+				<OutputDevice>
+					<OutputDeviceDisplay name="Display 2" deviceId="\Registry\Machine\System\CurrentControlSet\Control\Video\{FB260894-F8D9-11EE-8D64-1C1B0D943437}\0001" idHash="10358871746145009999" fullscreen="1" width="1280" height="800">
+						<Params name="Params">
+							<ParamRange name="Delay" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.10000000000000000555"/>
+								<ValueRange name="minMax" min="0" max="0.10000000000000000555"/>
+								<ValueRange name="startStop" min="0" max="0.10000000000000000555"/>
+							</ParamRange>
+						</Params>
+					</OutputDeviceDisplay>
+				</OutputDevice>
+			</Screen>
+		</screens>
+		<SoftEdging>
+			<Params name="Soft Edge">
+				<ParamRange name="Gamma Red" T="DOUBLE" default="2" value="2">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="1" max="3"/>
+					<ValueRange name="minMax" min="1" max="3"/>
+					<ValueRange name="startStop" min="1" max="3"/>
+				</ParamRange>
+				<ParamRange name="Gamma Green" T="DOUBLE" default="2" value="2">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="1" max="3"/>
+					<ValueRange name="minMax" min="1" max="3"/>
+					<ValueRange name="startStop" min="1" max="3"/>
+				</ParamRange>
+				<ParamRange name="Gamma Blue" T="DOUBLE" default="2" value="2">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="1" max="3"/>
+					<ValueRange name="minMax" min="1" max="3"/>
+					<ValueRange name="startStop" min="1" max="3"/>
+				</ParamRange>
+				<ParamRange name="Gamma" T="DOUBLE" default="1" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0" max="1"/>
+					<ValueRange name="minMax" min="0" max="1"/>
+					<ValueRange name="startStop" min="0" max="1"/>
+				</ParamRange>
+				<ParamRange name="Luminance" T="DOUBLE" default="0.5" value="0.5">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0" max="1"/>
+					<ValueRange name="minMax" min="0" max="1"/>
+					<ValueRange name="startStop" min="0" max="1"/>
+				</ParamRange>
+				<ParamRange name="Power" T="DOUBLE" default="2" value="1.999999999999999778">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0.10000000000000000555" max="7"/>
+					<ValueRange name="minMax" min="0.10000000000000000555" max="7"/>
+					<ValueRange name="startStop" min="0.10000000000000000555" max="7"/>
+				</ParamRange>
+			</Params>
+		</SoftEdging>
+	</ScreenSetup>
+</XmlState>
+

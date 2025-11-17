@@ -1,0 +1,200 @@
+/*{
+    "DESCRIPTION": "Crossfade between tiles of a joined atlas image (horizontal strip), with auto or manual control.",
+    "CREDIT": "Ben + GPT",
+    "ISFVSN": "2.0",
+    "CATEGORIES": [ "Source", "Mixing" ],
+    "INPUTS": [
+        {
+            "NAME": "atlasImage",
+            "TYPE": "image",
+            "LABEL": "Atlas Image"
+        },
+        {
+            "NAME": "textureCount",
+            "TYPE": "float",
+            "DEFAULT": 4.0,
+            "MIN": 1.0,
+            "MAX": 64.0,
+            "LABEL": "Textures in Atlas"
+        },
+
+        {
+            "NAME": "autoMode",
+            "TYPE": "bool",
+            "DEFAULT": 1,
+            "LABEL": "Auto Mode"
+        },
+
+        /* Auto mode timing: each segment is roughly an average of min/max */
+        {
+            "NAME": "minDuration",
+            "TYPE": "float",
+            "DEFAULT": 2.0,
+            "MIN": 0.1,
+            "MAX": 20.0,
+            "LABEL": "Min Duration (s)"
+        },
+        {
+            "NAME": "maxDuration",
+            "TYPE": "float",
+            "DEFAULT": 6.0,
+            "MIN": 0.1,
+            "MAX": 40.0,
+            "LABEL": "Max Duration (s)"
+        },
+        {
+            "NAME": "fadeFraction",
+            "TYPE": "float",
+            "DEFAULT": 0.3,
+            "MIN": 0.0,
+            "MAX": 1.0,
+            "LABEL": "Fade Fraction"
+        },
+
+        /* Manual mode inputs (used when autoMode == false):
+           - transitionStep: integer-like counter you increment per trigger
+           - transitionPhase: 0..1 fade curve you drive from Wire
+        */
+        {
+            "NAME": "transitionStep",
+            "TYPE": "float",
+            "DEFAULT": 0.0,
+            "MIN": 0.0,
+            "MAX": 9999.0,
+            "LABEL": "Transition Step"
+        },
+        {
+            "NAME": "transitionPhase",
+            "TYPE": "float",
+            "DEFAULT": 0.0,
+            "MIN": 0.0,
+            "MAX": 1.0,
+            "LABEL": "Transition Phase"
+        },
+
+        {
+            "NAME": "seed",
+            "TYPE": "float",
+            "DEFAULT": 0.0,
+            "MIN": 0.0,
+            "MAX": 10000.0,
+            "LABEL": "Random Seed"
+        }
+    ]
+}*/
+
+#ifdef GL_ES
+precision mediump float;
+precision mediump int;
+#endif
+
+// ISF built-ins:
+// TIME
+// isf_FragNormCoord
+// RENDERSIZE
+
+// ---------- Random helpers ----------
+
+float hash11(float p) {
+    p = fract(p * 0.1031);
+    p *= p + 33.33;
+    p *= p + p;
+    return fract(p);
+}
+
+// Deterministically pick an index in [0, count-1] based on "key" and seed
+int chooseIndex(float key, int count, float seedOffset) {
+    if (count <= 0) {
+        return 0;
+    }
+    float h = hash11(key * 7.123 + seedOffset);
+    int i = int(floor(h * float(count)));
+    return clamp(i, 0, max(count - 1, 0));
+}
+
+// ---------- Atlas sampling ----------
+
+// atlasImage contains "textureCount" horizontal tiles of equal width.
+// Given a tile index and normalized uv for the output, sample the correct region.
+vec4 sampleAtlasTile(int tileIndex, int tileCount, vec2 uv) {
+    tileCount = max(tileCount, 1);
+    float tiles = float(tileCount);
+    float tileWidth = 1.0 / tiles;
+
+    // Map [0..1] uv.x into this tile's region
+    float x = uv.x * tileWidth + tileWidth * float(tileIndex);
+    vec2 atlasUV = vec2(x, uv.y);
+
+    return IMG_NORM_PIXEL(atlasImage, atlasUV);
+}
+
+// ---------- Main ----------
+
+void main() {
+    vec2 uv = isf_FragNormCoord;
+
+    int texCount = int(clamp(textureCount, 1.0, 64.0));
+
+    int idxPrev = 0;
+    int idxCurr = 0;
+    float blend = 0.0;
+
+    if (autoMode) {
+        // ---------- AUTO MODE ----------
+        float durMin = max(minDuration, 0.01);
+        float durMax = max(maxDuration, durMin);
+        // Using average duration keeps things stable & stateless
+        float segmentDuration = 0.5 * (durMin + durMax);
+
+        float t = TIME;
+        float segIndex = floor(t / segmentDuration);
+        float segTime  = t - segIndex * segmentDuration;
+
+        float fadeFrac = clamp(fadeFraction, 0.0, 1.0);
+        float fadeTime = segmentDuration * fadeFrac;
+
+        // Current and previous segments
+        float segCurr = segIndex;
+        float segPrev = segIndex - 1.0;
+
+        // Pick current and previous tile indices
+        idxCurr = chooseIndex(segCurr + seed, texCount, seed * 13.17);
+        idxPrev = chooseIndex(segPrev + seed, texCount, seed * 31.73);
+
+        // Avoid same index when multiple tiles exist
+        if (texCount > 1 && idxPrev == idxCurr) {
+            idxPrev = (idxCurr + 1) % texCount;
+        }
+
+        // Blend from prev -> curr during the fade window
+        if (fadeTime > 0.0) {
+            blend = clamp(segTime / fadeTime, 0.0, 1.0);
+            blend = smoothstep(0.0, 1.0, blend);
+        } else {
+            blend = 1.0;
+        }
+    } else {
+        // ---------- MANUAL MODE ----------
+        // You drive:
+        //  - transitionStep: step counter (increment per trigger)
+        //  - transitionPhase: 0..1 fade
+
+        float stepF = floor(transitionStep);
+        float stepPrevF = stepF - 1.0;
+
+        idxCurr = chooseIndex(stepF + seed, texCount, seed * 13.17);
+        idxPrev = chooseIndex(stepPrevF + seed, texCount, seed * 31.73);
+
+        if (texCount > 1 && idxPrev == idxCurr) {
+            idxPrev = (idxCurr + 1) % texCount;
+        }
+
+        blend = clamp(transitionPhase, 0.0, 1.0);
+        blend = smoothstep(0.0, 1.0, blend);
+    }
+
+    vec4 colPrev = sampleAtlasTile(idxPrev, texCount, uv);
+    vec4 colCurr = sampleAtlasTile(idxCurr, texCount, uv);
+
+    gl_FragColor = mix(colPrev, colCurr, blend);
+}

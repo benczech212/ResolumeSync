@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<midiController enabled="1" midiClockMode="2" octaveNumForMiddleC="4" syncDeviceName="">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="23" microVersion="2" revision="51094"/>
+	<inputDevices>
+		<device name="Akai APC40"/>
+	</inputDevices>
+	<outputDevices>
+		<device name="Akai APC40"/>
+	</outputDevices>
+	<controlSurfaces>
+		<device port="Akai APC40" name="Akai APC40" option="3"/>
+	</controlSurfaces>
+</midiController>
+

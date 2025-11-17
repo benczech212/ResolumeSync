@@ -1,0 +1,86 @@
+
+
+uniform sampler2D tex0;
+
+/* Controls (expose these as sliders/toggles in Wire)
+   Hue Center and Width in degrees for user friendliness, converted to 0..1 in shader.
+   Sat/Val minimum reject low-chroma or dark pixels (optional).
+   Feather softens the band edges.
+*/
+uniform float HueCenterDeg;  // 0..360
+uniform float HueWidthDeg;   // 0..180 (full width)
+uniform float SatMin;        // 0..1
+uniform float ValMin;        // 0..1
+uniform float Feather;       // 0..1 (0 = hard edge, 0.02..0.15 typical)
+uniform bool Invert;         // flip selection (false = normal)
+
+in vec2 vTexCoord;
+out vec4 fragColor;
+
+// --- RGB -> HSV (h in 0..1, s in 0..1, v in 0..1)
+vec3 rgb2hsv(vec3 c) {
+    float maxc = max(c.r, max(c.g, c.b));
+    float minc = min(c.r, min(c.g, c.b));
+    float delta = maxc - minc;
+
+    float h = 0.0;
+    if (delta > 1e-6) {
+        if (maxc == c.r) {
+            h = mod((c.g - c.b) / delta, 6.0);
+        } else if (maxc == c.g) {
+            h = ((c.b - c.r) / delta) + 2.0;
+        } else {
+            h = ((c.r - c.g) / delta) + 4.0;
+        }
+        h /= 6.0; // map 0..6 -> 0..1
+        if (h < 0.0) h += 1.0;
+    }
+    float s = (maxc <= 0.0) ? 0.0 : (delta / maxc);
+    float v = maxc;
+    return vec3(h, s, v);
+}
+
+// Shortest circular distance on [0,1) ring
+float hueDistance(float h, float center) {
+    float d = abs(h - center);
+    return min(d, 1.0 - d); // wrap-around distance
+}
+
+void main() {
+    vec4 src = texture(tex0, vTexCoord);
+    // Early out for fully transparent source pixels
+    if (src.a <= 0.0) {
+        fragColor = vec4(0.0);
+        return;
+    }
+
+    vec3 hsv = rgb2hsv(src.rgb);
+
+    // Convert degrees to 0..1 domain
+    float center = clamp(HueCenterDeg / 360.0, 0.0, 1.0);
+    float halfWidth = clamp(HueWidthDeg / 360.0, 0.0, 0.5); // max half-width is 0.5 (180°)
+
+    // Reject low saturation/value before band test (pre-mask gate)
+    float gate = 1.0;
+    gate *= step(SatMin, hsv.y);
+    gate *= step(ValMin, hsv.z);
+
+    // Distance from band center (circular)
+    float d = hueDistance(hsv.x, center);
+
+    // Feathered mask:
+    //   d <= halfWidth  -> inside
+    //   smooth edge controlled by Feather around boundary
+    float edge = max(1e-6, Feather);  // avoid div-by-zero
+    float hard = 1.0 - smoothstep(halfWidth, halfWidth + edge, d);
+
+    float mask = hard * gate;
+
+    if (Invert) mask = 1.0 - mask;
+
+    // Output original color where mask > 0; alpha = mask (premultiplied-safe)
+    vec3 outRgb = src.rgb * mask;
+    float outA = mask;
+
+    fragColor = vec4(outRgb, outA);
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preset name="Glitchy" uniqueId="Animation" className="Animation" default="0">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="23" microVersion="0" revision="47876"/>
+	<Animation>
+		<DurationSource name="DurationSource" defaultDuration="5s" scale="1"/>
+		<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.53715858012933004328" defaultMillisecondsDuration="5000" defaultBeatsDuration="4" hardSynced="0">
+			<Params name="Params">
+				<ParamRange name="Speed" T="DOUBLE" default="1" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0" max="10"/>
+					<ValueRange name="minMax" min="0" max="10"/>
+					<ValueRange name="startStop" min="0" max="10"/>
+				</ParamRange>
+				<ParamRange name="Multiplier" altName="Speed" T="DOUBLE" default="1" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0" max="16"/>
+					<ValueRange name="minMax" min="0" max="16"/>
+					<ValueRange name="startStop" min="0" max="16"/>
+				</ParamRange>
+				<ParamRange name="Interval" T="DOUBLE" default="0.5" value="0.021183146766169152347">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0" max="5"/>
+					<ValueRange name="minMax" min="0" max="5"/>
+					<ValueRange name="startStop" min="0" max="5"/>
+				</ParamRange>
+				<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2.4405317164179103351">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0" max="5"/>
+					<ValueRange name="minMax" min="0" max="5"/>
+					<ValueRange name="startStop" min="0" max="5"/>
+				</ParamRange>
+				<ParamChoice name="PlayDirection" T="INT32" default="2" value="2" storeChoices="0"/>
+				<ParamChoice name="PlayMode" T="INT32" default="0" value="2" storeChoices="0"/>
+				<ParamChoice name="PlayModeAway" T="INT32" default="0" value="0" storeChoices="0"/>
+				<Param name="DurationIsScalable" altName="Duration Changes With In &amp; Out Points" T="BOOL" default="1" value="1"/>
+				<ParamRange name="Duration" T="DOUBLE" default="5" value="5">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0.0010000000000000000208" max="604800"/>
+					<ValueRange name="minMax" min="0.0010000000000000000208" max="604800"/>
+					<ValueRange name="startStop" min="0.0010000000000000000208" max="604800"/>
+					<ParamChoice name="DurationType" T="INT32" default="2" value="0" storeChoices="0"/>
+					<Param name="DurationIsScalable" altName="Duration Changes With In &amp; Out Points" T="BOOL" default="1" value="1"/>
+				</ParamRange>
+				<ParamChoice name="DurationType" T="INT32" default="2" value="0" storeChoices="0"/>
+			</Params>
+			<Beats_d name="Beats_d" numDetectedBeats="-1" numManualBeats="4" detectedTempo="-1"/>
+		</PhaseSourceTimeline>
+		<BehaviourDouble name="BehaviourDouble"/>
+		<AnimationStarter flags="9223372036854775810"/>
+	</Animation>
+</Preset>
+

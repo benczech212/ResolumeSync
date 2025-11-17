@@ -1,0 +1,654 @@
+{
+	"formatVersion": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"patch": {
+		"connections": [
+			{
+				"from": [
+					0,
+					"output"
+				],
+				"to": [
+					2,
+					"image"
+				]
+			},
+			{
+				"from": [
+					67,
+					"output"
+				],
+				"to": [
+					17,
+					"input"
+				]
+			},
+			{
+				"from": [
+					2,
+					"output"
+				],
+				"to": [
+					67,
+					"inputImage"
+				]
+			}
+		],
+		"inputOrder": {
+			"groups": {},
+			"roots": [
+				{
+					"node": 0
+				},
+				{
+					"node": 4
+				},
+				{
+					"node": 89
+				}
+			]
+		},
+		"meta": {
+			"author": "Benjamin Czech",
+			"category": "source",
+			"deploymentTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 0
+				}
+			},
+			"description": "",
+			"displayName": "Spectrum Fill Trigger 2",
+			"identifier": "2f4837bd-ddb5-4919-9f28-f18e6efe0eb2",
+			"licenseName": "",
+			"mail": "",
+			"originalTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 2
+				}
+			},
+			"quality": 32856,
+			"resolution": {
+				"height": 1080,
+				"width": 1920
+			},
+			"saveTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 2
+				}
+			},
+			"thumbnail": "",
+			"url": "",
+			"vendor": "Watt"
+		},
+		"nextNodeId": 90,
+		"nodes": {
+			"0": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "D:\/Stages\/Lotus Stage V2\/Wire Fills\/Spectrum Masks\/All 1_pointfill_wide_1.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 608.3287353515625,
+					"y": 646.32965087890625
+				},
+				"class": {
+					"id": "77697265-8C38-4571-885A-7EDF323F3437",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Image In",
+				"thumbnail_visible": true
+			},
+			"17": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 132,
+					"x": 1419.533203125,
+					"y": 626.42620849609375
+				},
+				"class": {
+					"id": "77697265-BEEA-4D38-8EE5-0EBA4CBD0AEE",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Texture Out",
+				"thumbnail_visible": true
+			},
+			"2": {
+				"attributes": {
+					"image": {
+						"type": "resourceImage",
+						"value": {
+							"path": {
+								"main": "D:\/Stages\/Lotus Stage V2\/Wire Fills\/Spectrum Masks\/All 1_pointfill_wide_1.png",
+								"sub": ""
+							},
+							"value": {
+								"alphaType": "straight",
+								"bitDepth": 4,
+								"channelCount": 4,
+								"codec": "PNG",
+								"resolution": {
+									"height": 1080,
+									"width": 1920
+								}
+							}
+						}
+					}
+				},
+				"bounds": {
+					"height": 139.9955291748046875,
+					"width": 195,
+					"x": 798.3287353515625,
+					"y": 646.32965087890625
+				},
+				"class": {
+					"id": "77697265-3683-409B-8C89-43AFAEA9A2B0",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"straight": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"hidden": [
+					"straight"
+				],
+				"name": "Image",
+				"thumbnail_visible": true
+			},
+			"4": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": true
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"max": {
+						"type": "float",
+						"value": 360
+					},
+					"min": {
+						"type": "float",
+						"value": 0
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 5
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": -118.19384765625,
+					"y": 7.6183929443359375
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 52.25806427001953125
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"max",
+					"min",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Hue Width",
+				"thumbnail_visible": true
+			},
+			"67": {
+				"attributes": {
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"fragment-shader": {
+						"type": "resourceIsf",
+						"value": {
+							"path": {
+								"main": "Resource\/Spectrum Fill 2.isf",
+								"sub": ""
+							},
+							"value": {
+								"inputs": [
+									{
+										"name": "inputImage",
+										"type": "image"
+									},
+									{
+										"defaultValue": 120,
+										"max": 300,
+										"min": 20,
+										"name": "bpm",
+										"type": "float"
+									},
+									{
+										"defaultValue": 8,
+										"max": 64,
+										"min": 1,
+										"name": "beatsTotal",
+										"type": "float"
+									},
+									{
+										"defaultValue": 2,
+										"name": "beatsFadeIn",
+										"type": "float"
+									},
+									{
+										"defaultValue": 2,
+										"name": "beatsFadeOut",
+										"type": "float"
+									},
+									{
+										"defaultValue": 0,
+										"label": "Trigger (0→1→0)",
+										"max": 1,
+										"min": 0,
+										"name": "trigger",
+										"type": "float"
+									},
+									{
+										"defaultValue": 360,
+										"name": "hueCenterMaxDeg",
+										"type": "float"
+									},
+									{
+										"defaultValue": 60,
+										"name": "hueWidthTargetDeg",
+										"type": "float"
+									},
+									{
+										"defaultValue": 0.15000000596046448,
+										"name": "satMin",
+										"type": "float"
+									},
+									{
+										"defaultValue": 0.10000000149011612,
+										"name": "valMin",
+										"type": "float"
+									},
+									{
+										"defaultValue": 0.05000000074505806,
+										"name": "feather",
+										"type": "float"
+									},
+									{
+										"defaultValue": false,
+										"name": "invert",
+										"type": "bool"
+									},
+									{
+										"defaultValue": false,
+										"name": "maskOnly",
+										"type": "bool"
+									},
+									{
+										"defaultValue": true,
+										"name": "keepSrcAlpha",
+										"type": "bool"
+									},
+									{
+										"defaultValue": false,
+										"name": "debugVisual",
+										"type": "bool"
+									}
+								]
+							}
+						}
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					}
+				},
+				"bounds": {
+					"height": 448.4217529296875,
+					"width": 195,
+					"x": 1122.4749755859375,
+					"y": 626.6795654296875
+				},
+				"class": {
+					"id": "77697265-4576-4C11-899B-6F11F3275D36",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"beatsFadeIn": {
+						"type": "float",
+						"value": 2
+					},
+					"beatsFadeOut": {
+						"type": "float",
+						"value": 2
+					},
+					"beatsTotal": {
+						"type": "float",
+						"value": 8
+					},
+					"bpm": {
+						"type": "float",
+						"value": 120
+					},
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"debugVisual": {
+						"type": "bool",
+						"value": true
+					},
+					"feather": {
+						"type": "float",
+						"value": 0.05000000074505806
+					},
+					"hueCenterMaxDeg": {
+						"type": "float",
+						"value": 360
+					},
+					"hueWidthTargetDeg": {
+						"type": "float",
+						"value": 60
+					},
+					"inputImage": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					},
+					"keepSrcAlpha": {
+						"type": "bool",
+						"value": true
+					},
+					"maskOnly": {
+						"type": "bool",
+						"value": false
+					},
+					"satMin": {
+						"type": "float",
+						"value": 0.15000000596046448
+					},
+					"time": {
+						"type": "float",
+						"value": 0
+					},
+					"trigger": {
+						"type": "float",
+						"value": 0
+					},
+					"valMin": {
+						"type": "float",
+						"value": 0.10000000149011612
+					}
+				},
+				"hidden": [
+					"bitdepth",
+					"bypass",
+					"instances",
+					"resolution-absolute",
+					"resolution-mode",
+					"resolution-relative"
+				],
+				"name": "ISF",
+				"thumbnail_visible": true
+			},
+			"68": {
+				"attributes": {},
+				"bounds": {
+					"height": 129.738525390625,
+					"width": 195,
+					"x": 463.70501708984375,
+					"y": 891.28656005859375
+				},
+				"class": {
+					"id": "77697265-66B1-4C28-A5A9-1F64026D769B",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [],
+				"name": "Transport Info",
+				"thumbnail_visible": true
+			},
+			"89": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": true
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"max": {
+						"type": "float",
+						"value": 1
+					},
+					"min": {
+						"type": "float",
+						"value": 0
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 863.49737548828125,
+					"y": 940.72698974609375
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"max",
+					"min",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Trigger (0→1→0)",
+				"thumbnail_visible": true
+			}
+		},
+		"ui": {
+			"camera": {
+				"x": 308.07489013671875,
+				"y": 298.32672119140625,
+				"zoom": 1.12923014163970947
+			},
+			"selection": [
+				"67"
+			]
+		}
+	},
+	"ui": {
+		"audio": {
+			"routing": {
+				"in": {},
+				"out": []
+			}
+		},
+		"deviceConnections": {
+			"input": {}
+		},
+		"transport": {
+			"bpm": 120,
+			"time-signature": [
+				4,
+				4
+			]
+		},
+		"video": {
+			"routing": {
+				"out": {
+					"Display 1": null,
+					"Display 2": null,
+					"Display 3": null,
+					"Display 4": null
+				}
+			}
+		}
+	}
+}

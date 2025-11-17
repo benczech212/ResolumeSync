@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MidiShortcutPreset presetId="-1877433834" name="Sacred Geometry Stage 3">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="23" microVersion="2" revision="51094"/>
+	<ShortcutManager name="MIDIShortcutManagerShortcuts">
+		<Shortcut name="Shortcut" uniqueId="1753550320149" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751510619362/connect" translationType="2" allowedTranslationTypes="35"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751510619362/connect" translationType="2" allowedTranslationTypes="35"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1751510619362/connected" translationType="2" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1751510619362/connected" translationType="2" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="129502392675750288" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="1"/>
+				<Value first="Disconnected" second="0.5"/>
+				<Value first="Empty" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320577" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751923115026/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751923115026/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="3" numChoices="4" name="Play Random Clip"/>
+			<RawInputMessage key="129502392675752848" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320535" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752159999389/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752159999389/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="3" numChoices="4" name="Play Random Clip"/>
+			<RawInputMessage key="129502392675752848" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320531" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752159999389/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752159999389/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="0" numChoices="4" name="Off"/>
+			<RawInputMessage key="129502392675753104" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320472" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751510631075/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751510631075/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="0" numChoices="4" name="Off"/>
+			<RawInputMessage key="129502392675753104" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320424" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752156218795/solo" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752156218795/solo" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1752156218795/soloed" translationType="2" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1752156218795/soloed" translationType="2" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="129502392675742102" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320623" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752156222172/connect" translationType="2" allowedTranslationTypes="51"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752156222172/connect" translationType="2" allowedTranslationTypes="51"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1752156222172/connected" translationType="2" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1752156222172/connected" translationType="2" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="129502392675742870" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.015748031496062991907"/>
+				<Value first="Disconnected" second="0.50393700787401574104"/>
+				<Value first="Empty" second="0"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320545" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752156226878/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752156226878/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="0" numChoices="4" name="Off"/>
+			<RawInputMessage key="129502392675753104" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1761524218655" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/master" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/master" translationType="1" allowedTranslationTypes="1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713661104" value="1" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320168" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1753228180537/connectnextcolumn" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1753228180537/connectnextcolumn" translationType="2" allowedTranslationTypes="19"/>
+			<RawInputMessage key="129502392675742359" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0.0078740157480314959537"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320615" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751923097137/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751923097137/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="0" numChoices="4" name="Off"/>
+			<RawInputMessage key="129502392675753104" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320591" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751923131916/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751923131916/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="0" numChoices="4" name="Off"/>
+			<RawInputMessage key="129502392675753104" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320451" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751923229952/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751923229952/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="0" numChoices="4" name="Off"/>
+			<RawInputMessage key="129502392675753104" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320601" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751923147749/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751923147749/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="3" numChoices="4" name="Play Random Clip"/>
+			<RawInputMessage key="129502392675752848" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1761524218665" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/groups/7/master" translationType="1" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/groups/7/master" translationType="1" allowedTranslationTypes="19"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659317" value="0.32283464566929132022" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320517" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751510617709/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751510617709/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="0" numChoices="4" name="Off"/>
+			<RawInputMessage key="129502392675753104" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320464" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751510631075/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751510631075/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="3" numChoices="4" name="Play Random Clip"/>
+			<RawInputMessage key="129502392675752848" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320587" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751923131916/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751923131916/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="3" numChoices="4" name="Play Random Clip"/>
+			<RawInputMessage key="129502392675752848" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1761524218695" paramNodeName="ParamRange" behaviour="65540" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/tempocontroller/tempo" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/tempocontroller/tempo" translationType="1" allowedTranslationTypes="1"/>
+			<Subtarget type="1" optionIndex="7"/>
+			<RawInputMessage key="129502392675755152" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320159" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1753228180756/connect" translationType="2" allowedTranslationTypes="51"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1753228180756/connect" translationType="2" allowedTranslationTypes="51"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1753228180756/connected" translationType="2" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1753228180756/connected" translationType="2" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="129502392675742871" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="1"/>
+				<Value first="Disconnected" second="0.50393700787401574104"/>
+				<Value first="Empty" second="0.0078740157480314959537"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1761524218661" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/groups/5/master" translationType="1" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/groups/5/master" translationType="1" allowedTranslationTypes="19"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659315" value="0.51968503937007870519" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320781" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752156224700/connectnextcolumn" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752156224700/connectnextcolumn" translationType="2" allowedTranslationTypes="19"/>
+			<RawInputMessage key="129502392675742357" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320420" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752156218795/bypassed" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752156218795/bypassed" translationType="2" allowedTranslationTypes="19"/>
+			<RawInputMessage key="129502392675741846" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1761524218699" paramNodeName="ParamRange" behaviour="65540" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/tempocontroller/tempo" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/tempocontroller/tempo" translationType="1" allowedTranslationTypes="1"/>
+			<Subtarget type="1" optionIndex="8"/>
+			<RawInputMessage key="129502392675755408" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320402" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1753228180537/bypassed" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1753228180537/bypassed" translationType="2" allowedTranslationTypes="19"/>
+			<RawInputMessage key="129502392675741847" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320322" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1753228180537/solo" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1753228180537/solo" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1753228180537/soloed" translationType="2" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1753228180537/soloed" translationType="2" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="129502392675742103" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320436" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752156218795/connectnextcolumn" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752156218795/connectnextcolumn" translationType="2" allowedTranslationTypes="19"/>
+			<RawInputMessage key="129502392675742358" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1761524218657" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/groups/3/master" translationType="1" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/groups/3/master" translationType="1" allowedTranslationTypes="19"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659313" value="0.299212598425196874" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1761524218691" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/tempocontroller/resync" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/tempocontroller/resync" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="129502392675754640" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1761524218659" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/groups/4/master" translationType="1" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/groups/4/master" translationType="1" allowedTranslationTypes="19"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659314" value="0.35433070866141730404" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320559" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752424077847/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752424077847/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="3" numChoices="4" name="Play Random Clip"/>
+			<RawInputMessage key="129502392675752848" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320549" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752156226878/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752156226878/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="3" numChoices="4" name="Play Random Clip"/>
+			<RawInputMessage key="129502392675752848" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320563" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752424077847/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752424077847/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="0" numChoices="4" name="Off"/>
+			<RawInputMessage key="129502392675753104" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320619" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751923097137/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751923097137/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="3" numChoices="4" name="Play Random Clip"/>
+			<RawInputMessage key="129502392675752848" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320639" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752156224700/bypassed" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752156224700/bypassed" translationType="2" allowedTranslationTypes="19"/>
+			<RawInputMessage key="129502392675741845" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="1"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1761524218667" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/groups/8/master" translationType="1" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/groups/8/master" translationType="1" allowedTranslationTypes="19"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659318" value="0.26771653543307089018" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1761524218663" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/groups/6/master" translationType="1" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/groups/6/master" translationType="1" allowedTranslationTypes="19"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659316" value="0.53543307086614178036" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320418" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752156218795/master" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752156218795/master" translationType="2" allowedTranslationTypes="19"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659318" value="0.26771653543307089018" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320521" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751510617709/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751510617709/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="3" numChoices="4" name="Play Random Clip"/>
+			<RawInputMessage key="129502392675752848" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320448" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751923229952/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751923229952/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="3" numChoices="4" name="Play Random Clip"/>
+			<RawInputMessage key="129502392675752848" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320655" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752156224700/solo" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752156224700/solo" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1752156224700/soloed" translationType="2" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1752156224700/soloed" translationType="2" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="129502392675742101" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1761524218688" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/tempocontroller/tempotap" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/tempocontroller/tempotap" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="129502392675754896" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320637" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752156224700/master" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752156224700/master" translationType="2" allowedTranslationTypes="19"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659317" value="0.32283464566929132022" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320573" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751923115026/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751923115026/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="0" numChoices="4" name="Off"/>
+			<RawInputMessage key="129502392675753104" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320605" paramNodeName="ParamChoice[struct AutoPilotTarget]" behaviour="4" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1751923147749/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1751923147749/autopilot/target" translationType="2" allowedTranslationTypes="11"/>
+			<Subtarget type="4" optionIndex="0" numChoices="4" name="Off"/>
+			<RawInputMessage key="129502392675753104" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320663" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1752156224916/connect" translationType="2" allowedTranslationTypes="51"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1752156224916/connect" translationType="2" allowedTranslationTypes="51"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1752156224916/connected" translationType="2" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1752156224916/connected" translationType="2" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="129502392675742869" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.015748031496062991907"/>
+				<Value first="Disconnected" second="0.50393700787401574104"/>
+				<Value first="Empty" second="0"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1753550320410" paramNodeName="ParamRange" behaviour="8" inputDeviceName="Akai APC40" outputDeviceName="Akai APC40">
+			<ShortcutPath name="InputPath" path="/composition/objects/1753228180537/master" translationType="2" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1753228180537/master" translationType="2" allowedTranslationTypes="19"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="201559986713659319" value="0.023622047244094487861" numSteps="128"/>
+		</Shortcut>
+	</ShortcutManager>
+</MidiShortcutPreset>
+

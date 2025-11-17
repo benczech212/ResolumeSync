@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset name="Saw" uniqueId="MOD_ENVELOPE" className="Envelope">
+  <versionInfo name="Resolume Arena" majorVersion="7" minorVersion="3" microVersion="0"
+               revision="70000"/>
+  <ModifierEnvelope name="ModifierEnvelope" altName="Envelope">
+    <points>
+      <point x="0" y="1" curve="33"/>
+      <point x="0.24999999999999997224" y="0" curve="1"/>
+      <point x="0.24999999999999997224" y="1" curve="1"/>
+      <point x="0.50000000000000033307" y="0" curve="1"/>
+      <point x="0.50000000000000033307" y="1" curve="1"/>
+      <point x="0.75" y="0" curve="1"/>
+      <point x="0.75000000000000066613" y="1" curve="1"/>
+      <point x="1" y="0" curve="1"/>
+    </points>
+  </ModifierEnvelope>
+</Preset>

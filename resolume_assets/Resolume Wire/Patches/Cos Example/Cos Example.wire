@@ -1,0 +1,1808 @@
+{
+	"formatVersion": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"patch": {
+		"connections": [
+			{
+				"from": [
+					9,
+					"output"
+				],
+				"to": [
+					7,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					9,
+					"output"
+				],
+				"to": [
+					8,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					7,
+					"output0"
+				],
+				"to": [
+					18,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					8,
+					"output0"
+				],
+				"to": [
+					18,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					18,
+					"output"
+				],
+				"to": [
+					16,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					16,
+					"output0"
+				],
+				"to": [
+					11,
+					"translation"
+				]
+			},
+			{
+				"from": [
+					23,
+					"output0"
+				],
+				"to": [
+					9,
+					"amplitude"
+				]
+			},
+			{
+				"from": [
+					25,
+					"output"
+				],
+				"to": [
+					23,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					11,
+					"output0"
+				],
+				"to": [
+					26,
+					"input"
+				]
+			},
+			{
+				"from": [
+					39,
+					"output"
+				],
+				"to": [
+					40,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					37,
+					"output"
+				],
+				"to": [
+					40,
+					"input2"
+				]
+			},
+			{
+				"from": [
+					41,
+					"output"
+				],
+				"to": [
+					42,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					25,
+					"output"
+				],
+				"to": [
+					44,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					44,
+					"output0"
+				],
+				"to": [
+					41,
+					"amplitude"
+				]
+			},
+			{
+				"from": [
+					42,
+					"output0"
+				],
+				"to": [
+					47,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					47,
+					"output0"
+				],
+				"to": [
+					40,
+					"mix"
+				]
+			},
+			{
+				"from": [
+					48,
+					"output0"
+				],
+				"to": [
+					11,
+					"rotation"
+				]
+			},
+			{
+				"from": [
+					50,
+					"output0"
+				],
+				"to": [
+					48,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					51,
+					"output"
+				],
+				"to": [
+					50,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					25,
+					"output"
+				],
+				"to": [
+					52,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					53,
+					"output"
+				],
+				"to": [
+					52,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					54,
+					"output"
+				],
+				"to": [
+					44,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					52,
+					"output0"
+				],
+				"to": [
+					51,
+					"amplitude"
+				]
+			},
+			{
+				"from": [
+					55,
+					"output"
+				],
+				"to": [
+					9,
+					"frequency"
+				]
+			},
+			{
+				"from": [
+					40,
+					"output0"
+				],
+				"to": [
+					11,
+					"input"
+				]
+			},
+			{
+				"from": [
+					60,
+					"output"
+				],
+				"to": [
+					61,
+					"input1"
+				]
+			}
+		],
+		"inputOrder": [
+			20,
+			53,
+			54,
+			55
+		],
+		"meta": {
+			"author": "",
+			"category": null,
+			"deploymentTarget": {
+				"branch": "unknown",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 15,
+					"patch": 0
+				}
+			},
+			"description": "This patch explains what this node does.",
+			"displayName": "Cos Example",
+			"identifier": "ac96d36d-cee5-4899-8e88-72e0e4bb0e66",
+			"licenseName": "",
+			"mail": "",
+			"originalTarget": {
+				"branch": "unknown",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 11,
+					"patch": 0
+				}
+			},
+			"quality": 32856,
+			"resolution": {
+				"height": 1080,
+				"width": 1920
+			},
+			"saveTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 15,
+					"patch": 0
+				}
+			},
+			"thumbnail": "",
+			"url": "",
+			"vendor": ""
+		},
+		"nextNodeId": 64,
+		"nodes": {
+			"11": {
+				"attributes": {
+					"anchor-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input-type": {
+						"type": "type",
+						"value": "procedural"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"rotation-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"scale-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"translation-type": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 131,
+					"width": 195,
+					"x": 1346.61962890625,
+					"y": 459.21142578125
+				},
+				"class": {
+					"id": "77697265-9225-4009-9D2D-5F898E94CC33",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"anchor": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					},
+					"input": {
+						"type": "procedural",
+						"value": null
+					},
+					"rotation": {
+						"type": "float",
+						"value": 0
+					},
+					"scale": {
+						"type": "float",
+						"value": 1
+					},
+					"translation": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances",
+					"input-type",
+					"translation-type",
+					"rotation-type",
+					"scale-type",
+					"anchor-type"
+				],
+				"name": "Transform",
+				"thumbnail_visible": true
+			},
+			"16": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float2"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 1054.81982421875,
+					"y": 493.7513427734375
+				},
+				"class": {
+					"id": "77697265-A0D8-429A-A558-69BC58D0D425",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"input1": {
+						"type": "float2",
+						"value": [
+							0.5,
+							0.5
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"size",
+					"type0",
+					"input0-dimensions",
+					"type1",
+					"input1-dimensions"
+				],
+				"name": "Multiply",
+				"thumbnail_visible": true
+			},
+			"18": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 819.1414794921875,
+					"y": 494.548583984375
+				},
+				"class": {
+					"id": "77697265-E7EF-4944-8FC2-D808EE0433CB",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					},
+					"input1": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances"
+				],
+				"name": "Float2",
+				"thumbnail_visible": true
+			},
+			"20": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": -445.5462646484375,
+					"y": 493.37921142578125
+				},
+				"class": {
+					"id": "77697265-999C-4F8B-8B9D-3646DC68AA69",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"instances",
+					"flow"
+				],
+				"name": "Bool In",
+				"thumbnail_visible": true
+			},
+			"23": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 134.4537353515625,
+					"y": 548.37921142578125
+				},
+				"class": {
+					"id": "77697265-A0D8-429A-A558-69BC58D0D425",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 1
+					},
+					"input1": {
+						"type": "float",
+						"value": 1
+					}
+				},
+				"hidden": [
+					"flow",
+					"size",
+					"type0",
+					"input0-dimensions",
+					"type1",
+					"input1-dimensions"
+				],
+				"name": "Multiply",
+				"thumbnail_visible": true
+			},
+			"24": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": -259.5462646484375,
+					"y": 388.37921142578125
+				},
+				"class": {
+					"id": "77697265-7BFA-44F2-A6D4-AE62B9FCC325",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow"
+				],
+				"name": "Pi",
+				"thumbnail_visible": true
+			},
+			"25": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": -243.5462646484375,
+					"y": 481.37921142578125
+				},
+				"class": {
+					"id": "77697265-563A-4A01-9307-A1F9684FD027",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow"
+				],
+				"name": "Tau",
+				"thumbnail_visible": true
+			},
+			"26": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"pretty": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"bounds": {
+					"height": 154,
+					"width": 195,
+					"x": 1599.9356689453125,
+					"y": 452.82489013671875
+				},
+				"class": {
+					"id": "77697265-9DF3-4B94-A36D-42F1C6FBE997",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"algorithm": {
+						"type": "integer",
+						"value": 3
+					},
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"color-select": {
+						"type": "integer",
+						"value": 0
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"preserve-alpha": {
+						"type": "bool",
+						"value": false
+					},
+					"sample-offset": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"strength": {
+						"type": "float",
+						"value": 100
+					}
+				},
+				"hidden": [
+					"bypass",
+					"pretty",
+					"instances"
+				],
+				"name": "Edge Detection",
+				"thumbnail_visible": true
+			},
+			"31": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 132,
+					"x": 2301.7646484375,
+					"y": 347.764556884765625
+				},
+				"class": {
+					"id": "77697265-BEEA-4D38-8EE5-0EBA4CBD0AEE",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Texture Out",
+				"thumbnail_visible": true
+			},
+			"37": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 750.4537353515625,
+					"y": 128.37921142578125
+				},
+				"class": {
+					"id": "77697265-4db6-4573-8aa7-42362bc44931",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"height": {
+						"type": "float",
+						"value": 0.5
+					},
+					"round": {
+						"type": "float4",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"width": {
+						"type": "float",
+						"value": 0.5
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Rectangle",
+				"thumbnail_visible": true
+			},
+			"39": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 750.4537353515625,
+					"y": 62.37921142578125
+				},
+				"class": {
+					"id": "77697265-EA26-47D6-985A-B4CAEC314BF7",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"radius": {
+						"type": "float",
+						"value": 0.25
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Circle",
+				"thumbnail_visible": true
+			},
+			"40": {
+				"attributes": {
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-type": {
+						"type": "type",
+						"value": "procedural"
+					},
+					"input2-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input2-type": {
+						"type": "type",
+						"value": "procedural"
+					},
+					"mix-dimensions": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 1054.4537353515625,
+					"y": 173.37921142578125
+				},
+				"class": {
+					"id": "77697265-7BAA-481B-8F7C-A32F6DBE1518",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input1": {
+						"type": "procedural",
+						"value": null
+					},
+					"input2": {
+						"type": "procedural",
+						"value": null
+					},
+					"mix": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"input1-type",
+					"input1-dimensions",
+					"input2-type",
+					"input2-dimensions",
+					"mix-dimensions"
+				],
+				"name": "Cross Fader",
+				"thumbnail_visible": true
+			},
+			"41": {
+				"attributes": {
+					"anti-alias": {
+						"type": "bool",
+						"value": false
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"unipolar": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 351.4537353515625,
+					"y": 279.37921142578125
+				},
+				"class": {
+					"id": "77697265-F95F-41D8-8FC4-DF0DC56E1051",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"amplitude": {
+						"type": "float",
+						"value": 2
+					},
+					"frequency": {
+						"type": "float",
+						"value": 0.5
+					},
+					"offset": {
+						"type": "float",
+						"value": 0
+					},
+					"phase-offset": {
+						"type": "float",
+						"value": 0
+					},
+					"reset-phase": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"reset-phase",
+					"unipolar",
+					"anti-alias",
+					"instances"
+				],
+				"name": "Saw",
+				"thumbnail_visible": true
+			},
+			"42": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"normalized-input": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 598.4537353515625,
+					"y": 279.5792236328125
+				},
+				"class": {
+					"id": "77697265-F1BB-4A7E-BF04-7D544E0E2D62",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"normalized-input",
+					"flow",
+					"input0-type",
+					"input0-dimensions"
+				],
+				"name": "Cos",
+				"thumbnail_visible": true
+			},
+			"44": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input0": {
+						"type": "float",
+						"value": 1
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1": {
+						"type": "float",
+						"value": 6.28318548202514648
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 95.4537353515625,
+					"y": 268.37921142578125
+				},
+				"class": {
+					"id": "77697265-A0D8-429A-A558-69BC58D0D425",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"size",
+					"type0",
+					"input0-dimensions",
+					"type1",
+					"input1-dimensions"
+				],
+				"name": "Multiply",
+				"thumbnail_visible": true
+			},
+			"47": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-type": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 819.4537353515625,
+					"y": 268.37921142578125
+				},
+				"class": {
+					"id": "77697265-3595-4107-A14B-9348570DB50B",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 1
+					},
+					"input1": {
+						"type": "float",
+						"value": 2
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-type",
+					"input0-dimensions",
+					"input1-type",
+					"input1-dimensions"
+				],
+				"name": "Power",
+				"thumbnail_visible": true
+			},
+			"48": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"normalized-input": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 893.4537353515625,
+					"y": 664.37921142578125
+				},
+				"class": {
+					"id": "77697265-F1BB-4A7E-BF04-7D544E0E2D62",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"normalized-input",
+					"flow",
+					"input0-type",
+					"input0-dimensions"
+				],
+				"name": "Cos",
+				"thumbnail_visible": true
+			},
+			"50": {
+				"attributes": {
+					"defaultValue-type": {
+						"type": "type",
+						"value": "null"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 624.4537353515625,
+					"y": 664.37921142578125
+				},
+				"class": {
+					"id": "77697265-E9E1-4BAC-9742-265E5207A103",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances",
+					"input0-type",
+					"defaultValue-type"
+				],
+				"name": "Float",
+				"thumbnail_visible": true
+			},
+			"51": {
+				"attributes": {
+					"anti-alias": {
+						"type": "bool",
+						"value": false
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"unipolar": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 330.4537353515625,
+					"y": 694.37921142578125
+				},
+				"class": {
+					"id": "77697265-F95F-41D8-8FC4-DF0DC56E1051",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"amplitude": {
+						"type": "float",
+						"value": 2
+					},
+					"frequency": {
+						"type": "float",
+						"value": 0.5
+					},
+					"offset": {
+						"type": "float",
+						"value": 0
+					},
+					"phase-offset": {
+						"type": "float",
+						"value": 0
+					},
+					"reset-phase": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"reset-phase",
+					"unipolar",
+					"anti-alias",
+					"instances"
+				],
+				"name": "Saw",
+				"thumbnail_visible": true
+			},
+			"52": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"input0": {
+						"type": "float",
+						"value": 0.5
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1": {
+						"type": "float",
+						"value": 6.28318548202514648
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 51.4537353515625,
+					"y": 681.37921142578125
+				},
+				"class": {
+					"id": "77697265-A0D8-429A-A558-69BC58D0D425",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"flow",
+					"size",
+					"type0",
+					"input0-dimensions",
+					"type1",
+					"input1-dimensions"
+				],
+				"name": "Multiply",
+				"thumbnail_visible": true
+			},
+			"53": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": false
+					},
+					"has-min": {
+						"type": "bool",
+						"value": false
+					},
+					"input": {
+						"type": "float",
+						"value": 0.5
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": -244.5462646484375,
+					"y": 91.37921142578125
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"instances",
+					"flow",
+					"has-min",
+					"has-max",
+					"options-count",
+					"widget",
+					"unit"
+				],
+				"name": "Rotation",
+				"thumbnail_visible": true
+			},
+			"54": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "attribute"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": false
+					},
+					"has-min": {
+						"type": "bool",
+						"value": false
+					},
+					"input": {
+						"type": "float",
+						"value": 1
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": -244.5462646484375,
+					"y": 279.37921142578125
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [
+					"instances",
+					"flow",
+					"has-min",
+					"has-max",
+					"options-count",
+					"widget",
+					"unit"
+				],
+				"name": "Change Speed",
+				"thumbnail_visible": true
+			},
+			"55": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": false
+					},
+					"has-min": {
+						"type": "bool",
+						"value": false
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": -243.399017333984375,
+					"y": 186.0596923828125
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 0.25
+					}
+				},
+				"hidden": [
+					"instances",
+					"flow",
+					"has-min",
+					"has-max",
+					"options-count",
+					"widget",
+					"unit"
+				],
+				"name": "Orbit Speed",
+				"thumbnail_visible": true
+			},
+			"60": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"mode": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 107,
+					"width": 195,
+					"x": 1863.726318359375,
+					"y": 570.2442626953125
+				},
+				"class": {
+					"id": "77697265-9518-4E69-899B-66B8C527C6EB",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"color": {
+						"type": "float4",
+						"value": [
+							1,
+							1,
+							0,
+							1
+						]
+					},
+					"contrast": {
+						"type": "float",
+						"value": 0.20000000298023224
+					},
+					"greysKeep": {
+						"type": "bool",
+						"value": false
+					},
+					"greysTolerance": {
+						"type": "float",
+						"value": 0.30000001192092896
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"mode",
+					"greysKeep",
+					"greysTolerance",
+					"instances"
+				],
+				"name": "Colorize",
+				"thumbnail_visible": true
+			},
+			"61": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 107,
+					"width": 195,
+					"x": 2107.3720703125,
+					"y": 655.99078369140625
+				},
+				"class": {
+					"id": "77697265-D054-4243-9640-61D187129F6C",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"channel": {
+						"type": "integer",
+						"value": 0
+					},
+					"input1": {
+						"type": "texture2d",
+						"value": null
+					},
+					"input2": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					},
+					"mask": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"bypass",
+					"invert",
+					"channel",
+					"instances"
+				],
+				"name": "Mask Blend",
+				"thumbnail_visible": true
+			},
+			"7": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"normalized-input": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 598.6009521484375,
+					"y": 494.459716796875
+				},
+				"class": {
+					"id": "77697265-F1BB-4A7E-BF04-7D544E0E2D62",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"normalized-input",
+					"flow",
+					"input0-type",
+					"input0-dimensions"
+				],
+				"name": "Cos",
+				"thumbnail_visible": true
+			},
+			"8": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"normalized-input": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 598.6009521484375,
+					"y": 552.0596923828125
+				},
+				"class": {
+					"id": "77697265-377A-4BCA-B170-B551F980F7BE",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"normalized-input",
+					"flow",
+					"input0-type",
+					"input0-dimensions"
+				],
+				"name": "Sin",
+				"thumbnail_visible": true
+			},
+			"9": {
+				"attributes": {
+					"anti-alias": {
+						"type": "bool",
+						"value": false
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"unipolar": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 351.600982666015625,
+					"y": 494.0596923828125
+				},
+				"class": {
+					"id": "77697265-F95F-41D8-8FC4-DF0DC56E1051",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"amplitude": {
+						"type": "float",
+						"value": 2
+					},
+					"frequency": {
+						"type": "float",
+						"value": 1
+					},
+					"offset": {
+						"type": "float",
+						"value": 0
+					},
+					"phase-offset": {
+						"type": "float",
+						"value": 0
+					},
+					"reset-phase": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"reset-phase",
+					"unipolar",
+					"anti-alias",
+					"instances"
+				],
+				"name": "Saw",
+				"thumbnail_visible": true
+			}
+		},
+		"ui": {
+			"camera": {
+				"x": -276.800567626953125,
+				"y": -86.4489288330078125,
+				"zoom": 0.95630663633346558
+			},
+			"selection": []
+		}
+	},
+	"resources": {},
+	"ui": {
+		"audio": {
+			"routing": {
+				"in": {},
+				"out": []
+			}
+		},
+		"deviceConnections": {
+			"input": {}
+		},
+		"transport": {
+			"bpm": 120,
+			"time-signature": [
+				4,
+				4
+			]
+		},
+		"video": {
+			"routing": {
+				"out": {
+					"Display 1": null,
+					"Display 2": null,
+					"Display 3": null,
+					"Display 4": null,
+					"Syphon": null
+				}
+			}
+		}
+	}
+}

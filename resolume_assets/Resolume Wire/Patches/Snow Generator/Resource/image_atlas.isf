@@ -1,0 +1,106 @@
+/*{
+    "DESCRIPTION": "Builds a horizontal atlas from up to 8 images, using imageCount to define how many tiles.",
+    "CREDIT": "Ben + GPT",
+    "ISFVSN": "2.0",
+    "CATEGORIES": [ "Source", "Utility", "Textures" ],
+    "INPUTS": [
+        {
+            "NAME": "image0",
+            "TYPE": "image",
+            "LABEL": "Image 0"
+        },
+        {
+            "NAME": "image1",
+            "TYPE": "image",
+            "LABEL": "Image 1"
+        },
+        {
+            "NAME": "image2",
+            "TYPE": "image",
+            "LABEL": "Image 2"
+        },
+        {
+            "NAME": "image3",
+            "TYPE": "image",
+            "LABEL": "Image 3"
+        },
+        {
+            "NAME": "image4",
+            "TYPE": "image",
+            "LABEL": "Image 4"
+        },
+        {
+            "NAME": "image5",
+            "TYPE": "image",
+            "LABEL": "Image 5"
+        },
+        {
+            "NAME": "image6",
+            "TYPE": "image",
+            "LABEL": "Image 6"
+        },
+        {
+            "NAME": "image7",
+            "TYPE": "image",
+            "LABEL": "Image 7"
+        },
+        {
+            "NAME": "imageCount",
+            "TYPE": "float",
+            "DEFAULT": 4.0,
+            "MIN": 1.0,
+            "MAX": 8.0,
+            "LABEL": "Number of Images"
+        }
+    ]
+}*/
+
+#ifdef GL_ES
+precision mediump float;
+precision mediump int;
+#endif
+
+// ISF built-ins:
+// TIME
+// isf_FragNormCoord
+// RENDERSIZE
+
+// Fetch from the N-th image input
+vec4 fetchImage(int idx, vec2 uv) {
+    if (idx == 0) return IMG_NORM_PIXEL(image0, uv);
+    else if (idx == 1) return IMG_NORM_PIXEL(image1, uv);
+    else if (idx == 2) return IMG_NORM_PIXEL(image2, uv);
+    else if (idx == 3) return IMG_NORM_PIXEL(image3, uv);
+    else if (idx == 4) return IMG_NORM_PIXEL(image4, uv);
+    else if (idx == 5) return IMG_NORM_PIXEL(image5, uv);
+    else if (idx == 6) return IMG_NORM_PIXEL(image6, uv);
+    else if (idx == 7) return IMG_NORM_PIXEL(image7, uv);
+    return vec4(0.0);
+}
+
+void main() {
+    // Normalized output coordinates [0..1]
+    vec2 uv = isf_FragNormCoord;
+
+    // How many images are actually in use
+    int count = int(clamp(imageCount, 1.0, 8.0));
+    float tiles = float(count);
+
+    // Each image gets a tile that is 1/count wide and full height
+    float tileWidth = 1.0 / tiles;
+
+    // Determine which tile this pixel belongs to
+    float x = uv.x;
+    int tileIndex = int(floor(x * tiles));
+    tileIndex = clamp(tileIndex, 0, count - 1);
+
+    // Remap UV.x into local [0..1] for that tile
+    float tileStart = tileWidth * float(tileIndex);
+    float localX = (x - tileStart) / tileWidth;
+    vec2 localUV = vec2(localX, uv.y);
+
+    // Sample from the chosen image
+    vec4 color = fetchImage(tileIndex, localUV);
+
+    gl_FragColor = color;
+}

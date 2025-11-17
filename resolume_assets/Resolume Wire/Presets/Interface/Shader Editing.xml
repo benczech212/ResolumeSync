@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Layout version="1">
+	<versionInfo name="Wire Editor" majorVersion="7" minorVersion="7" microVersion="0" revision="11365"/>
+	<Desktop>
+		<Window panel_id="59" main="1" full_screen="1" x="20" y="45" width="2520" height="1328">
+			<FlexContainer panel_id="60" orientation="0">
+				<FlexContainer panel_id="108" width_desired="818" orientation="1">
+					<TabbedContainer panel_id="109" height_desired="1043">
+						<TextEditor width_desired="400"/>
+					</TabbedContainer>
+					<FlexContainer panel_id="110" height_desired="267" orientation="0">
+						<TabbedContainer panel_id="111">
+							<Log width_desired="400"/>
+						</TabbedContainer>
+					</FlexContainer>
+				</FlexContainer>
+				<FlexContainer panel_id="61" width_desired="1738" orientation="1">
+					<FlexContainer panel_id="71" height_desired="589" orientation="0">
+						<FlexContainer panel_id="73" width_desired="978" orientation="1">
+							<TabbedContainer panel_id="72">
+								<Monitor width_desired="550" height_desired="360" instance="0"/>
+							</TabbedContainer>
+						</FlexContainer>
+						<FlexContainer panel_id="116" width_desired="404" orientation="1">
+							<TabbedContainer panel_id="117">
+								<Dashboard width_desired="400"/>
+							</TabbedContainer>
+						</FlexContainer>
+						<FlexContainer panel_id="78" width_desired="382" orientation="1">
+							<TabbedContainer panel_id="79">
+								<Library width_desired="400"/>
+								<Resources width_desired="400"/>
+							</TabbedContainer>
+							<FlexContainer panel_id="114" orientation="0">
+								<TabbedContainer panel_id="115">
+									<Help height_desired="100"/>
+								</TabbedContainer>
+							</FlexContainer>
+						</FlexContainer>
+					</FlexContainer>
+					<Toolbar height_desired="36"/>
+					<FlexContainer panel_id="50" height_desired="681" orientation="0">
+						<FlexContainer panel_id="51" width_desired="1387" orientation="1">
+							<PatchCanvas/>
+						</FlexContainer>
+						<FlexContainer panel_id="52" width_desired="381" orientation="1">
+							<FlexContainer panel_id="53" height_desired="831" orientation="0">
+								<FlexContainer panel_id="63" orientation="1">
+									<TabbedContainer panel_id="64">
+										<NodeInspector width_desired="400"/>
+										<PatchInspector width_desired="400"/>
+									</TabbedContainer>
+								</FlexContainer>
+							</FlexContainer>
+						</FlexContainer>
+					</FlexContainer>
+				</FlexContainer>
+			</FlexContainer>
+		</Window>
+	</Desktop>
+	<HiddenPanels/>
+</Layout>
+

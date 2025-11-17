@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preset name="Lows Trigger" uniqueId="Animation" className="Animation" default="0">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="23" microVersion="2" revision="51094"/>
+	<Animation>
+		<DurationSource name="DurationSource" defaultDuration="4b" scale="1"/>
+		<PhaseSourceFFT name="PhaseSourceFFT" phase="0.10484842786110823432" linkId="/audioengine/externalfft">
+			<Params name="Params">
+				<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.10480859483149543299">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="0" max="1"/>
+					<ValueRange name="minMax" min="0" max="1"/>
+					<ValueRange name="startStop" min="0" max="0.33333333333333331483"/>
+				</ParamRange>
+				<ParamRange name="Gain" T="DOUBLE" default="0" value="0">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="-48" max="48"/>
+					<ValueRange name="minMax" min="-48" max="48"/>
+					<ValueRange name="startStop" min="-48" max="48"/>
+				</ParamRange>
+				<ParamRange name="Fallback" T="DOUBLE" default="1000" value="1000">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+					<BehaviourDouble name="BehaviourDouble"/>
+					<ValueRange name="defaultRange" min="100" max="2000"/>
+					<ValueRange name="minMax" min="100" max="2000"/>
+					<ValueRange name="startStop" min="100" max="2000"/>
+				</ParamRange>
+				<ParamChoice name="ValueBehaviour" T="INT32" default="0" value="0" storeChoices="0"/>
+			</Params>
+		</PhaseSourceFFT>
+		<BehaviourDouble name="BehaviourDouble">
+			<Modifier>
+				<ModifierEnvelope name="ModifierEnvelope" altName="Envelope" uniqueId="1741624130684">
+					<points>
+						<point x="0" y="0" curve="33"/>
+						<point x="0.12222222222222213495" y="0" curve="1"/>
+						<point x="0.19097222222222220989" y="1" curve="10"/>
+						<point x="1" y="1" curve="12"/>
+					</points>
+				</ModifierEnvelope>
+			</Modifier>
+		</BehaviourDouble>
+		<AnimationStarter flags="18446744073709551615"/>
+	</Animation>
+</Preset>
+

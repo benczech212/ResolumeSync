@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset name="ASR" uniqueId="MOD_ENVELOPE" className="Envelope">
+  <versionInfo name="Resolume Arena" majorVersion="7" minorVersion="3" microVersion="0"
+               revision="70000"/>
+  <ModifierEnvelope name="ModifierEnvelope" altName="Envelope">
+    <points>
+      <point x="0" y="0" curve="33"/>
+      <point x="0.10000000000000000555" y="1" curve="12"/>
+      <point x="0.5" y="1" curve="1"/>
+      <point x="1" y="0" curve="12"/>
+    </points>
+  </ModifierEnvelope>
+</Preset>

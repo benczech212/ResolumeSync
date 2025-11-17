@@ -1,0 +1,1884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Composition name="Composition" uniqueId="1635258988420" numDecks="3" currentDeckIndex="0" numLayers="5" numColumns="16" compositionIsRelative="0">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="23" microVersion="2" revision="51094"/>
+	<CompositionInfo name="Snow Place Like Tarpon" description="" width="1920" height="1080">
+		<DeckInfo name="Snow Place Like Tarpon Springs" id="1762541949021" closed="0"/>
+		<DeckInfo name="empty" id="1762541949027" closed="0"/>
+		<DeckInfo name="empty" id="1762541949033" closed="0"/>
+	</CompositionInfo>
+	<Params name="Params">
+		<Param name="Name" T="STRING" default="" value="Snow Place Like Tarpon"/>
+		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999987088106">
+			<PhaseSourceStatic name="PhaseSourceStatic"/>
+		</ParamRange>
+		<Param name="KeyboardShortcutPreset" T="STRING" default="" value="Default"/>
+		<Param name="MidiShortcutPreset" T="STRING" default="" value="Test"/>
+		<Param name="OscShortcutPreset" T="STRING" default="" value="OSC Test"/>
+		<Param name="DmxShortcutPreset" T="STRING" default="" value="Default"/>
+	</Params>
+	<CompositionView name="CompositionView">
+		<FoldParams name="FoldParams">
+			<FoldState component="/compositionpropertiesdashboard" folded="0"/>
+		</FoldParams>
+	</CompositionView>
+	<AudioTrack name="AudioTrack">
+		<AudioEffectChain name="AudioEffectChain"/>
+	</AudioTrack>
+	<VideoTrack name="VideoTrack">
+		<Params name="Params">
+			<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+				<PhaseSourceStatic name="PhaseSourceStatic"/>
+			</ParamRange>
+			<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+				<PhaseSourceStatic name="PhaseSourceStatic"/>
+			</ParamRange>
+		</Params>
+		<RenderPass name="RenderPassChain">
+			<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1762541948998" baseType="Effect">
+				<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+			</RenderPass>
+		</RenderPass>
+	</VideoTrack>
+	<Group name="Group" uniqueId="1763321315802">
+		<LayerGroupView name="LayerGroupView" foldedControl="0">
+			<FoldParams name="FoldParams"/>
+		</LayerGroupView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763321316501" baseType="Effect">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<VideoMixerStateID uniqueId="1763321316495"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763321316497" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Group>
+	<Layer name="Layer" uniqueId="1762541949075" layerIndex="0">
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView" foldedControl="0">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1762541949195" baseType="Effect">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<VideoMixerStateID uniqueId="1762541949184"/>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1762541949186" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<VideoMixerStateID uniqueId="1762541949189"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1762541949191" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer name="Layer" uniqueId="1763181537492" layerIndex="1">
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView" foldedControl="0">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181538077" baseType="Effect">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<VideoMixerStateID uniqueId="1763181538066"/>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1763181538068" baseType="Mixer">
+					<Params name="Params">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.5">
+							<PhaseSourceStatic name="PhaseSourceStatic"/>
+						</ParamRange>
+					</Params>
+				</RenderPass>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<VideoMixerStateID uniqueId="1763181538071"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763181538073" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer name="Layer" uniqueId="1762541949213" layerIndex="2">
+		<Params name="AutoPilot">
+			<ParamChoice name="Duration" default="1" value="2" storeChoices="0"/>
+			<ParamRange name="Beats" T="DOUBLE" default="4" value="64">
+				<PhaseSourceStatic name="PhaseSourceStatic"/>
+			</ParamRange>
+		</Params>
+		<ClipTransition name="ClipTransition">
+			<Params name="Params">
+				<ParamRange name="Duration" T="DOUBLE" default="0" value="4">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+			</Params>
+		</ClipTransition>
+		<LayerView name="LayerView" foldedControl="0">
+			<FoldParams name="FoldParams">
+				<FoldState component="/groupedcomponentautopilot" folded="0"/>
+			</FoldParams>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1762541949333" baseType="Effect">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<Params name="Params">
+					<ParamChoice name="Blend Mode" T="UINT64" default="67464114" value="8259252329296218008" storeChoices="0"/>
+				</Params>
+				<VideoMixerStateID uniqueId="1762541949322"/>
+				<RenderPass name="Mask" type="WireMixer" uniqueTypeId="4b493472-bf8a-4011-bf33-f130c261425c" uniqueId="1763181537299" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<VideoMixerStateID uniqueId="1762541949327"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1762541949329" baseType="Mixer">
+					<Params name="Params">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.95267117023468017578">
+							<PhaseSourceStatic name="PhaseSourceStatic"/>
+						</ParamRange>
+					</Params>
+				</RenderPass>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer name="Layer" uniqueId="1762541949351" layerIndex="3">
+		<Params name="AutoPilot">
+			<ParamChoice name="Duration" default="1" value="2" storeChoices="0"/>
+			<ParamRange name="Beats" T="DOUBLE" default="4" value="64">
+				<PhaseSourceStatic name="PhaseSourceStatic"/>
+			</ParamRange>
+			<ParamChoice name="Target" default="BAAAAAAAAAA=,AAAAAAAAAAA=" value="AwAAAAAAAAA=,AAAAAAAAAAA=" storeChoices="0"/>
+		</Params>
+		<ClipTransition name="ClipTransition">
+			<Params name="Params">
+				<ParamRange name="Duration" T="DOUBLE" default="0" value="4">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+			</Params>
+		</ClipTransition>
+		<LayerView name="LayerView" foldedControl="0">
+			<FoldParams name="FoldParams">
+				<FoldState component="/groupedcomponentautopilot" folded="0"/>
+			</FoldParams>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1762541949471" baseType="Effect">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<VideoMixerStateID uniqueId="1762541949460"/>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1762541949462" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<VideoMixerStateID uniqueId="1762541949465"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1762541949467" baseType="Mixer">
+					<Params name="Params">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.56012415885925292969">
+							<PhaseSourceStatic name="PhaseSourceStatic"/>
+						</ParamRange>
+					</Params>
+				</RenderPass>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer name="Layer" uniqueId="1763321315861" layerIndex="4" layerGroup="0">
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView" foldedControl="0">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763321316477" baseType="Effect">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<VideoMixerStateID uniqueId="1763321316466"/>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1763321316468" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<VideoMixerStateID uniqueId="1763321316471"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763321316473" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<CrossFader name="CrossFader">
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain"/>
+			<ChoosableMixer name="Blend mode">
+				<VideoMixerStateID uniqueId="1762541949016"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1762541949018" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</CrossFader>
+	<TempoController name="TempoController"/>
+	<Deck name="Deck" uniqueId="1762541949021" closed="0" numLayersWithContent="5" numColumnsWithContent="15" numLayers="5" numColumns="16" deckIndex="0">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="empty" value="Snow Place Like Tarpon Springs"/>
+		</Params>
+		<Column uniqueId="1762541949066" columnIndex="0"/>
+		<Column uniqueId="1762541949067" columnIndex="1"/>
+		<Column uniqueId="1762541949068" columnIndex="2"/>
+		<Column uniqueId="1762541949069" columnIndex="3"/>
+		<Column uniqueId="1762541949070" columnIndex="4"/>
+		<Column uniqueId="1762541949071" columnIndex="5"/>
+		<Column uniqueId="1762541949072" columnIndex="6"/>
+		<Column uniqueId="1762541949073" columnIndex="7"/>
+		<Column uniqueId="1762541949074" columnIndex="8"/>
+		<Column uniqueId="1763181534794" columnIndex="9"/>
+		<Column uniqueId="1763181534858" columnIndex="10"/>
+		<Column uniqueId="1763181534968" columnIndex="11"/>
+		<Column uniqueId="1763181535078" columnIndex="12"/>
+		<Column uniqueId="1763181535188" columnIndex="13"/>
+		<Column uniqueId="1763181535298" columnIndex="14"/>
+		<Column uniqueId="1763181538337" columnIndex="15"/>
+		<Column uniqueId="1763321316519" groupIndex="0" columnIndex="0"/>
+		<Column uniqueId="1763321316537" groupIndex="0" columnIndex="1"/>
+		<Column uniqueId="1763321316555" groupIndex="0" columnIndex="2"/>
+		<Column uniqueId="1763321316573" groupIndex="0" columnIndex="3"/>
+		<Column uniqueId="1763321316591" groupIndex="0" columnIndex="4"/>
+		<Column uniqueId="1763321316609" groupIndex="0" columnIndex="5"/>
+		<Column uniqueId="1763321316627" groupIndex="0" columnIndex="6"/>
+		<Column uniqueId="1763321316645" groupIndex="0" columnIndex="7"/>
+		<Column uniqueId="1763321316663" groupIndex="0" columnIndex="8"/>
+		<Column uniqueId="1763321316681" groupIndex="0" columnIndex="9"/>
+		<Column uniqueId="1763321316699" groupIndex="0" columnIndex="10"/>
+		<Column uniqueId="1763321316717" groupIndex="0" columnIndex="11"/>
+		<Column uniqueId="1763321316735" groupIndex="0" columnIndex="12"/>
+		<Column uniqueId="1763321316753" groupIndex="0" columnIndex="13"/>
+		<Column uniqueId="1763321316771" groupIndex="0" columnIndex="14"/>
+		<Column uniqueId="1763321316789" groupIndex="0" columnIndex="15"/>
+		<Clip name="Clip" uniqueId="1762541949039" layerIndex="0" columnIndex="0"/>
+		<Clip name="Clip" uniqueId="1763181537601" layerIndex="1" columnIndex="0"/>
+		<Clip name="Clip" uniqueId="1762541949053" layerIndex="2" columnIndex="0"/>
+		<Clip name="Clip" uniqueId="1762541949058" layerIndex="3" columnIndex="0"/>
+		<Clip name="Clip" uniqueId="1763321315970" layerIndex="4" columnIndex="0"/>
+		<Clip name="Clip" uniqueId="1762541949040" layerIndex="0" columnIndex="1">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Full Building Perspective Corrected.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Full Building Perspective Corrected" value="Full Building Perspective Corrected"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1868" value="1868">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1050" value="1050">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1762541949581" baseType="Effect">
+						<Params name="Params">
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="102.5">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1762541949579"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1868" height="1050" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Full Building Perspective Corrected.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1762541949579"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763181537632" layerIndex="1" columnIndex="1">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Spectrum Fill Trigger V6" value="Spectrum Fill Trigger V6"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181538162" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181538160"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
+						<RenderPass name="SpectrumFillTriggerV6" type="WireGenerator" uniqueTypeId="20c00f30-1cf3-4407-b9bf-c8a4c5466064" uniqueId="1763181538104" baseType="Generator">
+							<Params name="Params">
+								<ParamImageFile name="Image In" T="FILE" default="D:\Stages\Pyramid\Spectrum Fills\All Area - Center Point.png" value="D:\Shows\2025-10-31 - Halloween\Radial Spectrum Gradient 2.png" relocatable="1" key="0"/>
+								<ParamRange name="Hue Offset" T="DOUBLE" default="132.352935791015625" value="0" key="39">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="Beat Duration" T="DOUBLE" default="4" value="3.9998779296875" key="43">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<Param name="Show Mask Only" T="BOOL" default="1" value="0" key="71"/>
+								<ParamRange name="Opacity 1" T="DOUBLE" default="0.5" value="0.71698113207547164993" key="165">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="Opacity 2" T="DOUBLE" default="0.75" value="0.9716981132075471761" key="170">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamColor name="Color 1" T="COLOR" default="4278190335" value="4278190335" channelmode="2" paletteEnabled="0" color="4278190335" interpolated="0" key="171"/>
+								<ParamColor name="Color 2" T="COLOR" default="4278255360" value="4278255360" channelmode="2" paletteEnabled="0" color="4278255360" interpolated="0" key="172"/>
+							</Params>
+						</RenderPass>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181538160"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763181535346" layerIndex="2" columnIndex="1">
+			<PreloadData>
+				<EmbeddedThumbnail encoding="LZF" width="320" height="240" bitdepth="32" data="AQAA4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A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"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Mask Randomizer" value="Mask Randomizer"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponentmaskrandomizerrandomizeparambasecomponentparambasecomponent" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181538593" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181538591"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
+						<RenderPass name="MaskRandomizer" type="WireGenerator" uniqueTypeId="1e4ad5b1-d2a8-4e74-acd7-40d0e9026060" uniqueId="1763181538559" baseType="Generator">
+							<Params name="Params">
+								<ParamImageFile name="Mask 1" T="FILE" default="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Flower - Flower Full.png" value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Big Window.png" relocatable="1" key="0"/>
+								<ParamImageFile name="Mask 2" T="FILE" default="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Flower - Flower Pattern.png" value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Roof Circle.png" relocatable="1" key="5"/>
+								<ParamImageFile name="Mask 3" T="FILE" default="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Merkaba - Boundries Stars.png" value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Column Tops and Bottoms.png" relocatable="1" key="6"/>
+								<ParamImageFile name="Mask 4" T="FILE" default="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Merkaba - Hexagons.png" value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Columns.png" relocatable="1" key="7"/>
+								<ParamImageFile name="Mask 5" T="FILE" default="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Merkaba - Pyramid.png" value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Roof Crown.png" relocatable="1" key="8"/>
+								<ParamImageFile name="Mask 6" T="FILE" default="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Panel - Left and Right.png" value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Mix 1.png" relocatable="1" key="9"/>
+								<ParamImageFile name="Mask 7" T="FILE" default="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Panel - Top and Bottom.png" value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Roof Peak.png" relocatable="1" key="10"/>
+								<ParamImageFile name="Mask 8" T="FILE" default="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Panel - Wires.png" value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Roof Trim.png" relocatable="1" key="11"/>
+								<ParamEvent name="Randomize" T="BOOL" default="0" value="1" key="12">
+									<DurationSource name="DurationSource" defaultDuration="4b"/>
+									<PhaseSourceFFT name="PhaseSourceFFT" phase="0" linkId="/audioengine/externalfft">
+										<Params name="Params">
+											<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.26052430834117368263">
+												<PhaseSourceStatic name="PhaseSourceStatic"/>
+												<ValueRange name="startStop" min="0.086366234756097559622" max="0.75862068965517237551"/>
+											</ParamRange>
+											<ParamRange name="Gain" T="DOUBLE" default="0" value="3.0720000000000169393">
+												<PhaseSourceStatic name="PhaseSourceStatic"/>
+											</ParamRange>
+										</Params>
+									</PhaseSourceFFT>
+									<BehaviourDouble name="BehaviourDouble">
+										<Modifier>
+											<ModifierEnvelope name="ModifierEnvelope" altName="Envelope" uniqueId="1741624130684">
+												<points>
+													<point x="0" y="0" curve="33"/>
+													<point x="0.38263888888888886175" y="0" curve="1"/>
+													<point x="0.5" y="1" curve="10"/>
+													<point x="1" y="1" curve="12"/>
+												</points>
+											</ModifierEnvelope>
+										</Modifier>
+									</BehaviourDouble>
+									<ValueRange name="startStopRangeNormalized" min="0.16896551724137931494" max="0.8482758620689655471"/>
+								</ParamEvent>
+								<ParamRange name="Maximum Opacity" T="DOUBLE" default="1" value="1.0001220703125" key="86">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="Transition Bar Count" T="DOUBLE" default="4" value="24" key="122">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamImageFile name="Mask 9" T="FILE" default="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Panel - Wires.png" value="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Panel - Wires.png" relocatable="1" key="164"/>
+								<ParamImageFile name="Mask 10" T="FILE" default="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Panel - Wires.png" value="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Panel - Wires.png" relocatable="1" key="165"/>
+								<ParamImageFile name="Mask 11" T="FILE" default="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Panel - Wires.png" value="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Panel - Wires.png" relocatable="1" key="166"/>
+								<ParamImageFile name="Mask 12" T="FILE" default="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Panel - Wires.png" value="J:\stages\sacred_geometry_stage\Masks 2\Revised\Sacred Geometry Stage - Panel - Wires.png" relocatable="1" key="167"/>
+							</Params>
+						</RenderPass>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181538591"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1762541949057" layerIndex="3" columnIndex="1">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="" value="Acuarela"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Acuarela" type="DryWetEffect" uniqueTypeId="c_c7106a57-878e-429a-ae83-313d07e6d943" uniqueId="1763181538842" baseType="DryWetEffect">
+						<RenderPass name="Acuarela" type="WireEffect" uniqueTypeId="c_c7106a57-878e-429a-ae83-313d07e6d943" uniqueId="1763181538831" baseType="Effect" dwType="Effect"/>
+						<ChoosableMixer name="Mixer">
+							<VideoMixerStateID uniqueId="1763181538847"/>
+							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763181538849" baseType="Mixer"/>
+						</ChoosableMixer>
+					</RenderPass>
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181538869" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181538867"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="CompositionRouterVideoSource"/>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181538867"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763321316001" layerIndex="4" columnIndex="1">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Video Fills\Generated Fills\Watch Folder\Output\noisefill_full_C1.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="noisefill_full_C1" value="noisefill_full_C1"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="5258.9996999786189917">
+						<DurationSource name="DurationSource" defaultDuration="10s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.52589996999786192688" defaultMillisecondsDuration="10000" defaultBeatsDuration="16">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="16" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="10000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763321317024" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763321317022"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Video Fills\Generated Fills\Watch Folder\Output\noisefill_full_C1.mov"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763321317022"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1762541949041" layerIndex="0" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1763181537663" layerIndex="1" columnIndex="2">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Synesthesia" value="Synesthesia"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="596.50099997924451145">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.119300199995848899" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181538718" baseType="Effect">
+						<Params name="Params">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-9.0432548224816855509">
+								<DurationSource name="DurationSource" defaultDuration="4b" userDuration="64" scale="0.13020833333333334259"/>
+								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.86673564687498594328" defaultBeatsDuration="64">
+									<Params name="Params">
+										<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="64" value="4">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamChoice name="PlayMode" T="INT32" default="0" value="1" storeChoices="0"/>
+										<Param name="DurationIsScalable" altName="Duration Changes With In &amp; Out Points" T="BOOL" default="1" value="0"/>
+									</Params>
+									<Beats_double name="Beats_double" numManualBeats="64" detectedTempo="-1"/>
+								</PhaseSourceTimeline>
+								<BehaviourDouble name="BehaviourDouble">
+									<Modifier>
+										<ModifierEnvelope name="ModifierEnvelope" altName="Envelope" uniqueId="1763181352423">
+											<points>
+												<point x="0" y="0" curve="33"/>
+												<point x="1" y="1" curve="13"/>
+											</points>
+										</ModifierEnvelope>
+									</Modifier>
+								</BehaviourDouble>
+								<ValueRange name="defaultRange" min="-1920" max="1920"/>
+								<ValueRange name="minMax" min="-32768" max="32768"/>
+								<ValueRange name="startStop" min="-500" max="0"/>
+							</ParamRange>
+						</Params>
+						<AnimationSettings name="AnimationSettings" uniqueId="1763181538719">
+							<Setting name="Position X" flags="8"/>
+						</AnimationSettings>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+					<RenderPass storage="0" name="AutoMask" type="DryWetEffect" uniqueTypeId="A120" uniqueId="1763181539247" baseType="DryWetEffect">
+						<RenderPass name="AutoMask" type="AutoMask" uniqueTypeId="A120" uniqueId="1763181539241" baseType="Effect" dwType="Effect">
+							<Params name="Params">
+								<ParamRange name="Contrast" T="DOUBLE" default="0.5" value="0.98499999999999998668">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+						</RenderPass>
+						<ChoosableMixer name="Mixer">
+							<VideoMixerStateID uniqueId="1763181539252"/>
+							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763181539254" baseType="Mixer"/>
+						</ChoosableMixer>
+					</RenderPass>
+					<RenderPass storage="0" name="Mirror" type="DryWetEffect" uniqueTypeId="A108" uniqueId="1763181539065" baseType="DryWetEffect">
+						<RenderPass name="Mirror" type="Mirror" uniqueTypeId="A108" uniqueId="1763181539056" baseType="Effect" dwType="Effect">
+							<Params name="Params">
+								<ParamRange name="X" T="DOUBLE" default="0" value="0.5">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="In / Out" T="DOUBLE" default="1" value="0">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+						</RenderPass>
+						<ChoosableMixer name="Mixer">
+							<VideoMixerStateID uniqueId="1763181539070"/>
+							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763181539072" baseType="Mixer"/>
+						</ChoosableMixer>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181538716"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="SpoutVideoSource">
+						<SpoutInfo serverName="Synesthesia"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181538716"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1762541949048" layerIndex="2" columnIndex="2">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\All Area.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="All Area" value="All Area"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1762541952352" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1762541952350"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\All Area.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1762541952350"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1762541949060" layerIndex="3" columnIndex="2">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="" value="Dot Screen"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="DotScreen" type="DryWetEffect" uniqueTypeId="A176" uniqueId="1763181538947" baseType="DryWetEffect">
+						<RenderPass name="DotScreen" type="DotScreen" uniqueTypeId="A176" uniqueId="1763181538941" baseType="Effect" dwType="Effect"/>
+						<ChoosableMixer name="Mixer">
+							<VideoMixerStateID uniqueId="1763181538952"/>
+							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763181538954" baseType="Mixer"/>
+						</ChoosableMixer>
+					</RenderPass>
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181538974" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181538972"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="CompositionRouterVideoSource"/>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181538972"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763321316032" layerIndex="4" columnIndex="2">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Video Fills\Generated Fills\Watch Folder\Output\noisefill_full_turb_C1.mov"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="noisefill_full_turb_C1" value="noisefill_full_turb_C1"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="10s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="10000" defaultBeatsDuration="16">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="16" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="10000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763321317097" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763321317095"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Video Fills\Generated Fills\Watch Folder\Output\noisefill_full_turb_C1.mov"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763321317095"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1762541949042" layerIndex="0" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1763181537694" layerIndex="1" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1762541949049" layerIndex="2" columnIndex="3">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Big Window.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Big Window" value="Big Window"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181536398" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536396"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Big Window.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536396"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1762541949059" layerIndex="3" columnIndex="3">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="" value="Edge Detection"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="EdgeDetection" type="DryWetEffect" uniqueTypeId="MEDG" uniqueId="1763181539103" baseType="DryWetEffect">
+						<RenderPass name="EdgeDetection" type="EdgeDetection" uniqueTypeId="MEDG" uniqueId="1763181539087" baseType="Effect" dwType="Effect">
+							<Params name="Params">
+								<ParamColor name="Color" T="COLOR" default="4294967295" value="4294967295" channelmode="2" paletteEnabled="0" color="4294967295" interpolated="0"/>
+							</Params>
+						</RenderPass>
+						<ChoosableMixer name="Mixer">
+							<VideoMixerStateID uniqueId="1763181539108"/>
+							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1763181539110" baseType="Mixer"/>
+						</ChoosableMixer>
+					</RenderPass>
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181539130" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181539128"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="CompositionRouterVideoSource"/>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181539128"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763321316063" layerIndex="4" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1762541949043" layerIndex="0" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1763181537725" layerIndex="1" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1762541949050" layerIndex="2" columnIndex="4">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Brick Face.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Brick Face" value="Brick Face"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="819.9873999812865577">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.8199873999812865577" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181536471" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536469"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Brick Face.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536469"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1762541949062" layerIndex="3" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1763321316094" layerIndex="4" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1762541949044" layerIndex="0" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1763181537756" layerIndex="1" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1762541949051" layerIndex="2" columnIndex="5">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Column Tops and Bottoms.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Column Tops and Bottoms" value="Column Tops and Bottoms"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181536544" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536542"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Column Tops and Bottoms.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536542"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1762541949061" layerIndex="3" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1763321316125" layerIndex="4" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1762541949045" layerIndex="0" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1763181537787" layerIndex="1" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1762541949052" layerIndex="2" columnIndex="6">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Columns.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Columns" value="Columns"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181536617" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536615"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Columns.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536615"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1762541949063" layerIndex="3" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1763321316156" layerIndex="4" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1762541949046" layerIndex="0" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1763181537818" layerIndex="1" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1762541949055" layerIndex="2" columnIndex="7">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Door.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Door" value="Door"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181536690" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536688"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Door.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536688"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1762541949064" layerIndex="3" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1763321316187" layerIndex="4" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1762541949047" layerIndex="0" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1763181537849" layerIndex="1" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1762541949054" layerIndex="2" columnIndex="8">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Mix 1.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Mix 1" value="Mix 1"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181536763" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536761"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Mix 1.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536761"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1762541949065" layerIndex="3" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1763321316218" layerIndex="4" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1763181534795" layerIndex="0" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1763181537880" layerIndex="1" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1762541949056" layerIndex="2" columnIndex="9">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Roof Circle.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Roof Circle" value="Roof Circle"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181536836" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536834"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Roof Circle.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536834"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763181534827" layerIndex="3" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1763321316249" layerIndex="4" columnIndex="9"/>
+		<Clip name="Clip" uniqueId="1763181534875" layerIndex="0" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1763181537911" layerIndex="1" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1763181534796" layerIndex="2" columnIndex="10">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Roof Crown.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Roof Crown" value="Roof Crown"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181536909" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536907"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Roof Crown.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536907"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763181534937" layerIndex="3" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1763321316280" layerIndex="4" columnIndex="10"/>
+		<Clip name="Clip" uniqueId="1763181534985" layerIndex="0" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1763181537942" layerIndex="1" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1763181534906" layerIndex="2" columnIndex="11">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Roof Peak.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Roof Peak" value="Roof Peak"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181536982" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536980"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Roof Peak.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181536980"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763181535047" layerIndex="3" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1763321316311" layerIndex="4" columnIndex="11"/>
+		<Clip name="Clip" uniqueId="1763181535095" layerIndex="0" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1763181537973" layerIndex="1" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1763181535016" layerIndex="2" columnIndex="12">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Roof Trim.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Roof Trim" value="Roof Trim"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181537055" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181537053"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Roof Trim.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181537053"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763181535157" layerIndex="3" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1763321316342" layerIndex="4" columnIndex="12"/>
+		<Clip name="Clip" uniqueId="1763181535205" layerIndex="0" columnIndex="13"/>
+		<Clip name="Clip" uniqueId="1763181538004" layerIndex="1" columnIndex="13"/>
+		<Clip name="Clip" uniqueId="1763181535126" layerIndex="2" columnIndex="13">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Windows Columns Door.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Windows Columns Door" value="Windows Columns Door"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181537128" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181537126"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Windows Columns Door.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181537126"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763181535267" layerIndex="3" columnIndex="13"/>
+		<Clip name="Clip" uniqueId="1763321316373" layerIndex="4" columnIndex="13"/>
+		<Clip name="Clip" uniqueId="1763181535315" layerIndex="0" columnIndex="14"/>
+		<Clip name="Clip" uniqueId="1763181538035" layerIndex="1" columnIndex="14"/>
+		<Clip name="Clip" uniqueId="1763181535236" layerIndex="2" columnIndex="14">
+			<PreloadData>
+				<VideoFile value="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Windows.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Windows" value="Windows"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="BPM" T="DOUBLE" default="120" value="120">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1763181537201" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181537199"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="D:\Projects\Snow Place Like Tarpon Springs\Masks\V2\Windows.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1763181537199"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1763181535377" layerIndex="3" columnIndex="14"/>
+		<Clip name="Clip" uniqueId="1763321316404" layerIndex="4" columnIndex="14"/>
+		<Clip name="Clip" uniqueId="1763181538354" layerIndex="0" columnIndex="15"/>
+		<Clip name="Clip" uniqueId="1763181538385" layerIndex="1" columnIndex="15"/>
+		<Clip name="Clip" uniqueId="1763181538416" layerIndex="2" columnIndex="15"/>
+		<Clip name="Clip" uniqueId="1763181538447" layerIndex="3" columnIndex="15"/>
+		<Clip name="Clip" uniqueId="1763321316435" layerIndex="4" columnIndex="15"/>
+	</Deck>
+	<Deck name="Deck" uniqueId="1762541949027" numLayersWithContent="0" numColumnsWithContent="0" numLayers="0" numColumns="0" closed="0" deckIndex="1"/>
+	<Deck name="Deck" uniqueId="1762541949033" numLayersWithContent="0" numColumnsWithContent="0" numLayers="0" numColumns="0" closed="0" deckIndex="2"/>
+	<Notes name="Notes">
+		<Note text_size_multiplier="2" text_color_index="3" text=""/>
+	</Notes>
+</Composition>
+

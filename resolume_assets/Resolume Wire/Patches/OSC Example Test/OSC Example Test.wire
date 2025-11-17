@@ -1,0 +1,581 @@
+{
+	"formatVersion": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"patch": {
+		"connections": [
+			{
+				"from": [
+					12,
+					"osc"
+				],
+				"to": [
+					13,
+					"input"
+				]
+			},
+			{
+				"from": [
+					14,
+					"output"
+				],
+				"to": [
+					12,
+					"write"
+				]
+			},
+			{
+				"from": [
+					15,
+					"output"
+				],
+				"to": [
+					16,
+					"osc"
+				]
+			},
+			{
+				"from": [
+					16,
+					"parameter2"
+				],
+				"to": [
+					19,
+					"radius"
+				]
+			},
+			{
+				"from": [
+					19,
+					"output"
+				],
+				"to": [
+					20,
+					"input"
+				]
+			},
+			{
+				"from": [
+					21,
+					"output"
+				],
+				"to": [
+					16,
+					"address"
+				]
+			},
+			{
+				"from": [
+					16,
+					"on-read"
+				],
+				"to": [
+					22,
+					"trigger"
+				]
+			}
+		],
+		"inputOrder": {
+			"groups": {},
+			"roots": [
+				{
+					"node": 14
+				},
+				{
+					"node": 15
+				},
+				{
+					"node": 21
+				}
+			]
+		},
+		"meta": {
+			"author": "",
+			"category": "source",
+			"deploymentTarget": {
+				"branch": "unknown",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 0
+				}
+			},
+			"description": "",
+			"displayName": "OSC Example Test",
+			"identifier": "690f2735-b199-496e-a7d4-d90b4f456e94",
+			"licenseName": "",
+			"mail": "",
+			"originalTarget": {
+				"branch": "unknown",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 11,
+					"patch": 0
+				}
+			},
+			"quality": 32856,
+			"resolution": {
+				"height": 1080,
+				"width": 1920
+			},
+			"saveTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 9
+				}
+			},
+			"thumbnail": "",
+			"url": "",
+			"vendor": ""
+		},
+		"nextNodeId": 23,
+		"nodes": {
+			"12": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"parameter-number": {
+						"type": "integer",
+						"value": 1
+					},
+					"parameter-type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 592,
+					"y": 705
+				},
+				"class": {
+					"id": "77697265-8B96-4D66-BF59-C726226F8F9C",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"address": {
+						"type": "string",
+						"value": "\/test_confirmed"
+					},
+					"parameter1": {
+						"type": "float",
+						"value": 1
+					},
+					"write": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"parameter-number",
+					"parameter-type1",
+					"instances"
+				],
+				"name": "Write OSC",
+				"thumbnail_visible": true
+			},
+			"13": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 132,
+					"x": 984,
+					"y": 652
+				},
+				"class": {
+					"id": "77697265-5b59-4fd5-b374-c7ca941ce21e",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "osc",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "OSC Out",
+				"thumbnail_visible": true
+			},
+			"14": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 251,
+					"y": 664
+				},
+				"class": {
+					"id": "77697265-e61f-42c0-862a-0dca04e14569",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances",
+					"flow"
+				],
+				"name": "Write",
+				"thumbnail_visible": true
+			},
+			"15": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 315,
+					"y": 915
+				},
+				"class": {
+					"id": "77697265-6489-4B7E-A024-A50A1F4C47E4",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "osc",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances",
+					"flow"
+				],
+				"name": "OSC In",
+				"thumbnail_visible": true
+			},
+			"16": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"parameter-number": {
+						"type": "integer",
+						"value": 2
+					},
+					"parameter-type1": {
+						"type": "type",
+						"value": "float"
+					},
+					"parameter-type2": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 551,
+					"y": 1018
+				},
+				"class": {
+					"id": "77697265-48C4-40C4-A756-81D6711CD472",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"address": {
+						"type": "string",
+						"value": "\/test"
+					},
+					"osc": {
+						"type": "osc",
+						"value": null
+					}
+				},
+				"hidden": [
+					"parameter-number",
+					"parameter-type1",
+					"parameter-type2",
+					"instances"
+				],
+				"name": "Read OSC",
+				"thumbnail_visible": true
+			},
+			"19": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 993,
+					"y": 1029
+				},
+				"class": {
+					"id": "77697265-EA26-47D6-985A-B4CAEC314BF7",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"radius": {
+						"type": "float",
+						"value": 0.5
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Circle",
+				"thumbnail_visible": true
+			},
+			"2": {
+				"attributes": {
+					"alignment": {
+						"type": "integer",
+						"value": 0
+					},
+					"fill": {
+						"type": "bool",
+						"value": true
+					},
+					"font-size": {
+						"type": "float",
+						"value": 19
+					},
+					"text": {
+						"type": "string",
+						"value": "OSC\n\nWire can both read and write OSC. This enables you to get OSC data into your patch. A common use case is to create a custom TouchOSC application on an Ipad or smartphone to control your patch, source or effect.\n\nWriting OSC enables you to get data out of your patch into other applications. Let's say you want to send the luminescence of your output to Ableton where it will modulate a filter. OSC Write is the node for you.\n\nTo get OSC into Wire simply use the OSC In node and connect it to the Read OSC node. Specify the address and you are off to the races.\n\nTo get  OSC out of wire use the Write OSC in conjunction with the OSC Out node.\n\nThe amount of parameters can be set in the inspector."
+					}
+				},
+				"bounds": {
+					"height": 279.40350341796875,
+					"width": 1046.9403076171875,
+					"x": 227.574859619140625,
+					"y": 270.811767578125
+				},
+				"class": {
+					"id": "77697265-3C1D-467D-A722-0FC566538374",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffd0c117",
+				"constants": {},
+				"hidden": [
+					"text",
+					"alignment",
+					"font-size",
+					"fill"
+				],
+				"name": "Comment",
+				"thumbnail_visible": true
+			},
+			"20": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 132,
+					"x": 1378,
+					"y": 1002
+				},
+				"class": {
+					"id": "77697265-BEEA-4D38-8EE5-0EBA4CBD0AEE",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Texture Out",
+				"thumbnail_visible": true
+			},
+			"21": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 265,
+					"y": 1046
+				},
+				"class": {
+					"id": "77697265-F29F-45E9-A833-21E09C750BA7",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "string",
+						"value": "\/test"
+					}
+				},
+				"hidden": [
+					"instances",
+					"flow",
+					"options-count",
+					"widget"
+				],
+				"name": "Address",
+				"thumbnail_visible": true
+			},
+			"22": {
+				"attributes": {
+					"no-duplicates": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 993,
+					"y": 862
+				},
+				"class": {
+					"id": "77697265-DD11-4AFA-849E-4CBA176B3049",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"max": {
+						"type": "integer",
+						"value": 10
+					},
+					"min": {
+						"type": "integer",
+						"value": 0
+					},
+					"reset": {
+						"type": "trigger",
+						"value": null
+					},
+					"seed": {
+						"type": "integer",
+						"value": 0
+					},
+					"trigger": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"no-duplicates",
+					"seed",
+					"empty"
+				],
+				"name": "Bag",
+				"thumbnail_visible": true
+			}
+		},
+		"ui": {
+			"camera": {
+				"x": -661,
+				"y": 255,
+				"zoom": 1
+			},
+			"selection": [
+				"22"
+			]
+		}
+	},
+	"ui": {
+		"audio": {
+			"routing": {
+				"in": {},
+				"out": []
+			}
+		},
+		"deviceConnections": {
+			"input": {}
+		},
+		"transport": {
+			"bpm": 120,
+			"time-signature": [
+				4,
+				4
+			]
+		},
+		"video": {
+			"routing": {
+				"out": {
+					"Display 1": null,
+					"Display 2": null,
+					"Display 3": null,
+					"Display 4": null,
+					"Syphon": null
+				}
+			}
+		}
+	}
+}

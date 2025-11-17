@@ -1,0 +1,187 @@
+/*{
+    "DESCRIPTION": "Falling snow with depth-based speed and blur, simple DOF, seamless-ish looping, and smooth parameter control.",
+    "CREDIT": "Ben + GPT",
+    "CATEGORIES": [ "Generator", "Particles", "Weather" ],
+    "INPUTS": [
+        { "NAME": "size",               "TYPE": "float",  "DEFAULT": 0.035, "MIN": 0.005,  "MAX": 0.20 },
+        { "NAME": "speed",              "TYPE": "float",  "DEFAULT": 0.40,  "MIN": 0.0,    "MAX": 3.0  },
+        { "NAME": "drift_x",            "TYPE": "float",  "DEFAULT": 0.15,  "MIN": 0.0,    "MAX": 1.0  },
+        { "NAME": "drift_y",            "TYPE": "float",  "DEFAULT": 0.05,  "MIN": 0.0,    "MAX": 1.0  },
+        { "NAME": "particle_count",     "TYPE": "float",  "DEFAULT": 160.0, "MIN": 10.0,   "MAX": 400.0 },
+
+        { "NAME": "feather_edge_amount","TYPE": "float",  "DEFAULT": 0.2,   "MIN": 0.0,    "MAX": 1.0  },
+        { "NAME": "blur",               "TYPE": "float",  "DEFAULT": 0.6,   "MIN": 0.0,    "MAX": 1.0  },
+        { "NAME": "depth_of_field",     "TYPE": "float",  "DEFAULT": 0.8,   "MIN": 0.0,    "MAX": 1.0  },
+
+        { "NAME": "wind",               "TYPE": "float",  "DEFAULT": 0.0,   "MIN": -1.0,   "MAX": 1.0  },
+        { "NAME": "bg_opacity",         "TYPE": "float",  "DEFAULT": 0.0,   "MIN": 0.0,    "MAX": 1.0  },
+        { "NAME": "snow_tint",          "TYPE": "color",  "DEFAULT": [1.0, 1.0, 1.0, 1.0] },
+        { "NAME": "seed",               "TYPE": "float",  "DEFAULT": 0.0,   "MIN": 0.0,    "MAX": 1000.0 },
+
+        { "NAME": "loop_duration",      "TYPE": "float",  "DEFAULT": 10.0,  "MIN": 0.1,    "MAX": 120.0 }
+    ]
+}*/
+
+#ifdef GL_ES
+precision mediump float;
+precision mediump int;
+#endif
+
+// ISF built-ins:
+// TIME, RENDERSIZE, isf_FragNormCoord
+
+// --- Random helpers --------------------------------------------------------
+
+float hash11(float p) {
+    p = fract(p * 0.1031);
+    p *= p + 33.33;
+    p *= p + p;
+    return fract(p);
+}
+
+vec2 hash21(float p) {
+    float n = hash11(p);
+    return vec2(
+        hash11(p + n * 17.13),
+        hash11(p + n * 37.91)
+    );
+}
+
+// --- Soft circular flake ---------------------------------------------------
+
+float softCircle(vec2 delta, float radius, float softness) {
+    float d = length(delta) / max(radius, 1e-5);
+    // softness ~0: sharper; higher: smoother
+    float k = mix(10.0, 2.0, clamp(softness, 0.0, 2.0));
+    return exp(-d * d * k);
+}
+
+// Depth-of-field weight around a mid-plane at depth = 0.5
+float dofWeight(float depth, float dofAmount) {
+    // depth in [0..1], mid-plane at 0.5
+    float center = 0.5;
+    // dofAmount 0 -> effectively infinite depth of field (everything sharp)
+    // dofAmount 1 -> narrow focus band
+    float minWidth = 0.8;  // almost no blur when dofAmount ~0
+    float maxWidth = 0.15; // tight focus when dofAmount ~1
+    float width = mix(minWidth, maxWidth, clamp(dofAmount, 0.0, 1.0));
+
+    float dist = abs(depth - center);
+    float w = 1.0 - smoothstep(0.0, width, dist); // 1 at center, 0 at far from focus
+    // For dofAmount==0, flatten this to ~1.0 so there is no DOF effect
+    return mix(1.0, w, dofAmount);
+}
+
+void main() {
+    vec2 uv = isf_FragNormCoord;
+
+    // Time: looped but independent of other parameters (modulating speed, drift, etc. is smooth)
+    float safeLoop = max(loop_duration, 0.1);
+    float t = mod(TIME, safeLoop);
+
+    vec3 accumColor = vec3(0.0);
+    float accumAlpha = 0.0;
+
+    vec3 bgColor = vec3(0.0);
+
+    const int MAX_PARTICLES = 400;
+    int count = int(clamp(particle_count, 1.0, float(MAX_PARTICLES)));
+
+    // Vertical band extension so flakes travel off-screen before wrapping
+    const float spawnMargin = 0.25;
+    const float spawnSpan   = 1.0 + 2.0 * spawnMargin;
+
+    // Pre-clamp some user params
+    float feather = clamp(feather_edge_amount, 0.0, 2.0);
+    float blurAmt = clamp(blur,               0.0, 1.0);
+    float dofAmt  = clamp(depth_of_field,     0.0, 1.0);
+
+    for (int i = 0; i < MAX_PARTICLES; i++) {
+        if (i >= count) {
+            break;
+        }
+
+        float fi = float(i);
+
+        // Stable, parameter-independent randomness: only depends on seed & index
+        float baseSeed = seed + fi * 23.791;
+        vec2 basePos   = hash21(baseSeed * 1.312);  // [0..1] starting XY
+        float depth    = hash11(baseSeed * 5.731);  // [0..1] depth: 0 = near, 1 = far
+
+        // --- Depth-driven behavior ----------------------------------------
+        // Size: larger near, smaller far
+        float depthSizeFactor = mix(1.4, 0.4, depth); // near ~1.4, far ~0.4
+        float radius = size * depthSizeFactor;
+
+        // Speed: fastest near, slowest far
+        float depthSpeedFactor = mix(1.0, 0.25, depth); // near 1x, far 0.25x
+        float fallSpeed = speed * depthSpeedFactor;
+
+        // DOF: in-focus in middle, blur at near & far
+        float focus = dofWeight(depth, dofAmt); // 1 in focus, 0 out of focus
+        // Blur factor based on how out-of-focus we are
+        float outOfFocus = 1.0 - focus;         // 0 in focus, 1 at extremes
+        float softness = feather + blurAmt * outOfFocus * 2.0;
+
+        // Optional brightness tweak: slightly dim further & very near flakes
+        float brightnessDepth = mix(1.2, 0.5, depth);           // near brighter, far dimmer
+        float brightnessFocus = mix(0.7, 1.0, focus);           // in-focus a bit brighter
+        float brightness = brightnessDepth * brightnessFocus;
+
+        // --- Position over time -------------------------------------------
+        // Base vertical position in extended band
+        float y0 = basePos.y * spawnSpan - spawnMargin;
+        float y  = y0 - t * fallSpeed;
+
+        // Wrap in extended band so wrap happens off-screen
+        y = mod(y + spawnMargin, spawnSpan) - spawnMargin;
+
+        // Wind + random drift
+        float driftPhase = t * 0.6 + fi;
+        float randX = hash11(baseSeed * 3.17) - 0.5;
+        float randY = hash11(baseSeed * 7.31) - 0.5;
+
+        float driftX = drift_x * randX * sin(driftPhase);
+        float driftY = drift_y * randY * cos(driftPhase * 1.27);
+
+        float x = basePos.x + wind * t * 0.25 + driftX;
+
+        // Wrap horizontally, too
+        x = fract(x);
+
+        vec2 p = vec2(x, y + driftY);
+
+        // Quick reject: flake center far away from screen
+        float maxReach = radius * 2.0;
+        if (p.y < -maxReach || p.y > 1.0 + maxReach) {
+            continue;
+        }
+
+        vec2 delta = uv - p;
+
+        // Quick reject in both axes
+        if (abs(delta.x) > maxReach || abs(delta.y) > maxReach) {
+            continue;
+        }
+
+        float alpha = softCircle(delta, radius, softness);
+        if (alpha <= 0.0001) {
+            continue;
+        }
+
+        alpha *= brightness;
+
+        vec3 flakeColor = snow_tint.rgb;
+        vec3 contrib = flakeColor * alpha;
+
+        accumColor += contrib;
+        accumAlpha += alpha * 0.5; // prevent over-blow
+    }
+
+    accumAlpha = clamp(accumAlpha, 0.0, 1.0);
+
+    float finalAlpha = clamp(bg_opacity + accumAlpha, 0.0, 1.0);
+    vec3 finalColor  = mix(bgColor, accumColor, 1.0);
+
+    gl_FragColor = vec4(finalColor, finalAlpha);
+}

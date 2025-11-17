@@ -1,0 +1,3966 @@
+{
+	"formatVersion": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"patch": {
+		"connections": [
+			{
+				"from": [
+					23,
+					"pattern"
+				],
+				"to": [
+					29,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					29,
+					"output"
+				],
+				"to": [
+					22,
+					"translation"
+				]
+			},
+			{
+				"from": [
+					0,
+					"output"
+				],
+				"to": [
+					41,
+					"input"
+				]
+			},
+			{
+				"from": [
+					0,
+					"output"
+				],
+				"to": [
+					42,
+					"osc"
+				]
+			},
+			{
+				"from": [
+					28,
+					"output0"
+				],
+				"to": [
+					23,
+					"size"
+				]
+			},
+			{
+				"from": [
+					6,
+					"output"
+				],
+				"to": [
+					27,
+					"input3"
+				]
+			},
+			{
+				"from": [
+					22,
+					"output0"
+				],
+				"to": [
+					53,
+					"collection"
+				]
+			},
+			{
+				"from": [
+					59,
+					"output0"
+				],
+				"to": [
+					28,
+					"container"
+				]
+			},
+			{
+				"from": [
+					59,
+					"output0"
+				],
+				"to": [
+					42,
+					"address"
+				]
+			},
+			{
+				"from": [
+					58,
+					"output"
+				],
+				"to": [
+					67,
+					"collection"
+				]
+			},
+			{
+				"from": [
+					67,
+					"output0"
+				],
+				"to": [
+					27,
+					"input7"
+				]
+			},
+			{
+				"from": [
+					68,
+					"output0"
+				],
+				"to": [
+					27,
+					"input5"
+				]
+			},
+			{
+				"from": [
+					69,
+					"output"
+				],
+				"to": [
+					68,
+					"collection"
+				]
+			},
+			{
+				"from": [
+					27,
+					"output0"
+				],
+				"to": [
+					59,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					42,
+					"parameter1"
+				],
+				"to": [
+					70,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					70,
+					"output0"
+				],
+				"to": [
+					71,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					71,
+					"output0"
+				],
+				"to": [
+					72,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					72,
+					"output0"
+				],
+				"to": [
+					74,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					75,
+					"output"
+				],
+				"to": [
+					70,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					75,
+					"output"
+				],
+				"to": [
+					72,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					76,
+					"output"
+				],
+				"to": [
+					74,
+					"duration"
+				]
+			},
+			{
+				"from": [
+					73,
+					"output"
+				],
+				"to": [
+					22,
+					"input"
+				]
+			},
+			{
+				"from": [
+					77,
+					"output"
+				],
+				"to": [
+					68,
+					"index"
+				]
+			},
+			{
+				"from": [
+					78,
+					"output"
+				],
+				"to": [
+					67,
+					"index"
+				]
+			},
+			{
+				"from": [
+					58,
+					"output"
+				],
+				"to": [
+					79,
+					"input"
+				]
+			},
+			{
+				"from": [
+					29,
+					"output"
+				],
+				"to": [
+					80,
+					"input"
+				]
+			},
+			{
+				"from": [
+					80,
+					"output0"
+				],
+				"to": [
+					81,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					81,
+					"output0"
+				],
+				"to": [
+					79,
+					"position"
+				]
+			},
+			{
+				"from": [
+					83,
+					"output"
+				],
+				"to": [
+					79,
+					"material"
+				]
+			},
+			{
+				"from": [
+					83,
+					"output"
+				],
+				"to": [
+					86,
+					"color"
+				]
+			},
+			{
+				"from": [
+					22,
+					"output0"
+				],
+				"to": [
+					86,
+					"input"
+				]
+			},
+			{
+				"from": [
+					88,
+					"output0"
+				],
+				"to": [
+					89,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					89,
+					"output0"
+				],
+				"to": [
+					87,
+					"position"
+				]
+			},
+			{
+				"from": [
+					90,
+					"output0"
+				],
+				"to": [
+					87,
+					"input"
+				]
+			},
+			{
+				"from": [
+					29,
+					"output"
+				],
+				"to": [
+					88,
+					"input"
+				]
+			},
+			{
+				"from": [
+					86,
+					"output"
+				],
+				"to": [
+					82,
+					"input3"
+				]
+			},
+			{
+				"from": [
+					79,
+					"output"
+				],
+				"to": [
+					82,
+					"input2"
+				]
+			},
+			{
+				"from": [
+					87,
+					"output"
+				],
+				"to": [
+					82,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					83,
+					"output"
+				],
+				"to": [
+					87,
+					"material"
+				]
+			},
+			{
+				"from": [
+					91,
+					"aspectratio"
+				],
+				"to": [
+					96,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					96,
+					"output"
+				],
+				"to": [
+					92,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					96,
+					"output"
+				],
+				"to": [
+					80,
+					"from-max"
+				]
+			},
+			{
+				"from": [
+					92,
+					"output0"
+				],
+				"to": [
+					80,
+					"from-min"
+				]
+			},
+			{
+				"from": [
+					74,
+					"output0"
+				],
+				"to": [
+					97,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					97,
+					"output0"
+				],
+				"to": [
+					90,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					97,
+					"output0"
+				],
+				"to": [
+					73,
+					"radius"
+				]
+			}
+		],
+		"inputOrder": {
+			"groups": {},
+			"roots": [
+				{
+					"node": 0
+				},
+				{
+					"node": 75
+				},
+				{
+					"node": 76
+				},
+				{
+					"node": 77
+				},
+				{
+					"node": 78
+				}
+			]
+		},
+		"meta": {
+			"author": "Benjamin Czech",
+			"category": "source",
+			"deploymentTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 0
+				}
+			},
+			"description": "",
+			"displayName": "Audio FFFT from Touch Designer via OSC",
+			"identifier": "ea6ef203-168b-44a1-a7e9-dc4523c8d37b",
+			"licenseName": "",
+			"mail": "",
+			"originalTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 2
+				}
+			},
+			"quality": 32856,
+			"resolution": {
+				"height": 1080,
+				"width": 1920
+			},
+			"saveTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 23,
+					"patch": 2
+				}
+			},
+			"thumbnail": "",
+			"url": "",
+			"vendor": "Watt"
+		},
+		"nextNodeId": 99,
+		"nodes": {
+			"0": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 2836.5693359375,
+					"y": -45.361572265625
+				},
+				"class": {
+					"id": "77697265-6489-4B7E-A024-A50A1F4C47E4",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "osc",
+						"value": null
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances"
+				],
+				"name": "OSC In",
+				"thumbnail_visible": true
+			},
+			"22": {
+				"attributes": {
+					"anchor-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input-type": {
+						"type": "type",
+						"value": "procedural"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 4
+					},
+					"rotation-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"scale-anchor-type": {
+						"type": "type",
+						"value": "bool"
+					},
+					"scale-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"translation-type": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 5646.17236328125,
+					"y": 229.961761474609375
+				},
+				"class": {
+					"id": "77697265-9225-4009-9D2D-5F898E94CC33",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"anchor": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					},
+					"input": {
+						"type": "procedural",
+						"value": [
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"rotation": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"type": "float",
+						"value": [
+							0.5,
+							0.5,
+							0.5,
+							0.5
+						]
+					},
+					"scale-anchor": {
+						"type": "bool",
+						"value": [
+							true,
+							true,
+							true,
+							true
+						]
+					},
+					"translation": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					}
+				},
+				"hidden": [
+					"anchor-type",
+					"flow",
+					"input-type",
+					"instances",
+					"rotation-type",
+					"scale-anchor",
+					"scale-anchor-type",
+					"scale-type",
+					"translation-type"
+				],
+				"name": "Transform",
+				"thumbnail_visible": true
+			},
+			"23": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"include-max": {
+						"type": "bool",
+						"value": true
+					},
+					"max-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"min-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"pattern-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"size": {
+						"type": "integer",
+						"value": 4
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 5136.17236328125,
+					"y": 343.330169677734375
+				},
+				"class": {
+					"id": "77697265-A48B-4AF9-8975-E3063B037D4C",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"max": {
+						"type": "float",
+						"value": 1.20000004768371582
+					},
+					"min": {
+						"type": "float",
+						"value": -1.20000004768371582
+					}
+				},
+				"hidden": [
+					"flow",
+					"include-max",
+					"max-type",
+					"min-type",
+					"pattern-type"
+				],
+				"name": "Linear",
+				"thumbnail_visible": true
+			},
+			"27": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input2-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input3-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input4-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input5-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input6-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input7-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 8
+					}
+				},
+				"bounds": {
+					"height": 255.5719757080078125,
+					"width": 195,
+					"x": 1501.0848388671875,
+					"y": 295.74676513671875
+				},
+				"class": {
+					"id": "77697265-5852-33AB-89e5-F52a24ca2d50",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "string",
+						"value": "\/"
+					},
+					"input1": {
+						"type": "string",
+						"value": "audio"
+					},
+					"input2": {
+						"type": "string",
+						"value": "\/"
+					},
+					"input3": {
+						"type": "string",
+						"value": [
+							"",
+							"",
+							"",
+							""
+						]
+					},
+					"input4": {
+						"type": "string",
+						"value": "\/"
+					},
+					"input5": {
+						"type": "string",
+						"value": ""
+					},
+					"input6": {
+						"type": "string",
+						"value": "\/"
+					},
+					"input7": {
+						"type": "string",
+						"value": ""
+					},
+					"separator": {
+						"type": "string",
+						"value": ""
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"input2-dimensions",
+					"input3-dimensions",
+					"input4-dimensions",
+					"input5-dimensions",
+					"input6-dimensions",
+					"input7-dimensions",
+					"size"
+				],
+				"name": "Concatenate",
+				"thumbnail_visible": true
+			},
+			"28": {
+				"attributes": {
+					"container-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"container-type": {
+						"type": "type",
+						"value": "string"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					}
+				},
+				"bounds": {
+					"height": 30,
+					"width": 195,
+					"x": 4881.17236328125,
+					"y": 343.330169677734375
+				},
+				"class": {
+					"id": "77697265-A712-4C94-96ED-3A1A9756EA6A",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"container": {
+						"type": "string",
+						"value": [
+							"",
+							"",
+							"",
+							""
+						]
+					}
+				},
+				"hidden": [
+					"container-dimensions",
+					"container-type",
+					"flow"
+				],
+				"name": "Size",
+				"thumbnail_visible": true
+			},
+			"29": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 4
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 5391.17236328125,
+					"y": 343.330169677734375
+				},
+				"class": {
+					"id": "77697265-E7EF-4944-8FC2-D808EE0433CB",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances"
+				],
+				"name": "Float2",
+				"thumbnail_visible": true
+			},
+			"41": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 132,
+					"x": 3088.73828125,
+					"y": -45.361572265625
+				},
+				"class": {
+					"id": "77697265-5b59-4fd5-b374-c7ca941ce21e",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "osc",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "OSC Out",
+				"thumbnail_visible": true
+			},
+			"42": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 4
+					},
+					"parameter-number": {
+						"type": "integer",
+						"value": 1
+					},
+					"parameter-type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 3026.5693359375,
+					"y": 178.638427734375
+				},
+				"class": {
+					"id": "77697265-48C4-40C4-A756-81D6711CD472",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"address": {
+						"type": "string",
+						"value": [
+							"\/audio\/all\/raw\/L",
+							"\/audio\/all\/raw\/L",
+							"\/audio\/all\/raw\/L",
+							"\/audio\/all\/raw\/L"
+						]
+					},
+					"osc": {
+						"type": "osc",
+						"value": [
+							null,
+							null,
+							null,
+							null
+						]
+					}
+				},
+				"hidden": [
+					"instances",
+					"parameter-number",
+					"parameter-type1"
+				],
+				"name": "Read OSC Triggers",
+				"thumbnail_visible": true
+			},
+			"53": {
+				"attributes": {
+					"collection-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"collection-flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"collection-type": {
+						"type": "type",
+						"value": "procedural"
+					},
+					"index-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"index-flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"index-type": {
+						"type": "type",
+						"value": "integer"
+					},
+					"interpolation": {
+						"type": "integer",
+						"value": 0
+					},
+					"wrapping": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 5796.36767578125,
+					"y": -122.7958984375
+				},
+				"class": {
+					"id": "77697265-A7DD-4C94-96ED-4A5E3756EA6A",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"collection": {
+						"type": "procedural",
+						"value": [
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"index": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"hidden": [
+					"collection-dimensions",
+					"collection-flow",
+					"collection-type",
+					"index-dimensions",
+					"index-flow",
+					"index-type",
+					"interpolation",
+					"wrapping"
+				],
+				"name": "Read",
+				"thumbnail_visible": true
+			},
+			"58": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input2-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input3-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"num-channels": {
+						"type": "integer",
+						"value": 4
+					},
+					"type": {
+						"type": "type",
+						"value": "string"
+					}
+				},
+				"bounds": {
+					"height": 132.5694122314453125,
+					"width": 195,
+					"x": 991.0848388671875,
+					"y": 694.7156982421875
+				},
+				"class": {
+					"id": "77697265-3732-42da-653e-b641d4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"channel0": {
+						"type": "string",
+						"value": "A"
+					},
+					"channel1": {
+						"type": "string",
+						"value": "L"
+					},
+					"channel2": {
+						"type": "string",
+						"value": "R"
+					},
+					"channel3": {
+						"type": "string",
+						"value": "D"
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"input2-dimensions",
+					"input3-dimensions",
+					"num-channels",
+					"type"
+				],
+				"name": "Join",
+				"thumbnail_visible": true
+			},
+			"59": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "string"
+					}
+				},
+				"bounds": {
+					"height": 30.067291259765625,
+					"width": 195,
+					"x": 2405.982177734375,
+					"y": 169.3819427490234375
+				},
+				"class": {
+					"id": "77697265-AEE3-4B9D-BBD5-6Ae4CCD5aB30",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "string",
+						"value": [
+							"",
+							"",
+							"",
+							""
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input0-type"
+				],
+				"name": "Hub",
+				"thumbnail_visible": true
+			},
+			"6": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input2-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input3-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"num-channels": {
+						"type": "integer",
+						"value": 4
+					},
+					"type": {
+						"type": "type",
+						"value": "string"
+					}
+				},
+				"bounds": {
+					"height": 130,
+					"width": 195,
+					"x": 1246.0848388671875,
+					"y": 396.74676513671875
+				},
+				"class": {
+					"id": "77697265-3732-42da-653e-b641d4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"channel0": {
+						"type": "string",
+						"value": "all"
+					},
+					"channel1": {
+						"type": "string",
+						"value": "low"
+					},
+					"channel2": {
+						"type": "string",
+						"value": "mid"
+					},
+					"channel3": {
+						"type": "string",
+						"value": "high"
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"input2-dimensions",
+					"input3-dimensions",
+					"num-channels",
+					"type"
+				],
+				"name": "Join",
+				"thumbnail_visible": true
+			},
+			"67": {
+				"attributes": {
+					"collection-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"collection-flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"collection-type": {
+						"type": "type",
+						"value": "string"
+					},
+					"index-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"index-flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"index-type": {
+						"type": "type",
+						"value": "integer"
+					},
+					"interpolation": {
+						"type": "integer",
+						"value": 0
+					},
+					"wrapping": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 58.76788711547851562,
+					"width": 195,
+					"x": 1246.0848388671875,
+					"y": 694.7156982421875
+				},
+				"class": {
+					"id": "77697265-A7DD-4C94-96ED-4A5E3756EA6A",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"collection": {
+						"type": "string",
+						"value": [
+							"",
+							"",
+							"",
+							""
+						]
+					},
+					"index": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"collection-dimensions",
+					"collection-flow",
+					"collection-type",
+					"index-dimensions",
+					"index-flow",
+					"index-type",
+					"interpolation",
+					"wrapping"
+				],
+				"name": "Direction",
+				"thumbnail_visible": true
+			},
+			"68": {
+				"attributes": {
+					"collection-dimensions": {
+						"type": "integer",
+						"value": 3
+					},
+					"collection-flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"collection-type": {
+						"type": "type",
+						"value": "string"
+					},
+					"index-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"index-flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"index-type": {
+						"type": "type",
+						"value": "integer"
+					},
+					"interpolation": {
+						"type": "integer",
+						"value": 0
+					},
+					"wrapping": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 58.76788711547851562,
+					"width": 195,
+					"x": 1246.0848388671875,
+					"y": 556.74676513671875
+				},
+				"class": {
+					"id": "77697265-A7DD-4C94-96ED-4A5E3756EA6A",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"collection": {
+						"type": "string",
+						"value": [
+							"",
+							"",
+							""
+						]
+					},
+					"index": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"hidden": [
+					"collection-dimensions",
+					"collection-flow",
+					"collection-type",
+					"index-dimensions",
+					"index-flow",
+					"index-type",
+					"interpolation",
+					"wrapping"
+				],
+				"name": "Feed Type",
+				"thumbnail_visible": true
+			},
+			"69": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input2-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"num-channels": {
+						"type": "integer",
+						"value": 3
+					},
+					"type": {
+						"type": "type",
+						"value": "string"
+					}
+				},
+				"bounds": {
+					"height": 107.96891021728515625,
+					"width": 195,
+					"x": 991.0848388671875,
+					"y": 556.74676513671875
+				},
+				"class": {
+					"id": "77697265-3732-42da-653e-b641d4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"channel0": {
+						"type": "string",
+						"value": "raw"
+					},
+					"channel1": {
+						"type": "string",
+						"value": "smooth"
+					},
+					"channel2": {
+						"type": "string",
+						"value": "trigger"
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"input2-dimensions",
+					"num-channels",
+					"type"
+				],
+				"name": "Join",
+				"thumbnail_visible": true
+			},
+			"70": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 83.3683929443359375,
+					"width": 195,
+					"x": 3923.29638671875,
+					"y": -288.82794189453125
+				},
+				"class": {
+					"id": "77697265-A0D8-429A-A558-69BC58D0D425",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0.60805702209472656,
+							0.81899791955947876,
+							0.28272899985313416,
+							0.19222563505172729
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": 4
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"size",
+					"type0",
+					"type1"
+				],
+				"name": "Multiply",
+				"thumbnail_visible": true
+			},
+			"71": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 30.067291259765625,
+					"width": 195,
+					"x": 4178.29638671875,
+					"y": -288.82794189453125
+				},
+				"class": {
+					"id": "77697265-8EB5-47B2-91A4-32D5C49D8141",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0.27353498339653015,
+							0.2080530971288681,
+							0.2153778076171875,
+							0.41442036628723145
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input0-type"
+				],
+				"name": "Floor",
+				"thumbnail_visible": true
+			},
+			"72": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 83.3683929443359375,
+					"width": 195,
+					"x": 4433.29638671875,
+					"y": -288.82794189453125
+				},
+				"class": {
+					"id": "77697265-0D55-485E-813D-706DD5DFE88D",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input1": {
+						"type": "float",
+						"value": 4
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"size",
+					"type0",
+					"type1"
+				],
+				"name": "Divide",
+				"thumbnail_visible": true
+			},
+			"73": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 4
+					}
+				},
+				"bounds": {
+					"height": 58.76788711547851562,
+					"width": 195,
+					"x": 5451.154296875,
+					"y": -323.199981689453125
+				},
+				"class": {
+					"id": "77697265-EA26-47D6-985A-B4CAEC314BF7",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"radius": {
+						"type": "float",
+						"value": [
+							0.5,
+							0.75,
+							0.25,
+							0.75
+						]
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Circle",
+				"thumbnail_visible": true
+			},
+			"74": {
+				"attributes": {
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 4
+					}
+				},
+				"bounds": {
+					"height": 58.76788711547851562,
+					"width": 195,
+					"x": 4685.6826171875,
+					"y": -265.30230712890625
+				},
+				"class": {
+					"id": "77697265-86ce-4e85-a02d-34f915fca74e",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"duration": {
+						"type": "float",
+						"value": [
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224
+						]
+					},
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"input0-type",
+					"instances"
+				],
+				"name": "Smooth",
+				"thumbnail_visible": true
+			},
+			"75": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": true
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"max": {
+						"type": "integer",
+						"value": 16
+					},
+					"min": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 3686.10693359375,
+					"y": -64.65790557861328125
+				},
+				"class": {
+					"id": "77697265-2649-4abb-b38f-4e1005183415",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "integer",
+						"value": 11
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"max",
+					"min",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Quantize Step Count",
+				"thumbnail_visible": true
+			},
+			"76": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": true
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"max": {
+						"type": "float",
+						"value": 2
+					},
+					"min": {
+						"type": "float",
+						"value": 0
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 3686.107177734375,
+					"y": 17.68183135986328125
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 0.21495300531387329
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"max",
+					"min",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Quantize Smoothing",
+				"thumbnail_visible": true
+			},
+			"77": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": false
+					},
+					"has-min": {
+						"type": "bool",
+						"value": false
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"option0-label": {
+						"type": "string",
+						"value": "Raw"
+					},
+					"option0-value": {
+						"type": "integer",
+						"value": 0
+					},
+					"option1-label": {
+						"type": "string",
+						"value": "Smooth"
+					},
+					"option1-value": {
+						"type": "integer",
+						"value": 1
+					},
+					"option2-label": {
+						"type": "string",
+						"value": "Trigger"
+					},
+					"option2-value": {
+						"type": "integer",
+						"value": 2
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 3
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 764.6318359375,
+					"y": 532.689697265625
+				},
+				"class": {
+					"id": "77697265-2649-4abb-b38f-4e1005183415",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"option0-label",
+					"option0-value",
+					"option1-label",
+					"option1-value",
+					"option2-label",
+					"option2-value",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Feed Selection",
+				"thumbnail_visible": true
+			},
+			"78": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": false
+					},
+					"has-min": {
+						"type": "bool",
+						"value": false
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"option0-label": {
+						"type": "string",
+						"value": "Average"
+					},
+					"option0-value": {
+						"type": "integer",
+						"value": 0
+					},
+					"option1-label": {
+						"type": "string",
+						"value": "Left"
+					},
+					"option1-value": {
+						"type": "integer",
+						"value": 1
+					},
+					"option2-label": {
+						"type": "string",
+						"value": "Right"
+					},
+					"option2-value": {
+						"type": "integer",
+						"value": 2
+					},
+					"option3-label": {
+						"type": "string",
+						"value": "Difference"
+					},
+					"option3-value": {
+						"type": "integer",
+						"value": 3
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 4
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 802.053955078125,
+					"y": 710.75372314453125
+				},
+				"class": {
+					"id": "77697265-2649-4abb-b38f-4e1005183415",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"option0-label",
+					"option0-value",
+					"option1-label",
+					"option1-value",
+					"option2-label",
+					"option2-value",
+					"option3-label",
+					"option3-value",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Direction Selection",
+				"thumbnail_visible": true
+			},
+			"79": {
+				"attributes": {
+					"alignment-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"alignmentvert-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"bypass-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"font": {
+						"type": "string",
+						"value": "Arial"
+					},
+					"glowin-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"glowout-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"linewidth-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"material-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"outlinecolor-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"outlinewidth-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"position-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"reduce": {
+						"type": "bool",
+						"value": false
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"rotation-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"scale-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"spacing-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"style": {
+						"type": "string",
+						"value": "Regular"
+					}
+				},
+				"bounds": {
+					"height": 230.757415771484375,
+					"width": 195,
+					"x": 5795.7783203125,
+					"y": 986.8671875
+				},
+				"class": {
+					"id": "77697265-E2EC-4F1B-901A-CEFC474D3C07",
+					"version": 5
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"alignment": {
+						"type": "integer",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"alignmentvert": {
+						"type": "integer",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"bypass": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false
+						]
+					},
+					"glowin": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"glowout": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input": {
+						"type": "string",
+						"value": [
+							"Text",
+							"Text",
+							"Text",
+							"Text"
+						]
+					},
+					"linewidth": {
+						"type": "float",
+						"value": [
+							1920,
+							1920,
+							1920,
+							1920
+						]
+					},
+					"material": {
+						"type": "color",
+						"value": [
+							[
+								1,
+								1,
+								1,
+								1
+							],
+							[
+								1,
+								1,
+								1,
+								1
+							],
+							[
+								1,
+								1,
+								1,
+								1
+							],
+							[
+								1,
+								1,
+								1,
+								1
+							]
+						]
+					},
+					"outlinecolor": {
+						"type": "color",
+						"value": [
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							]
+						]
+					},
+					"outlinewidth": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					},
+					"rotation": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"spacing": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					}
+				},
+				"hidden": [
+					"alignment-dimensions",
+					"alignmentvert-dimensions",
+					"bitdepth",
+					"bypass",
+					"bypass-dimensions",
+					"font",
+					"glowin",
+					"glowin-dimensions",
+					"glowout",
+					"glowout-dimensions",
+					"input-dimensions",
+					"linewidth-dimensions",
+					"material-dimensions",
+					"outlinecolor",
+					"outlinecolor-dimensions",
+					"outlinewidth",
+					"outlinewidth-dimensions",
+					"position-dimensions",
+					"reduce",
+					"resolution-absolute",
+					"resolution-mode",
+					"resolution-relative",
+					"rotation",
+					"rotation-dimensions",
+					"scale-dimensions",
+					"spacing-dimensions",
+					"style"
+				],
+				"name": "Text Render",
+				"thumbnail_visible": true
+			},
+			"80": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"from-max-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"from-max-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"from-min-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"from-min-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"input-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"skew-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"skew-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"to-max-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"to-max-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"to-min-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"to-min-type": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 157.4040679931640625,
+					"width": 195,
+					"x": 5286.72509765625,
+					"y": 1063.8671875
+				},
+				"class": {
+					"id": "77697265-992D-4044-82DC-D2E0D30DF78E",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"from-max": {
+						"type": "float2",
+						"value": [
+							[
+								1.70000004768371582,
+								0
+							],
+							[
+								1.70000004768371582,
+								0
+							],
+							[
+								1.70000004768371582,
+								0
+							],
+							[
+								1.70000004768371582,
+								0
+							]
+						]
+					},
+					"from-min": {
+						"type": "float2",
+						"value": [
+							[
+								-1.70000004768371582,
+								0
+							],
+							[
+								-1.70000004768371582,
+								0
+							],
+							[
+								-1.70000004768371582,
+								0
+							],
+							[
+								-1.70000004768371582,
+								0
+							]
+						]
+					},
+					"input": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					},
+					"skew": {
+						"type": "float",
+						"value": [
+							0.5,
+							0.5,
+							0.5,
+							0.5
+						]
+					},
+					"to-max": {
+						"type": "float2",
+						"value": [
+							[
+								960,
+								0
+							],
+							[
+								960,
+								0
+							],
+							[
+								960,
+								0
+							],
+							[
+								960,
+								0
+							]
+						]
+					},
+					"to-min": {
+						"type": "float2",
+						"value": [
+							[
+								-960,
+								0
+							],
+							[
+								-960,
+								0
+							],
+							[
+								-960,
+								0
+							],
+							[
+								-960,
+								0
+							]
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"from-max-dimensions",
+					"from-max-type",
+					"from-min-dimensions",
+					"from-min-type",
+					"input-dimensions",
+					"input-type",
+					"skew-dimensions",
+					"skew-type",
+					"to-max-dimensions",
+					"to-max-type",
+					"to-min-dimensions",
+					"to-min-type"
+				],
+				"name": "Map",
+				"thumbnail_visible": true
+			},
+			"81": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float2"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 82.98891448974609375,
+					"width": 195,
+					"x": 5540.7783203125,
+					"y": 1063.8671875
+				},
+				"class": {
+					"id": "77697265-A9AF-4CB4-B10F-3968B36BB63B",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					},
+					"input1": {
+						"type": "float2",
+						"value": [
+							0,
+							-200
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"size",
+					"type0",
+					"type1"
+				],
+				"name": "Add",
+				"thumbnail_visible": true
+			},
+			"82": {
+				"attributes": {
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"input-count": {
+						"type": "integer",
+						"value": 3
+					},
+					"instances": {
+						"type": "integer",
+						"value": 4
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					}
+				},
+				"bounds": {
+					"height": 177.7550506591796875,
+					"width": 195,
+					"x": 6236.228515625,
+					"y": 294.14801025390625
+				},
+				"class": {
+					"id": "77697265-A270-4D60-911C-A88B1BE6369A",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false
+						]
+					},
+					"input1": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"input2": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"input3": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"mode": {
+						"type": "integer",
+						"value": [
+							11,
+							11,
+							11,
+							11
+						]
+					},
+					"opacity1": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"opacity2": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"opacity3": {
+						"type": "float",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				"hidden": [
+					"bitdepth",
+					"bypass",
+					"input-count",
+					"instances",
+					"mode",
+					"resolution-absolute",
+					"resolution-mode",
+					"resolution-relative"
+				],
+				"name": "Video Mixer",
+				"thumbnail_visible": true
+			},
+			"83": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input2-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input3-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"num-channels": {
+						"type": "integer",
+						"value": 4
+					},
+					"type": {
+						"type": "type",
+						"value": "color"
+					}
+				},
+				"bounds": {
+					"height": 130.3669586181640625,
+					"width": 195,
+					"x": 4777.63427734375,
+					"y": 1592.5087890625
+				},
+				"class": {
+					"id": "77697265-3732-42da-653e-b641d4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"channel0": {
+						"type": "color",
+						"value": [
+							1,
+							0,
+							0,
+							1
+						]
+					},
+					"channel1": {
+						"type": "color",
+						"value": [
+							1,
+							1,
+							0,
+							1
+						]
+					},
+					"channel2": {
+						"type": "color",
+						"value": [
+							0,
+							1,
+							0,
+							1
+						]
+					},
+					"channel3": {
+						"type": "color",
+						"value": [
+							0,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"input2-dimensions",
+					"input3-dimensions",
+					"num-channels",
+					"type"
+				],
+				"name": "Join",
+				"thumbnail_visible": true
+			},
+			"86": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 4
+					},
+					"mode": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 104.5583648681640625,
+					"width": 195,
+					"x": 5929.42333984375,
+					"y": 207.8028564453125
+				},
+				"class": {
+					"id": "77697265-9518-4E69-899B-66B8C527C6EB",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false
+						]
+					},
+					"color": {
+						"type": "color",
+						"value": [
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							]
+						]
+					},
+					"contrast": {
+						"type": "float",
+						"value": [
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224,
+							0.20000000298023224
+						]
+					},
+					"greysKeep": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false
+						]
+					},
+					"greysTolerance": {
+						"type": "float",
+						"value": [
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896,
+							0.30000001192092896
+						]
+					},
+					"input": {
+						"type": "texture2d",
+						"value": [
+							null,
+							null,
+							null,
+							null
+						]
+					},
+					"invert": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false
+						]
+					}
+				},
+				"hidden": [
+					"bypass",
+					"greysKeep",
+					"greysTolerance",
+					"instances",
+					"mode"
+				],
+				"name": "Colorize",
+				"thumbnail_visible": true
+			},
+			"87": {
+				"attributes": {
+					"alignment-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"alignmentvert-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"bypass-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"font": {
+						"type": "string",
+						"value": "Arial"
+					},
+					"glowin-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"glowout-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"linewidth-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"material-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"outlinecolor-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"outlinewidth-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"position-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"reduce": {
+						"type": "bool",
+						"value": false
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"rotation-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"scale-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"spacing-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"style": {
+						"type": "string",
+						"value": "Regular"
+					}
+				},
+				"bounds": {
+					"height": 225.8691558837890625,
+					"width": 195,
+					"x": 5795.7783203125,
+					"y": 1587.1494140625
+				},
+				"class": {
+					"id": "77697265-E2EC-4F1B-901A-CEFC474D3C07",
+					"version": 5
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"alignment": {
+						"type": "integer",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"alignmentvert": {
+						"type": "integer",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"bypass": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false
+						]
+					},
+					"glowin": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"glowout": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"input": {
+						"type": "string",
+						"value": [
+							"Text",
+							"Text",
+							"Text",
+							"Text"
+						]
+					},
+					"linewidth": {
+						"type": "float",
+						"value": [
+							1920,
+							1920,
+							1920,
+							1920
+						]
+					},
+					"material": {
+						"type": "color",
+						"value": [
+							[
+								1,
+								1,
+								1,
+								1
+							],
+							[
+								1,
+								1,
+								1,
+								1
+							],
+							[
+								1,
+								1,
+								1,
+								1
+							],
+							[
+								1,
+								1,
+								1,
+								1
+							]
+						]
+					},
+					"outlinecolor": {
+						"type": "color",
+						"value": [
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							],
+							[
+								1,
+								0,
+								0,
+								1
+							]
+						]
+					},
+					"outlinewidth": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					},
+					"rotation": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"type": "float",
+						"value": [
+							0.80000001192092896,
+							0.80000001192092896,
+							0.80000001192092896,
+							0.80000001192092896
+						]
+					},
+					"spacing": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					}
+				},
+				"hidden": [
+					"alignment-dimensions",
+					"alignmentvert-dimensions",
+					"bitdepth",
+					"bypass",
+					"bypass-dimensions",
+					"font",
+					"glowin",
+					"glowin-dimensions",
+					"glowout",
+					"glowout-dimensions",
+					"input-dimensions",
+					"linewidth-dimensions",
+					"material-dimensions",
+					"outlinecolor",
+					"outlinecolor-dimensions",
+					"outlinewidth",
+					"outlinewidth-dimensions",
+					"position-dimensions",
+					"reduce",
+					"resolution-absolute",
+					"resolution-mode",
+					"resolution-relative",
+					"rotation",
+					"rotation-dimensions",
+					"scale-dimensions",
+					"spacing-dimensions",
+					"style"
+				],
+				"name": "Text Render",
+				"thumbnail_visible": true
+			},
+			"88": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"from-max-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"from-max-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"from-min-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"from-min-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"input-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"skew-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"skew-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"to-max-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"to-max-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"to-min-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"to-min-type": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 153.6979522705078125,
+					"width": 195,
+					"x": 5285.7783203125,
+					"y": 1721.851318359375
+				},
+				"class": {
+					"id": "77697265-992D-4044-82DC-D2E0D30DF78E",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"from-max": {
+						"type": "float2",
+						"value": [
+							[
+								1.70000004768371582,
+								0
+							],
+							[
+								1.70000004768371582,
+								0
+							],
+							[
+								1.70000004768371582,
+								0
+							],
+							[
+								1.70000004768371582,
+								0
+							]
+						]
+					},
+					"from-min": {
+						"type": "float2",
+						"value": [
+							[
+								-1.70000004768371582,
+								0
+							],
+							[
+								-1.70000004768371582,
+								0
+							],
+							[
+								-1.70000004768371582,
+								0
+							],
+							[
+								-1.70000004768371582,
+								0
+							]
+						]
+					},
+					"input": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					},
+					"skew": {
+						"type": "float",
+						"value": [
+							0.5,
+							0.5,
+							0.5,
+							0.5
+						]
+					},
+					"to-max": {
+						"type": "float2",
+						"value": [
+							[
+								960,
+								0
+							],
+							[
+								960,
+								0
+							],
+							[
+								960,
+								0
+							],
+							[
+								960,
+								0
+							]
+						]
+					},
+					"to-min": {
+						"type": "float2",
+						"value": [
+							[
+								-960,
+								0
+							],
+							[
+								-960,
+								0
+							],
+							[
+								-960,
+								0
+							],
+							[
+								-960,
+								0
+							]
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"from-max-dimensions",
+					"from-max-type",
+					"from-min-dimensions",
+					"from-min-type",
+					"input-dimensions",
+					"input-type",
+					"skew-dimensions",
+					"skew-type",
+					"to-max-dimensions",
+					"to-max-type",
+					"to-min-dimensions",
+					"to-min-type"
+				],
+				"name": "Map",
+				"thumbnail_visible": true
+			},
+			"89": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float2"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 81.5267333984375,
+					"width": 195,
+					"x": 5540.7783203125,
+					"y": 1721.851318359375
+				},
+				"class": {
+					"id": "77697265-A9AF-4CB4-B10F-3968B36BB63B",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float2",
+						"value": [
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							],
+							[
+								0,
+								0
+							]
+						]
+					},
+					"input1": {
+						"type": "float2",
+						"value": [
+							0,
+							-300
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"size",
+					"type0",
+					"type1"
+				],
+				"name": "Add",
+				"thumbnail_visible": true
+			},
+			"90": {
+				"attributes": {
+					"decimals-type": {
+						"type": "type",
+						"value": "integer"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 4
+					},
+					"trimZeroes-type": {
+						"type": "type",
+						"value": "bool"
+					}
+				},
+				"bounds": {
+					"height": 104.701995849609375,
+					"width": 195,
+					"x": 5540.7783203125,
+					"y": 1587.1494140625
+				},
+				"class": {
+					"id": "77697265-5852-4454-89e5-61a24cea2d50",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"decimals": {
+						"type": "integer",
+						"value": [
+							2,
+							2,
+							2,
+							2
+						]
+					},
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					},
+					"trimZeroes": {
+						"type": "bool",
+						"value": [
+							false,
+							false,
+							false,
+							false
+						]
+					}
+				},
+				"hidden": [
+					"decimals-type",
+					"flow",
+					"input0-type",
+					"instances",
+					"trimZeroes-type"
+				],
+				"name": "String",
+				"thumbnail_visible": true
+			},
+			"91": {
+				"attributes": {},
+				"bounds": {
+					"height": 129.640899658203125,
+					"width": 195,
+					"x": 4521.72509765625,
+					"y": 1063.8671875
+				},
+				"class": {
+					"id": "77697265-ec64-44f7-b446-de2a0220c5b8",
+					"version": 0
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {},
+				"hidden": [],
+				"name": "Patch Info",
+				"thumbnail_visible": true
+			},
+			"92": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 29.4030914306640625,
+					"width": 195,
+					"x": 5031.72509765625,
+					"y": 1063.8671875
+				},
+				"class": {
+					"id": "77697265-1296-4264-A646-5CE3BE529286",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input0-type"
+				],
+				"name": "Negate",
+				"thumbnail_visible": true
+			},
+			"96": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 81.52675628662109375,
+					"width": 195,
+					"x": 4776.72509765625,
+					"y": 1063.8671875
+				},
+				"class": {
+					"id": "77697265-E7EF-4944-8FC2-D808EE0433CB",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					},
+					"input1": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances"
+				],
+				"name": "Float2",
+				"thumbnail_visible": true
+			},
+			"97": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 4
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 29.88872528076171875,
+					"width": 195,
+					"x": 4941.81396484375,
+					"y": -259.00933837890625
+				},
+				"class": {
+					"id": "77697265-AEE3-4B9D-BBD5-6Ae4CCD5aB30",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": [
+							0,
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input0-type"
+				],
+				"name": "4 Channel Out",
+				"thumbnail_visible": true
+			}
+		},
+		"ui": {
+			"camera": {
+				"x": 3772.291015625,
+				"y": 17.87458038330078125,
+				"zoom": 0.57228553295135498
+			},
+			"selection": []
+		}
+	},
+	"ui": {
+		"audio": {
+			"routing": {
+				"in": {},
+				"out": []
+			}
+		},
+		"deviceConnections": {
+			"input": {}
+		},
+		"transport": {
+			"bpm": 120,
+			"time-signature": [
+				4,
+				4
+			]
+		},
+		"video": {
+			"routing": {
+				"out": {
+					"Display 1": null,
+					"Display 2": null,
+					"Display 3": null
+				}
+			}
+		}
+	}
+}

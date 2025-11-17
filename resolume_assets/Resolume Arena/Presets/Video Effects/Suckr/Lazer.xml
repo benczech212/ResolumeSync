@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset name="Lazer" uniqueId="A126" className="Suckr">
+  <versionInfo name="Resolume Arena" majorVersion="7" minorVersion="3" microVersion="0"
+               revision="70000"/>
+  <RenderPass name="Suckr" type="DryWetEffect" uniqueId="1603880240216" baseType="DryWetEffect"
+              uniqueTypeId="A126">
+    <Params name="Params">
+      <Param name="Bypassed" default="0" value="0"/>
+      <ParamRange name="Opacity" default="1" value="1">
+        <BehaviourDouble name="BehaviourDouble">
+          <PhaseSourceStatic name="PhaseSourceStatic"/>
+        </BehaviourDouble>
+      </ParamRange>
+    </Params>
+    <View name="View"/>
+    <RenderPass name="Suckr" type="Suckr" uniqueId="1603880240217" baseType="Effect"
+                dwType="Effect" uniqueTypeId="A126">
+      <Params name="Params">
+        <Param name="Bypassed" default="0" value="0"/>
+        <ParamRange name="Suck" default="0.5" value="1">
+          <BehaviourDouble name="BehaviourDouble">
+            <PhaseSourceStatic name="PhaseSourceStatic"/>
+          </BehaviourDouble>
+        </ParamRange>
+        <Param name="Black BG" default="0" value="0"/>
+      </Params>
+    </RenderPass>
+    <ChoosableMixer name="Mixer">
+      <Params name="Params">
+        <ParamChoice name="Blend Mode" default="67464115" value="67464114" storeChoices="0"/>
+      </Params>
+      <RenderPass name="Add" type="Add" uniqueId="1603880240218" baseType="Mixer"
+                  uniqueTypeId="A005">
+        <Params name="Params">
+          <Param name="Bypassed" default="0" value="0"/>
+          <ParamRange name="Opacity" default="1" value="1">
+            <BehaviourDouble name="BehaviourDouble">
+              <PhaseSourceStatic name="PhaseSourceStatic"/>
+            </BehaviourDouble>
+          </ParamRange>
+        </Params>
+      </RenderPass>
+    </ChoosableMixer>
+  </RenderPass>
+</Preset>

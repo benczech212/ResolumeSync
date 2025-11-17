@@ -1,0 +1,1880 @@
+{
+	"formatVersion": {
+		"major": 1,
+		"minor": 1,
+		"patch": 0
+	},
+	"patch": {
+		"connections": [
+			{
+				"from": [
+					73,
+					"output"
+				],
+				"to": [
+					74,
+					"input"
+				]
+			},
+			{
+				"from": [
+					73,
+					"output"
+				],
+				"to": [
+					84,
+					"input"
+				]
+			},
+			{
+				"from": [
+					73,
+					"output"
+				],
+				"to": [
+					95,
+					"input"
+				]
+			},
+			{
+				"from": [
+					74,
+					"pitch"
+				],
+				"to": [
+					112,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					84,
+					"pitch"
+				],
+				"to": [
+					111,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					95,
+					"value"
+				],
+				"to": [
+					113,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					114,
+					"output"
+				],
+				"to": [
+					118,
+					"channel0"
+				]
+			},
+			{
+				"from": [
+					117,
+					"output"
+				],
+				"to": [
+					118,
+					"channel1"
+				]
+			},
+			{
+				"from": [
+					73,
+					"output"
+				],
+				"to": [
+					121,
+					"input"
+				]
+			},
+			{
+				"from": [
+					73,
+					"output"
+				],
+				"to": [
+					122,
+					"input"
+				]
+			},
+			{
+				"from": [
+					95,
+					"controller"
+				],
+				"to": [
+					119,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					119,
+					"output0"
+				],
+				"to": [
+					114,
+					"input"
+				]
+			},
+			{
+				"from": [
+					95,
+					"channel"
+				],
+				"to": [
+					120,
+					"input1"
+				]
+			},
+			{
+				"from": [
+					120,
+					"output0"
+				],
+				"to": [
+					117,
+					"input"
+				]
+			},
+			{
+				"from": [
+					122,
+					"velocity"
+				],
+				"to": [
+					124,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					124,
+					"output0"
+				],
+				"to": [
+					123,
+					"input"
+				]
+			},
+			{
+				"from": [
+					126,
+					"output"
+				],
+				"to": [
+					125,
+					"input"
+				]
+			},
+			{
+				"from": [
+					127,
+					"output"
+				],
+				"to": [
+					125,
+					"translation"
+				]
+			},
+			{
+				"from": [
+					121,
+					"value"
+				],
+				"to": [
+					128,
+					"input"
+				]
+			},
+			{
+				"from": [
+					128,
+					"output0"
+				],
+				"to": [
+					127,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					121,
+					"value"
+				],
+				"to": [
+					124,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					123,
+					"output"
+				],
+				"to": [
+					116,
+					"input"
+				]
+			}
+		],
+		"inputOrder": {
+			"groups": {},
+			"roots": [
+				{
+					"node": 73
+				}
+			]
+		},
+		"meta": {
+			"author": "Mark Buitenwerf",
+			"category": "source",
+			"deploymentTarget": {
+				"branch": "unknown",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 0
+				}
+			},
+			"description": "Explains what this node does",
+			"displayName": "Midi Test",
+			"identifier": "6b6d53d5-d9a1-4757-8243-b3b9bc677667",
+			"licenseName": "",
+			"mail": "mail@resolume.com",
+			"originalTarget": {
+				"branch": "unknown",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 11,
+					"patch": 0
+				}
+			},
+			"quality": 32856,
+			"resolution": {
+				"height": 1080,
+				"width": 1920
+			},
+			"saveTarget": {
+				"branch": "",
+				"name": "Wire",
+				"version": {
+					"major": 7,
+					"minor": 22,
+					"patch": 9
+				}
+			},
+			"thumbnail": "",
+			"url": "www.resolume.com",
+			"vendor": "Resolume"
+		},
+		"nextNodeId": 129,
+		"nodes": {
+			"111": {
+				"attributes": {
+					"defaultValue-type": {
+						"type": "type",
+						"value": "null"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 395.17645263671875,
+					"y": 572.58056640625
+				},
+				"class": {
+					"id": "77697265-E9E1-4BAC-9742-265E5207A103",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 34
+					}
+				},
+				"hidden": [
+					"input0-type",
+					"defaultValue-type",
+					"flow",
+					"instances"
+				],
+				"name": "Float",
+				"thumbnail_visible": true
+			},
+			"112": {
+				"attributes": {
+					"defaultValue-type": {
+						"type": "type",
+						"value": "null"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 396.17645263671875,
+					"y": 438.697662353515625
+				},
+				"class": {
+					"id": "77697265-E9E1-4BAC-9742-265E5207A103",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 34
+					}
+				},
+				"hidden": [
+					"input0-type",
+					"defaultValue-type",
+					"flow",
+					"instances"
+				],
+				"name": "Float",
+				"thumbnail_visible": true
+			},
+			"113": {
+				"attributes": {
+					"defaultValue-type": {
+						"type": "type",
+						"value": "null"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 58,
+					"width": 195,
+					"x": 395.17645263671875,
+					"y": 699.4473876953125
+				},
+				"class": {
+					"id": "77697265-E9E1-4BAC-9742-265E5207A103",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 34
+					}
+				},
+				"hidden": [
+					"input0-type",
+					"defaultValue-type",
+					"flow",
+					"instances"
+				],
+				"name": "Float",
+				"thumbnail_visible": true
+			},
+			"114": {
+				"attributes": {
+					"alignment-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"alignmentvert-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"bypass-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"font": {
+						"type": "string",
+						"value": "Arial"
+					},
+					"glowin-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"glowout-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"linewidth-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"material-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"outlinecolor-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"outlinewidth-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"position-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"reduce": {
+						"type": "bool",
+						"value": false
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"rotation-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"scale-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"spacing-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"style": {
+						"type": "string",
+						"value": "Regular"
+					}
+				},
+				"bounds": {
+					"height": 226,
+					"width": 195,
+					"x": 1289.3258056640625,
+					"y": 739.58740234375
+				},
+				"class": {
+					"id": "77697265-E2EC-4F1B-901A-CEFC474D3C07",
+					"version": 5
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"alignment": {
+						"type": "integer",
+						"value": 1
+					},
+					"alignmentvert": {
+						"type": "integer",
+						"value": 1
+					},
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"glowin": {
+						"type": "float",
+						"value": 0
+					},
+					"glowout": {
+						"type": "float",
+						"value": 0
+					},
+					"input": {
+						"type": "string",
+						"value": ""
+					},
+					"linewidth": {
+						"type": "float",
+						"value": 1920
+					},
+					"material": {
+						"type": "color",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"outlinecolor": {
+						"type": "color",
+						"value": [
+							1,
+							0,
+							0,
+							1
+						]
+					},
+					"outlinewidth": {
+						"type": "float",
+						"value": 0
+					},
+					"position": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					},
+					"rotation": {
+						"type": "float",
+						"value": 0
+					},
+					"scale": {
+						"type": "float",
+						"value": 1
+					},
+					"spacing": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"font",
+					"style",
+					"bypass-dimensions",
+					"input-dimensions",
+					"linewidth-dimensions",
+					"position-dimensions",
+					"alignment-dimensions",
+					"alignmentvert-dimensions",
+					"material-dimensions",
+					"spacing-dimensions",
+					"scale-dimensions",
+					"rotation-dimensions",
+					"outlinecolor-dimensions",
+					"outlinewidth-dimensions",
+					"glowin-dimensions",
+					"glowout-dimensions",
+					"bypass",
+					"rotation",
+					"outlinecolor",
+					"outlinewidth",
+					"glowin",
+					"glowout",
+					"resolution-mode",
+					"resolution-relative",
+					"resolution-absolute",
+					"bitdepth",
+					"reduce"
+				],
+				"name": "Text Render",
+				"thumbnail_visible": true
+			},
+			"116": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 132,
+					"x": 1828.3258056640625,
+					"y": 739.58740234375
+				},
+				"class": {
+					"id": "77697265-BEEA-4D38-8EE5-0EBA4CBD0AEE",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Texture Out",
+				"thumbnail_visible": true
+			},
+			"117": {
+				"attributes": {
+					"alignment-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"alignmentvert-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"bypass-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"font": {
+						"type": "string",
+						"value": "Arial"
+					},
+					"glowin-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"glowout-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"linewidth-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"material-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"outlinecolor-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"outlinewidth-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"position-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"reduce": {
+						"type": "bool",
+						"value": false
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"rotation-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"scale-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"spacing-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"style": {
+						"type": "string",
+						"value": "Regular"
+					}
+				},
+				"bounds": {
+					"height": 226,
+					"width": 195,
+					"x": 1288.8258056640625,
+					"y": 994.58734130859375
+				},
+				"class": {
+					"id": "77697265-E2EC-4F1B-901A-CEFC474D3C07",
+					"version": 5
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"alignment": {
+						"type": "integer",
+						"value": 1
+					},
+					"alignmentvert": {
+						"type": "integer",
+						"value": 1
+					},
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"glowin": {
+						"type": "float",
+						"value": 0
+					},
+					"glowout": {
+						"type": "float",
+						"value": 0
+					},
+					"input": {
+						"type": "string",
+						"value": ""
+					},
+					"linewidth": {
+						"type": "float",
+						"value": 1920
+					},
+					"material": {
+						"type": "color",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"outlinecolor": {
+						"type": "color",
+						"value": [
+							1,
+							0,
+							0,
+							1
+						]
+					},
+					"outlinewidth": {
+						"type": "float",
+						"value": 0
+					},
+					"position": {
+						"type": "float2",
+						"value": [
+							0,
+							-100
+						]
+					},
+					"rotation": {
+						"type": "float",
+						"value": 0
+					},
+					"scale": {
+						"type": "float",
+						"value": 1
+					},
+					"spacing": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"font",
+					"style",
+					"bypass-dimensions",
+					"input-dimensions",
+					"linewidth-dimensions",
+					"position-dimensions",
+					"alignment-dimensions",
+					"alignmentvert-dimensions",
+					"material-dimensions",
+					"spacing-dimensions",
+					"scale-dimensions",
+					"rotation-dimensions",
+					"outlinecolor-dimensions",
+					"outlinewidth-dimensions",
+					"glowin-dimensions",
+					"glowout-dimensions",
+					"bypass",
+					"rotation",
+					"outlinecolor",
+					"outlinewidth",
+					"glowin",
+					"glowout",
+					"resolution-mode",
+					"resolution-relative",
+					"resolution-absolute",
+					"bitdepth",
+					"reduce"
+				],
+				"name": "Text Render",
+				"thumbnail_visible": true
+			},
+			"118": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"num-channels": {
+						"type": "integer",
+						"value": 2
+					},
+					"type": {
+						"type": "type",
+						"value": "texture2d"
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 1520.3258056640625,
+					"y": 730.58740234375
+				},
+				"class": {
+					"id": "77697265-3732-42da-653e-b641d4a49224",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"channel0": {
+						"type": "texture2d",
+						"value": null
+					},
+					"channel1": {
+						"type": "texture2d",
+						"value": null
+					}
+				},
+				"hidden": [
+					"type",
+					"flow",
+					"num-channels",
+					"input0-dimensions",
+					"input1-dimensions"
+				],
+				"name": "Join",
+				"thumbnail_visible": true
+			},
+			"119": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					}
+				},
+				"bounds": {
+					"height": 105.02516937255859375,
+					"width": 195,
+					"x": 1031.3258056640625,
+					"y": 764.58740234375
+				},
+				"class": {
+					"id": "77697265-5852-33AB-89e5-F52a24ca2d50",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "string",
+						"value": "Controller: "
+					},
+					"input1": {
+						"type": "string",
+						"value": ""
+					},
+					"separator": {
+						"type": "string",
+						"value": ""
+					}
+				},
+				"hidden": [
+					"flow",
+					"size",
+					"input0-dimensions",
+					"input1-dimensions"
+				],
+				"name": "Concatenate",
+				"thumbnail_visible": true
+			},
+			"120": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					}
+				},
+				"bounds": {
+					"height": 105.02516937255859375,
+					"width": 195,
+					"x": 1030.8258056640625,
+					"y": 888.58740234375
+				},
+				"class": {
+					"id": "77697265-5852-33AB-89e5-F52a24ca2d50",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "string",
+						"value": "Channel"
+					},
+					"input1": {
+						"type": "string",
+						"value": ""
+					},
+					"separator": {
+						"type": "string",
+						"value": ""
+					}
+				},
+				"hidden": [
+					"flow",
+					"size",
+					"input0-dimensions",
+					"input1-dimensions"
+				],
+				"name": "Concatenate",
+				"thumbnail_visible": true
+			},
+			"121": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"normalize": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 105.02516937255859375,
+					"width": 195,
+					"x": 191.2393798828125,
+					"y": 1572.5860595703125
+				},
+				"class": {
+					"id": "77697265-91ED-4FF7-AE24-EAFEFBBBD3AE",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "midi",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Read CC",
+				"thumbnail_visible": true
+			},
+			"122": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"normalize": {
+						"type": "bool",
+						"value": false
+					},
+					"zero-is-off": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"bounds": {
+					"height": 152.53656005859375,
+					"width": 195,
+					"x": 502.5640869140625,
+					"y": 1526.324951171875
+				},
+				"class": {
+					"id": "77697265-56BC-4715-AADA-9F84718996A2",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "midi",
+						"value": null
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Read Note On",
+				"thumbnail_visible": true
+			},
+			"123": {
+				"attributes": {
+					"alignment-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"alignmentvert-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"bitdepth": {
+						"type": "integer",
+						"value": 0
+					},
+					"bypass-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"font": {
+						"type": "string",
+						"value": "Arial"
+					},
+					"glowin-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"glowout-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"linewidth-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"material-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"outlinecolor-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"outlinewidth-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"position-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"reduce": {
+						"type": "bool",
+						"value": false
+					},
+					"resolution-absolute": {
+						"type": "float2",
+						"value": [
+							1920,
+							1080
+						]
+					},
+					"resolution-mode": {
+						"type": "integer",
+						"value": 0
+					},
+					"resolution-relative": {
+						"type": "float2",
+						"value": [
+							1,
+							1
+						]
+					},
+					"rotation-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"scale-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"spacing-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"style": {
+						"type": "string",
+						"value": "Regular"
+					}
+				},
+				"bounds": {
+					"height": 223.8036346435546875,
+					"width": 195,
+					"x": 1289.02587890625,
+					"y": 1302.04833984375
+				},
+				"class": {
+					"id": "77697265-E2EC-4F1B-901A-CEFC474D3C07",
+					"version": 5
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"alignment": {
+						"type": "integer",
+						"value": 1
+					},
+					"alignmentvert": {
+						"type": "integer",
+						"value": 1
+					},
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"glowin": {
+						"type": "float",
+						"value": 0
+					},
+					"glowout": {
+						"type": "float",
+						"value": 0
+					},
+					"input": {
+						"type": "string",
+						"value": "0.00"
+					},
+					"linewidth": {
+						"type": "float",
+						"value": 1920
+					},
+					"material": {
+						"type": "color",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					},
+					"outlinecolor": {
+						"type": "color",
+						"value": [
+							1,
+							0,
+							0,
+							1
+						]
+					},
+					"outlinewidth": {
+						"type": "float",
+						"value": 0
+					},
+					"position": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					},
+					"rotation": {
+						"type": "float",
+						"value": 0
+					},
+					"scale": {
+						"type": "float",
+						"value": 1
+					},
+					"spacing": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"font",
+					"style",
+					"bypass-dimensions",
+					"input-dimensions",
+					"linewidth-dimensions",
+					"position-dimensions",
+					"alignment-dimensions",
+					"alignmentvert-dimensions",
+					"material-dimensions",
+					"spacing-dimensions",
+					"scale-dimensions",
+					"rotation-dimensions",
+					"outlinecolor-dimensions",
+					"outlinewidth-dimensions",
+					"glowin-dimensions",
+					"glowout-dimensions",
+					"bypass",
+					"rotation",
+					"outlinecolor",
+					"outlinewidth",
+					"glowin",
+					"glowout",
+					"resolution-mode",
+					"resolution-relative",
+					"resolution-absolute",
+					"bitdepth",
+					"reduce"
+				],
+				"name": "Text Render",
+				"thumbnail_visible": true
+			},
+			"124": {
+				"attributes": {
+					"decimals-type": {
+						"type": "type",
+						"value": "integer"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"trimZeroes-type": {
+						"type": "type",
+						"value": "bool"
+					}
+				},
+				"bounds": {
+					"height": 105.02516937255859375,
+					"width": 195,
+					"x": 882.65509033203125,
+					"y": 1533.826904296875
+				},
+				"class": {
+					"id": "77697265-5852-4454-89e5-61a24cea2d50",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"decimals": {
+						"type": "integer",
+						"value": 2
+					},
+					"input0": {
+						"type": "float",
+						"value": 0
+					},
+					"trimZeroes": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"input0-type",
+					"decimals-type",
+					"trimZeroes-type",
+					"flow",
+					"instances"
+				],
+				"name": "String",
+				"thumbnail_visible": true
+			},
+			"125": {
+				"attributes": {
+					"anchor-type": {
+						"type": "type",
+						"value": "float2"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input-type": {
+						"type": "type",
+						"value": "procedural"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"rotation-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"scale-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"translation-type": {
+						"type": "type",
+						"value": "float2"
+					}
+				},
+				"bounds": {
+					"height": 128.7808685302734375,
+					"width": 195,
+					"x": 1031.4407958984375,
+					"y": 481.074462890625
+				},
+				"class": {
+					"id": "77697265-9225-4009-9D2D-5F898E94CC33",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"anchor": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					},
+					"input": {
+						"type": "procedural",
+						"value": null
+					},
+					"rotation": {
+						"type": "float",
+						"value": 0
+					},
+					"scale": {
+						"type": "float",
+						"value": 1
+					},
+					"translation": {
+						"type": "float2",
+						"value": [
+							0,
+							0
+						]
+					}
+				},
+				"hidden": [
+					"input-type",
+					"translation-type",
+					"rotation-type",
+					"scale-type",
+					"anchor-type",
+					"flow",
+					"instances"
+				],
+				"name": "Transform",
+				"thumbnail_visible": true
+			},
+			"126": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 57.51378250122070312,
+					"width": 195,
+					"x": 985.1795654296875,
+					"y": 296.030120849609375
+				},
+				"class": {
+					"id": "77697265-EA26-47D6-985A-B4CAEC314BF7",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"radius": {
+						"type": "float",
+						"value": 0.5
+					}
+				},
+				"hidden": [
+					"instances"
+				],
+				"name": "Circle",
+				"thumbnail_visible": true
+			},
+			"127": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 81.26947784423828125,
+					"width": 195,
+					"x": 722.6634521484375,
+					"y": 463.57025146484375
+				},
+				"class": {
+					"id": "77697265-E7EF-4944-8FC2-D808EE0433CB",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					},
+					"input1": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances"
+				],
+				"name": "Float2",
+				"thumbnail_visible": true
+			},
+			"128": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"from-max-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"from-max-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"from-min-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"from-min-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"input-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"skew-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"skew-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"to-max-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"to-max-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"to-min-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"to-min-type": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 152.53656005859375,
+					"width": 195,
+					"x": 550.0753173828125,
+					"y": 1251.2591552734375
+				},
+				"class": {
+					"id": "77697265-992D-4044-82DC-D2E0D30DF78E",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"from-max": {
+						"type": "float",
+						"value": 127
+					},
+					"from-min": {
+						"type": "float",
+						"value": 0
+					},
+					"input": {
+						"type": "float",
+						"value": 0
+					},
+					"skew": {
+						"type": "float",
+						"value": 0.5
+					},
+					"to-max": {
+						"type": "float",
+						"value": 1
+					},
+					"to-min": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"input-type",
+					"from-min-type",
+					"from-max-type",
+					"to-min-type",
+					"to-max-type",
+					"skew-type",
+					"flow",
+					"input-dimensions",
+					"from-min-dimensions",
+					"from-max-dimensions",
+					"to-min-dimensions",
+					"to-max-dimensions",
+					"skew-dimensions"
+				],
+				"name": "Map",
+				"thumbnail_visible": true
+			},
+			"71": {
+				"attributes": {
+					"alignment": {
+						"type": "integer",
+						"value": 0
+					},
+					"fill": {
+						"type": "bool",
+						"value": true
+					},
+					"font-size": {
+						"type": "float",
+						"value": 19
+					},
+					"text": {
+						"type": "string",
+						"value": "READING MIDI\n\nThe Read Note On\/Off and Read CC nodes are there to read incomming midi data and split up the contents to better keep track of what is comming in.\n\nMIDI In inputs midi data into your wire patch.\n\nRead Node On outputs the incomming pitch, velocity and channel when a note is on.\n\nRead Node Off outputs the incomming pitch, velocity and channel when a note is off.\n\nRead CC outputs the CC message, the controller that sends the CC message and the channel.\n\nConnect a Midi controller to use the example."
+					}
+				},
+				"bounds": {
+					"height": 310,
+					"width": 668.940185546875,
+					"x": -42.84625244140625,
+					"y": 78.1183929443359375
+				},
+				"class": {
+					"id": "77697265-3C1D-467D-A722-0FC566538374",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffd0c117",
+				"constants": {},
+				"hidden": [
+					"text",
+					"alignment",
+					"font-size",
+					"fill"
+				],
+				"name": "Comment",
+				"thumbnail_visible": true
+			},
+			"73": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "event"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": -42.59613037109375,
+					"y": 439.19696044921875
+				},
+				"class": {
+					"id": "77697265-5275-4BB0-97B0-DBEEFD85997B",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "midi",
+						"value": null
+					}
+				},
+				"hidden": [
+					"input",
+					"instances",
+					"flow"
+				],
+				"name": "MIDI In",
+				"thumbnail_visible": true
+			},
+			"74": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"normalize": {
+						"type": "bool",
+						"value": true
+					},
+					"zero-is-off": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 136.81658935546875,
+					"y": 439.250335693359375
+				},
+				"class": {
+					"id": "77697265-56BC-4715-AADA-9F84718996A2",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "midi",
+						"value": null
+					}
+				},
+				"hidden": [
+					"normalize",
+					"instances",
+					"zero-is-off"
+				],
+				"name": "Read Note On",
+				"thumbnail_visible": true
+			},
+			"84": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"normalize": {
+						"type": "bool",
+						"value": true
+					},
+					"zero-is-off": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 106,
+					"width": 195,
+					"x": 135.81658935546875,
+					"y": 572.44921875
+				},
+				"class": {
+					"id": "77697265-4DD4-47E0-B704-9F9757B6C4EC",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "midi",
+						"value": null
+					}
+				},
+				"hidden": [
+					"normalize",
+					"instances",
+					"zero-is-off"
+				],
+				"name": "Read Note Off",
+				"thumbnail_visible": true
+			},
+			"95": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"normalize": {
+						"type": "bool",
+						"value": true
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 195,
+					"x": 135.81658935546875,
+					"y": 699.6097412109375
+				},
+				"class": {
+					"id": "77697265-91ED-4FF7-AE24-EAFEFBBBD3AE",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input": {
+						"type": "midi",
+						"value": null
+					}
+				},
+				"hidden": [
+					"normalize",
+					"instances"
+				],
+				"name": "Read CC",
+				"thumbnail_visible": true
+			}
+		},
+		"ui": {
+			"camera": {
+				"x": -1166.5860595703125,
+				"y": 188.5043487548828125,
+				"zoom": 0.79980826377868652
+			},
+			"selection": []
+		}
+	},
+	"ui": {
+		"audio": {
+			"routing": {
+				"in": {},
+				"out": []
+			}
+		},
+		"deviceConnections": {
+			"input": {}
+		},
+		"transport": {
+			"bpm": 120,
+			"time-signature": [
+				4,
+				4
+			]
+		},
+		"video": {
+			"routing": {
+				"out": {
+					"Display 1": null,
+					"Display 2": null,
+					"Display 3": null
+				}
+			}
+		}
+	}
+}

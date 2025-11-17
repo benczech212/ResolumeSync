@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Layout version="1">
+	<versionInfo name="Wire Editor" majorVersion="7" minorVersion="7" microVersion="0" revision="11365"/>
+	<Desktop>
+		<Window panel_id="59" main="1" full_screen="1" x="0" y="53" width="2558" height="1339">
+			<FlexContainer panel_id="60" orientation="0">
+				<FlexContainer panel_id="61" orientation="1">
+					<FlexContainer panel_id="71" height_desired="603" orientation="0">
+						<FlexContainer panel_id="74" width_desired="373" orientation="1">
+							<TabbedContainer panel_id="75">
+								<Dashboard width_desired="400"/>
+							</TabbedContainer>
+						</FlexContainer>
+						<FlexContainer panel_id="73" width_desired="976" orientation="1">
+							<TabbedContainer panel_id="72">
+								<Monitor width_desired="550" height_desired="360" instance="0"/>
+							</TabbedContainer>
+						</FlexContainer>
+						<FlexContainer panel_id="143" width_desired="440" orientation="1">
+							<TabbedContainer panel_id="144">
+								<NodeInspector width_desired="400"/>
+								<PatchInspector width_desired="400"/>
+							</TabbedContainer>
+						</FlexContainer>
+						<FlexContainer panel_id="150" width_desired="366" orientation="1">
+							<TabbedContainer panel_id="151">
+								<Library width_desired="400"/>
+							</TabbedContainer>
+							<FlexContainer panel_id="152" orientation="0">
+								<TabbedContainer panel_id="153">
+									<Help height_desired="100"/>
+								</TabbedContainer>
+							</FlexContainer>
+						</FlexContainer>
+						<FlexContainer panel_id="84" width_desired="392" orientation="1">
+							<TabbedContainer panel_id="85">
+								<Resources width_desired="400"/>
+								<Log width_desired="400"/>
+							</TabbedContainer>
+						</FlexContainer>
+					</FlexContainer>
+					<Toolbar width_desired="1000" height_desired="36"/>
+					<FlexContainer panel_id="165" height_desired="668" orientation="0">
+						<PatchCanvas height_desired="700"/>
+					</FlexContainer>
+				</FlexContainer>
+			</FlexContainer>
+		</Window>
+	</Desktop>
+	<HiddenPanels>
+		<TextEditor unhide_panel_id="165" unhide_target_index="0" width_desired="350" height_desired="200"/>
+	</HiddenPanels>
+</Layout>
+

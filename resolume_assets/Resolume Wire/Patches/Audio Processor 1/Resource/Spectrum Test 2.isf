@@ -1,0 +1,57 @@
+/*{
+  "CATEGORIES": ["GENERATOR"],
+  "INPUTS": [
+    {"NAME":"SpectrumTex","TYPE":"image"},           // 1 x nBins texture (R = magnitude)
+    {"NAME":"nBins","TYPE":"float","DEFAULT":512.0},
+    {"NAME":"sampleRate","TYPE":"float","DEFAULT":48000.0},
+    {"NAME":"lowMaxHz","TYPE":"float","DEFAULT":160.0},
+    {"NAME":"midMaxHz","TYPE":"float","DEFAULT":2000.0},
+    {"NAME":"highMaxHz","TYPE":"float","DEFAULT":12000.0},
+    {"NAME":"noiseFloor","TYPE":"float","DEFAULT":0.02},
+    {"NAME":"peakCeil","TYPE":"float","DEFAULT":0.6},
+    {"NAME":"curve","TYPE":"float","DEFAULT":0.6}
+  ]
+}*/
+float hzForBin(float k, float sr, float nfft) { return k * sr / nfft; }
+float shape(float x, float nf, float pc, float c) {
+  float t = clamp((x - nf) / max(pc - nf, 1e-6), 0.0, 1.0);
+  return pow(t, c);
+}
+void main() {
+  int taps = 256;                 // downsampled taps across the spectrum
+  float low=0.0, mid=0.0, high=0.0;
+  float cL=0.0, cM=0.0, cH=0.0;
+
+  for (int i=0; i<taps; i++) {
+    float k = float(i) * (nBins-1.0)/float(taps-1);
+    float u = (k+0.5)/nBins;
+    float mag = IMG_NORM_PIXEL(SpectrumTex, vec2(u,0.5)).r;
+
+    float f = hzForBin(k, sampleRate, nBins*2.0);  // ~real-FFT relation
+    float L = float(f <= lowMaxHz);
+    float M = float(f >  lowMaxHz && f <= midMaxHz);
+    float H = float(f >  midMaxHz && f <= highMaxHz);
+
+    low  += mag*L;   cL += L;
+    mid  += mag*M;   cM += M;
+    high += mag*H;   cH += H;
+  }
+  low  = (cL>0.0)? low/cL  : 0.0;
+  mid  = (cM>0.0)? mid/cM  : 0.0;
+  high = (cH>0.0)? high/cH : 0.0;
+
+  float Ls = shape(low,  noiseFloor, peakCeil, curve);
+  float Ms = shape(mid,  noiseFloor, peakCeil, curve);
+  float Hs = shape(high, noiseFloor, peakCeil, curve);
+  float Loud = clamp((Ls+Ms+Hs)/3.0, 0.0, 1.0);
+
+  // 1) Encode data in RGBA so Wire can read it back (sample the pixel)
+  vec4 data = vec4(Ls, Ms, Hs, Loud);
+
+  // 2) Optional simple visual so you see something on screen
+  vec2 uv = isf_FragNormCoord - 0.5;
+  float ring = smoothstep(0.35,0.34,abs(length(uv)-0.35));
+  vec3 vis = vec3(Ls,Ms,Hs) * (0.2 + 0.8*Loud) * ring;
+
+  gl_FragColor = vec4(vis, 1.0) + vec4(0.0)*data;  // swap to `data` if you want 1×1 output
+}

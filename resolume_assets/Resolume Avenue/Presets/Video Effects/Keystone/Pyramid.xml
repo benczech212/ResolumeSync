@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset name="Pyramid" uniqueId="A137" className="Keystone">
+  <versionInfo name="Resolume Arena" majorVersion="7" minorVersion="3" microVersion="0"
+               revision="70000"/>
+  <RenderPass name="Keystone" type="DryWetEffect" uniqueId="1603880240423"
+              baseType="DryWetEffect" uniqueTypeId="A137">
+    <Params name="Params">
+      <Param name="Bypassed" default="0" value="0"/>
+      <ParamRange name="Opacity" default="1" value="1">
+        <BehaviourDouble name="BehaviourDouble">
+          <PhaseSourceStatic name="PhaseSourceStatic"/>
+        </BehaviourDouble>
+      </ParamRange>
+    </Params>
+    <View name="View"/>
+    <RenderPass name="Keystone" type="Keystone" uniqueId="1603880240424" baseType="Effect"
+                dwType="Effect" uniqueTypeId="A137">
+      <Params name="Params">
+        <Param name="Bypassed" default="0" value="0"/>
+        <ParamRange name="Top Left X" default="0" value="0.50222222199999999592">
+          <BehaviourDouble name="BehaviourDouble">
+            <PhaseSourceStatic name="PhaseSourceStatic"/>
+          </BehaviourDouble>
+        </ParamRange>
+        <ParamRange name="Top Left Y" default="0" value="0.11999999999999999556">
+          <BehaviourDouble name="BehaviourDouble">
+            <PhaseSourceStatic name="PhaseSourceStatic"/>
+          </BehaviourDouble>
+        </ParamRange>
+        <ParamRange name="Top Right X" default="1" value="0.49777777800000000408">
+          <BehaviourDouble name="BehaviourDouble">
+            <PhaseSourceStatic name="PhaseSourceStatic"/>
+          </BehaviourDouble>
+        </ParamRange>
+        <ParamRange name="Top Right Y" default="0" value="0.11999999999999999556">
+          <BehaviourDouble name="BehaviourDouble">
+            <PhaseSourceStatic name="PhaseSourceStatic"/>
+          </BehaviourDouble>
+        </ParamRange>
+        <ParamRange name="Bot. Right X" default="1" value="1">
+          <BehaviourDouble name="BehaviourDouble">
+            <PhaseSourceStatic name="PhaseSourceStatic"/>
+          </BehaviourDouble>
+        </ParamRange>
+        <ParamRange name="Bot. Right Y" default="1" value="1">
+          <BehaviourDouble name="BehaviourDouble">
+            <PhaseSourceStatic name="PhaseSourceStatic"/>
+          </BehaviourDouble>
+        </ParamRange>
+        <ParamRange name="Bot. Left X" default="0" value="0">
+          <BehaviourDouble name="BehaviourDouble">
+            <PhaseSourceStatic name="PhaseSourceStatic"/>
+          </BehaviourDouble>
+        </ParamRange>
+        <ParamRange name="Bot. Left Y" default="1" value="1">
+          <BehaviourDouble name="BehaviourDouble">
+            <PhaseSourceStatic name="PhaseSourceStatic"/>
+          </BehaviourDouble>
+        </ParamRange>
+        <Param name="Show Grid" default="0" value="0"/>
+        <Param name="Black BG" default="0" value="0"/>
+      </Params>
+    </RenderPass>
+    <ChoosableMixer name="Mixer">
+      <Params name="Params">
+        <ParamChoice name="Blend Mode" default="67464115" value="67464114" storeChoices="0"/>
+      </Params>
+      <RenderPass name="Add" type="Add" uniqueId="1603880240425" baseType="Mixer"
+                  uniqueTypeId="A005">
+        <Params name="Params">
+          <Param name="Bypassed" default="0" value="0"/>
+          <ParamRange name="Opacity" default="1" value="1">
+            <BehaviourDouble name="BehaviourDouble">
+              <PhaseSourceStatic name="PhaseSourceStatic"/>
+            </BehaviourDouble>
+          </ParamRange>
+        </Params>
+      </RenderPass>
+    </ChoosableMixer>
+  </RenderPass>
+</Preset>

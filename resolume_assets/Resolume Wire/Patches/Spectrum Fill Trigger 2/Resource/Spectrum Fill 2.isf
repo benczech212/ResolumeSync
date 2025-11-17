@@ -1,0 +1,87 @@
+/*{
+  "CREDIT": "Ben Czech + AI co-pilot",
+  "DESCRIPTION": "Hue sweep effect triggered by pulse. Runs a timed fade-in → sweep → fade-out cycle, then idles transparent.",
+  "CATEGORIES": [ "filter", "keying", "color", "music" ],
+  "INPUTS": [
+    { "NAME":"inputImage", "TYPE":"image" },
+    { "NAME":"bpm","TYPE":"float","DEFAULT":120.0,"MIN":20.0,"MAX":300.0 },
+    { "NAME":"beatsTotal","TYPE":"float","DEFAULT":8.0,"MIN":1.0,"MAX":64.0 },
+    { "NAME":"beatsFadeIn","TYPE":"float","DEFAULT":2.0 },
+    { "NAME":"beatsFadeOut","TYPE":"float","DEFAULT":2.0 },
+    { "NAME":"trigger","TYPE":"float","LABEL":"Trigger (0→1→0)","DEFAULT":0.0,"MIN":0.0,"MAX":1.0 },
+
+    { "NAME":"hueCenterMaxDeg","TYPE":"float","DEFAULT":360.0 },
+    { "NAME":"hueWidthTargetDeg","TYPE":"float","DEFAULT":60.0 },
+    { "NAME":"satMin","TYPE":"float","DEFAULT":0.15 },
+    { "NAME":"valMin","TYPE":"float","DEFAULT":0.10 },
+    { "NAME":"feather","TYPE":"float","DEFAULT":0.05 },
+
+    { "NAME":"invert","TYPE":"bool","DEFAULT":false },
+    { "NAME":"maskOnly","TYPE":"bool","DEFAULT":false },
+    { "NAME":"keepSrcAlpha","TYPE":"bool","DEFAULT":true },
+    { "NAME":"debugVisual","TYPE":"bool","DEFAULT":false }
+  ]
+}*/
+
+// --- helpers ---
+float sstep(float a,float b,float x){float w=max(1e-6,b-a);float t=clamp((x-a)/w,0.,1.);return t*t*(3.-2.*t);}
+vec3 rgb2hsv(vec3 c){float M=max(c.r,max(c.g,c.b)),m=min(c.r,min(c.g,c.b)),d=M-m;float h=0.;if(d>1e-6){if(M==c.r)h=mod((c.g-c.b)/d,6.);else if(M==c.g)h=((c.b-c.r)/d)+2.;else h=((c.r-c.g)/d)+4.;h/=6.;if(h<0.)h+=1.;}return vec3(h,(M<=0.)?0.:d/M,M);}
+float hueDistance(float h,float c){float d=abs(h-c);return min(d,1.-d);}
+
+// --- main ---
+void main(){
+  vec2 uv = isf_FragNormCoord.xy;
+  vec4 src = IMG_NORM_PIXEL(inputImage, uv);
+  if(src.a<=0.){gl_FragColor=vec4(0.);return;}
+
+  // timing
+  float beatSec = 60.0/max(1e-3,bpm);
+  float dur  = beatSec*beatsTotal;
+  float fin  = beatSec*beatsFadeIn;
+  float fout = beatSec*beatsFadeOut;
+  float mid  = max(0.0,dur-fin-fout);
+
+  // make trigger edge "sticky" for one frame using TIME wrapping
+  // convert TIME into repeating sawtooth with period = dur*2
+  float phase = fract(TIME/(dur*2.0));
+  float pulse = step(0.5,trigger);
+  // emulate a start window if trigger>0.5 in the first half of the saw
+  float active = step(phase, pulse*0.5 + 0.001);
+
+  // when active==0, shader is transparent
+  if(active<0.5){ if(debugVisual){gl_FragColor=vec4(0.,0.,1.,1.);} else {gl_FragColor=vec4(0.);} return; }
+
+  // elapsed time within current run
+  float elapsed = mod(TIME, dur);
+  float t = clamp(elapsed, 0., dur);
+
+  // fade envelopes
+  float wT = max(0.0,hueWidthTargetDeg);
+  float wNow=0.;
+  if(t<fin) wNow=wT*sstep(0.,fin,t);
+  else if(t<fin+mid) wNow=wT;
+  else wNow=wT*(1.-sstep(0.,max(1e-6,fout),t-(fin+mid)));
+
+  float cNow = clamp(hueCenterMaxDeg * clamp((t-fin)/max(1e-6,mid),0.,1.),0.,360.);
+  if(wNow<=0.){gl_FragColor=vec4(0.);return;}
+
+  // hsv filtering
+  vec3 hsv=rgb2hsv(src.rgb);
+  float center=cNow/360.;
+  float halfW=min(wNow/360.,0.5);
+  float d=hueDistance(hsv.x,center);
+  float band=1.0-smoothstep(halfW,halfW+max(1e-6,feather),d);
+  float gate=step(satMin,hsv.y)*step(valMin,hsv.z);
+  float mask=band*gate;
+  if(invert)mask=1.-mask;
+  float outA=keepSrcAlpha?mask*src.a:mask;
+
+  if(debugVisual){
+    vec3 col=(t<fin)?vec3(1.,1.,0.):(t<fin+mid)?vec3(0.,1.,0.):vec3(1.,0.,1.);
+    gl_FragColor=vec4(col,1.);
+    return;
+  }
+
+  if(maskOnly)gl_FragColor=vec4(vec3(mask),outA);
+  else gl_FragColor=vec4(src.rgb*mask,outA);
+}

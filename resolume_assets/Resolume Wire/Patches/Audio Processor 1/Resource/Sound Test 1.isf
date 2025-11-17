@@ -1,0 +1,15 @@
+/*{
+  "CATEGORIES": ["GENERATOR"],
+  "INPUTS": [
+    {"NAME":"Lows","TYPE":"float","DEFAULT":0.0,"MIN":0.0,"MAX":1.0},
+    {"NAME":"Mids","TYPE":"float","DEFAULT":0.0,"MIN":0.0,"MAX":1.0},
+    {"NAME":"Highs","TYPE":"float","DEFAULT":0.0,"MIN":0.0,"MAX":1.0},
+    {"NAME":"Loudness","TYPE":"float","DEFAULT":0.0,"MIN":0.0,"MAX":1.0}
+  ]
+}*/
+void main() {
+  vec2 uv = isf_FragNormCoord;
+  float ring = smoothstep(0.4, 0.41, length(uv-0.5));
+  vec3 c = vec3(Lows, Mids, Highs) * (0.2 + 0.8*Loudness);
+  gl_FragColor = vec4(c * ring, 1.0);
+}
